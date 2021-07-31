@@ -1,0 +1,7 @@
+
+bindir=/practices/.internal
+
+export CLASSPATH=$CLASSPATH:$bindir/WhatJar.jar
+
+java -jar $bindir/WhatJar.jar
+
