@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1383738720265_3" label="SLSB_Projects" name="SLSB_Projects">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/SimpleAuctionWebAppDb" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/SimpleAuctionDbSLSB_EAR" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/SimpleAuctionDBSLSB_EJBClient" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/SimpleAuctionDbSLSB_EJB" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/SimpleAuctionDbSLSB_WebApp" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1383744820080_4" label="Auction Libraries" name="Auction Libraries">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/AuctionMemLib" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/AuctionDbLib" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/AuctionWebAppSec" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/AuctionWebApp" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1383744848485_5" label="ShoppingCart" name="ShoppingCart">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/ShoppingCart" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1383744877998_6" label="WLST" name="WLST">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/WLSTProject" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1383744947679_9" label="Standard Projects From Java EE Team" name="Standard Projects From Java EE Team">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/SimpleAuctionWebAppDb" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/SimpleAuctionWebAppDbSec" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/SimpleAuctionWebApp" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/CreateAuctionDatabase" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/SimpleAuctionWebAppSec" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1383752583988_10" label="SFSB_Projects" name="SFSB_Projects">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/SimpleAuctionDbSFSB_EJBClient" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/SimpleAuctionDbSFSB_EAR" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/SimpleAuctionDbSFSB_EJB" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/SimpleAuctionDbSFSB_WebApp" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1383753414399_11" label="Elio&apos;s Projects" name="Elio&apos;s Projects">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/StressGC" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/StuckThreads" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/StressSocketServer" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/SaturateMemory" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/TestBatchUpdates" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/StressTestOS" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1378719603828_0" label="Window Working Set" name="Aggregate for window 1378719603825"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1378726770871_1" label="Window Working Set" name="Aggregate for window 1378726770871"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1380794080149_2" label="Window Working Set" name="Aggregate for window 1380794080149"/>
+<mruList name="SLSB_Projects"/>
+<mruList name="SFSB_Projects"/>
+<mruList name="Elio&apos;s Projects"/>
+<mruList name="Auction Libraries"/>
+<mruList name="Standard Projects From Java EE Team"/>
+</workingSetManager>

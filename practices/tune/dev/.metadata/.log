@@ -1,0 +1,2181 @@
+!SESSION 2013-12-10 17:20:08.330 -----------------------------------------------
+eclipse.buildId=4.3.0.I20130605-2000
+java.version=1.7.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+This is a continuation of log file /practices/tune/dev/.metadata/.bak_0.log
+Created Time: 2013-12-10 17:21:02.560
+
+!ENTRY oracle.eclipse.tools.common.services 4 2 2013-12-10 17:21:02.585
+!MESSAGE Problems occurred when invoking code from plug-in: "oracle.eclipse.tools.common.services".
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+	at org.eclipse.wst.html.core.internal.modelhandler.EmbeddedHTML.initializeFactoryRegistry(EmbeddedHTML.java:97)
+	at org.eclipse.jst.jsp.core.internal.modelhandler.JSPModelLoader.initEmbeddedTypePre(JSPModelLoader.java:517)
+	at org.eclipse.wst.sse.core.internal.model.AbstractModelLoader.createModel(AbstractModelLoader.java:125)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:852)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:811)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._doCommonGetModel(ModelManagerImpl.java:545)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:509)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:482)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.getModelForRead(ModelManagerImpl.java:1428)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.createModel(MergedModel.java:532)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.access$10(MergedModel.java:516)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel$2.run(MergedModel.java:330)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.getModelForRead(MergedModel.java:348)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider$GetModelRunnable.run(MergedModelManager.java:693)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider.getModelForRead(MergedModelManager.java:682)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getModelFromProvider(StructuredModelFactory.java:85)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getVisitableModelForRead(StructuredModelFactory.java:63)
+	at oracle.eclipse.tools.application.common.services.discovery.internal.StructuredDocumentResourceDiscoveryContext.getVisitableModel(StructuredDocumentResourceDiscoveryContext.java:51)
+	at oracle.eclipse.tools.application.common.services.discovery.internal.StructuredModelDiscoveryParticipant.discover(StructuredModelDiscoveryParticipant.java:115)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.DiscoveryParticipantList$SafeRunnerWithStatus.run(DiscoveryParticipantList.java:161)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.DiscoveryParticipantList.discover(DiscoveryParticipantList.java:96)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ResourceSetCommand.execute(ResourceSetCommand.java:97)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ProjectLoadCommand.execute(ProjectLoadCommand.java:53)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob$SafeRunnable.run(CommandSetJob.java:261)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.runCommand(CommandSetJob.java:196)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.run(CommandSetJob.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY oracle.eclipse.tools.common.services 4 2 2013-12-10 17:21:02.601
+!MESSAGE Problems occurred when invoking code from plug-in: "oracle.eclipse.tools.common.services".
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+	at org.eclipse.wst.html.core.internal.modelhandler.EmbeddedHTML.initializeFactoryRegistry(EmbeddedHTML.java:97)
+	at org.eclipse.jst.jsp.core.internal.modelhandler.JSPModelLoader.initEmbeddedTypePre(JSPModelLoader.java:517)
+	at org.eclipse.wst.sse.core.internal.model.AbstractModelLoader.createModel(AbstractModelLoader.java:125)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:852)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:811)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._doCommonGetModel(ModelManagerImpl.java:545)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:509)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:482)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.getModelForRead(ModelManagerImpl.java:1428)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.createModel(MergedModel.java:532)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.access$10(MergedModel.java:516)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel$2.run(MergedModel.java:330)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.getModelForRead(MergedModel.java:348)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider$GetModelRunnable.run(MergedModelManager.java:693)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider.getModelForRead(MergedModelManager.java:682)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getModelFromProvider(StructuredModelFactory.java:85)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getVisitableModelForRead(StructuredModelFactory.java:63)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredDocumentResourceCollectionContext.getVisitableModel(StructuredDocumentResourceCollectionContext.java:33)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredModelCollectionParticipant.collect(StructuredModelCollectionParticipant.java:138)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList$4.run(CollectionParticipantList.java:106)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList.collect(CollectionParticipantList.java:103)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ResourceSetCommand.execute(ResourceSetCommand.java:101)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ProjectLoadCommand.execute(ProjectLoadCommand.java:53)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob$SafeRunnable.run(CommandSetJob.java:261)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.runCommand(CommandSetJob.java:196)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.run(CommandSetJob.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY oracle.eclipse.tools.common.services 4 4 2013-12-10 17:21:02.652
+!MESSAGE Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+	at org.eclipse.wst.html.core.internal.modelhandler.EmbeddedHTML.initializeFactoryRegistry(EmbeddedHTML.java:97)
+	at org.eclipse.jst.jsp.core.internal.modelhandler.JSPModelLoader.initEmbeddedTypePre(JSPModelLoader.java:517)
+	at org.eclipse.wst.sse.core.internal.model.AbstractModelLoader.createModel(AbstractModelLoader.java:125)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:852)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:811)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._doCommonGetModel(ModelManagerImpl.java:545)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:509)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:482)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.getModelForRead(ModelManagerImpl.java:1428)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.createModel(MergedModel.java:532)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.access$10(MergedModel.java:516)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel$2.run(MergedModel.java:330)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.getModelForRead(MergedModel.java:348)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider$GetModelRunnable.run(MergedModelManager.java:693)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider.getModelForRead(MergedModelManager.java:682)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getModelFromProvider(StructuredModelFactory.java:85)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getVisitableModelForRead(StructuredModelFactory.java:63)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredDocumentResourceCollectionContext.getVisitableModel(StructuredDocumentResourceCollectionContext.java:33)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredModelCollectionParticipant.collect(StructuredModelCollectionParticipant.java:138)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList$4.run(CollectionParticipantList.java:106)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList.collect(CollectionParticipantList.java:103)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ResourceSetCommand.execute(ResourceSetCommand.java:101)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ProjectLoadCommand.execute(ProjectLoadCommand.java:53)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob$SafeRunnable.run(CommandSetJob.java:261)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.runCommand(CommandSetJob.java:196)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.run(CommandSetJob.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY oracle.eclipse.tools.common.services 4 2 2013-12-10 17:21:02.669
+!MESSAGE Problems occurred when invoking code from plug-in: "oracle.eclipse.tools.common.services".
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+	at org.eclipse.wst.html.core.internal.modelhandler.EmbeddedHTML.initializeFactoryRegistry(EmbeddedHTML.java:97)
+	at org.eclipse.jst.jsp.core.internal.modelhandler.JSPModelLoader.initEmbeddedTypePre(JSPModelLoader.java:511)
+	at org.eclipse.wst.sse.core.internal.model.AbstractModelLoader.createModel(AbstractModelLoader.java:125)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:852)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:811)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._doCommonGetModel(ModelManagerImpl.java:545)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:509)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:482)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.getModelForRead(ModelManagerImpl.java:1428)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.createModel(MergedModel.java:532)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.access$10(MergedModel.java:516)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel$2.run(MergedModel.java:330)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.getModelForRead(MergedModel.java:348)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider$GetModelRunnable.run(MergedModelManager.java:693)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider.getModelForRead(MergedModelManager.java:682)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getModelFromProvider(StructuredModelFactory.java:85)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getVisitableModelForRead(StructuredModelFactory.java:63)
+	at oracle.eclipse.tools.application.common.services.discovery.internal.StructuredDocumentResourceDiscoveryContext.getVisitableModel(StructuredDocumentResourceDiscoveryContext.java:51)
+	at oracle.eclipse.tools.application.common.services.discovery.internal.StructuredModelDiscoveryParticipant.discover(StructuredModelDiscoveryParticipant.java:115)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.DiscoveryParticipantList$SafeRunnerWithStatus.run(DiscoveryParticipantList.java:161)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.DiscoveryParticipantList.discover(DiscoveryParticipantList.java:96)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ResourceSetCommand.execute(ResourceSetCommand.java:97)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ProjectLoadCommand.execute(ProjectLoadCommand.java:53)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob$SafeRunnable.run(CommandSetJob.java:261)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.runCommand(CommandSetJob.java:196)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.run(CommandSetJob.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY oracle.eclipse.tools.common.services 4 2 2013-12-10 17:21:02.694
+!MESSAGE Problems occurred when invoking code from plug-in: "oracle.eclipse.tools.common.services".
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+	at org.eclipse.wst.html.core.internal.modelhandler.EmbeddedHTML.initializeFactoryRegistry(EmbeddedHTML.java:97)
+	at org.eclipse.jst.jsp.core.internal.modelhandler.JSPModelLoader.initEmbeddedTypePre(JSPModelLoader.java:511)
+	at org.eclipse.wst.sse.core.internal.model.AbstractModelLoader.createModel(AbstractModelLoader.java:125)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:852)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:811)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._doCommonGetModel(ModelManagerImpl.java:545)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:509)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:482)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.getModelForRead(ModelManagerImpl.java:1428)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.createModel(MergedModel.java:532)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.access$10(MergedModel.java:516)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel$2.run(MergedModel.java:330)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.getModelForRead(MergedModel.java:348)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider$GetModelRunnable.run(MergedModelManager.java:693)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider.getModelForRead(MergedModelManager.java:682)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getModelFromProvider(StructuredModelFactory.java:85)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getVisitableModelForRead(StructuredModelFactory.java:63)
+	at oracle.eclipse.tools.application.common.services.discovery.internal.StructuredDocumentResourceDiscoveryContext.getVisitableModel(StructuredDocumentResourceDiscoveryContext.java:51)
+	at oracle.eclipse.tools.application.common.services.discovery.internal.StructuredModelDiscoveryParticipant.discover(StructuredModelDiscoveryParticipant.java:115)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.DiscoveryParticipantList$SafeRunnerWithStatus.run(DiscoveryParticipantList.java:161)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.DiscoveryParticipantList.discover(DiscoveryParticipantList.java:96)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ResourceSetCommand.execute(ResourceSetCommand.java:97)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ProjectLoadCommand.execute(ProjectLoadCommand.java:53)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob$SafeRunnable.run(CommandSetJob.java:261)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.runCommand(CommandSetJob.java:196)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.run(CommandSetJob.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY oracle.eclipse.tools.common.services 4 2 2013-12-10 17:21:02.715
+!MESSAGE Problems occurred when invoking code from plug-in: "oracle.eclipse.tools.common.services".
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+	at org.eclipse.wst.html.core.internal.modelhandler.EmbeddedHTML.initializeFactoryRegistry(EmbeddedHTML.java:97)
+	at org.eclipse.jst.jsp.core.internal.modelhandler.JSPModelLoader.initEmbeddedTypePre(JSPModelLoader.java:511)
+	at org.eclipse.wst.sse.core.internal.model.AbstractModelLoader.createModel(AbstractModelLoader.java:125)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:852)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:811)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._doCommonGetModel(ModelManagerImpl.java:545)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:509)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:482)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.getModelForRead(ModelManagerImpl.java:1428)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.createModel(MergedModel.java:532)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.access$10(MergedModel.java:516)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel$2.run(MergedModel.java:330)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.getModelForRead(MergedModel.java:348)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider$GetModelRunnable.run(MergedModelManager.java:693)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider.getModelForRead(MergedModelManager.java:682)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getModelFromProvider(StructuredModelFactory.java:85)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getVisitableModelForRead(StructuredModelFactory.java:63)
+	at oracle.eclipse.tools.application.common.services.discovery.internal.StructuredDocumentResourceDiscoveryContext.getVisitableModel(StructuredDocumentResourceDiscoveryContext.java:51)
+	at oracle.eclipse.tools.application.common.services.discovery.internal.StructuredModelDiscoveryParticipant.discover(StructuredModelDiscoveryParticipant.java:115)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.DiscoveryParticipantList$SafeRunnerWithStatus.run(DiscoveryParticipantList.java:161)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.DiscoveryParticipantList.discover(DiscoveryParticipantList.java:96)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ResourceSetCommand.execute(ResourceSetCommand.java:97)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ProjectLoadCommand.execute(ProjectLoadCommand.java:53)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob$SafeRunnable.run(CommandSetJob.java:261)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.runCommand(CommandSetJob.java:196)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.run(CommandSetJob.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY oracle.eclipse.tools.common.services 4 2 2013-12-10 17:21:02.720
+!MESSAGE Problems occurred when invoking code from plug-in: "oracle.eclipse.tools.common.services".
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+	at org.eclipse.wst.html.core.internal.modelhandler.EmbeddedHTML.initializeFactoryRegistry(EmbeddedHTML.java:97)
+	at org.eclipse.jst.jsp.core.internal.modelhandler.JSPModelLoader.initEmbeddedTypePre(JSPModelLoader.java:517)
+	at org.eclipse.wst.sse.core.internal.model.AbstractModelLoader.createModel(AbstractModelLoader.java:125)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:852)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:811)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._doCommonGetModel(ModelManagerImpl.java:545)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:509)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:482)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.getModelForRead(ModelManagerImpl.java:1428)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.createModel(MergedModel.java:532)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.access$10(MergedModel.java:516)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel$2.run(MergedModel.java:330)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.getModelForRead(MergedModel.java:348)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider$GetModelRunnable.run(MergedModelManager.java:693)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider.getModelForRead(MergedModelManager.java:682)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getModelFromProvider(StructuredModelFactory.java:85)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getVisitableModelForRead(StructuredModelFactory.java:63)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredDocumentResourceCollectionContext.getVisitableModel(StructuredDocumentResourceCollectionContext.java:33)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredModelCollectionParticipant.collect(StructuredModelCollectionParticipant.java:138)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList$4.run(CollectionParticipantList.java:106)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList.collect(CollectionParticipantList.java:103)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ResourceSetCommand.execute(ResourceSetCommand.java:101)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ProjectLoadCommand.execute(ProjectLoadCommand.java:53)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob$SafeRunnable.run(CommandSetJob.java:261)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.runCommand(CommandSetJob.java:196)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.run(CommandSetJob.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY oracle.eclipse.tools.common.services 4 4 2013-12-10 17:21:02.728
+!MESSAGE Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+	at org.eclipse.wst.html.core.internal.modelhandler.EmbeddedHTML.initializeFactoryRegistry(EmbeddedHTML.java:97)
+	at org.eclipse.jst.jsp.core.internal.modelhandler.JSPModelLoader.initEmbeddedTypePre(JSPModelLoader.java:517)
+	at org.eclipse.wst.sse.core.internal.model.AbstractModelLoader.createModel(AbstractModelLoader.java:125)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:852)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:811)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._doCommonGetModel(ModelManagerImpl.java:545)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:509)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:482)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.getModelForRead(ModelManagerImpl.java:1428)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.createModel(MergedModel.java:532)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.access$10(MergedModel.java:516)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel$2.run(MergedModel.java:330)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.getModelForRead(MergedModel.java:348)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider$GetModelRunnable.run(MergedModelManager.java:693)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider.getModelForRead(MergedModelManager.java:682)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getModelFromProvider(StructuredModelFactory.java:85)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getVisitableModelForRead(StructuredModelFactory.java:63)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredDocumentResourceCollectionContext.getVisitableModel(StructuredDocumentResourceCollectionContext.java:33)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredModelCollectionParticipant.collect(StructuredModelCollectionParticipant.java:138)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList$4.run(CollectionParticipantList.java:106)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList.collect(CollectionParticipantList.java:103)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ResourceSetCommand.execute(ResourceSetCommand.java:101)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ProjectLoadCommand.execute(ProjectLoadCommand.java:53)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob$SafeRunnable.run(CommandSetJob.java:261)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.runCommand(CommandSetJob.java:196)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.run(CommandSetJob.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY oracle.eclipse.tools.common.services 4 2 2013-12-10 17:21:02.739
+!MESSAGE Problems occurred when invoking code from plug-in: "oracle.eclipse.tools.common.services".
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+	at org.eclipse.wst.html.core.internal.modelhandler.EmbeddedHTML.initializeFactoryRegistry(EmbeddedHTML.java:97)
+	at org.eclipse.jst.jsp.core.internal.modelhandler.JSPModelLoader.initEmbeddedTypePre(JSPModelLoader.java:511)
+	at org.eclipse.wst.sse.core.internal.model.AbstractModelLoader.createModel(AbstractModelLoader.java:125)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:852)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:811)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._doCommonGetModel(ModelManagerImpl.java:545)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:509)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:482)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.getModelForRead(ModelManagerImpl.java:1428)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.createModel(MergedModel.java:532)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.access$10(MergedModel.java:516)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel$2.run(MergedModel.java:330)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.getModelForRead(MergedModel.java:348)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider$GetModelRunnable.run(MergedModelManager.java:693)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider.getModelForRead(MergedModelManager.java:682)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getModelFromProvider(StructuredModelFactory.java:85)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getVisitableModelForRead(StructuredModelFactory.java:63)
+	at oracle.eclipse.tools.application.common.services.discovery.internal.StructuredDocumentResourceDiscoveryContext.getVisitableModel(StructuredDocumentResourceDiscoveryContext.java:51)
+	at oracle.eclipse.tools.application.common.services.discovery.internal.StructuredModelDiscoveryParticipant.discover(StructuredModelDiscoveryParticipant.java:115)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.DiscoveryParticipantList$SafeRunnerWithStatus.run(DiscoveryParticipantList.java:161)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.DiscoveryParticipantList.discover(DiscoveryParticipantList.java:96)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ResourceSetCommand.execute(ResourceSetCommand.java:97)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ProjectLoadCommand.execute(ProjectLoadCommand.java:53)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob$SafeRunnable.run(CommandSetJob.java:261)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.runCommand(CommandSetJob.java:196)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.run(CommandSetJob.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY oracle.eclipse.tools.common.services 2 2 2013-12-10 17:21:02.785
+!MESSAGE Unable to find file [12.artifact.sjo].
+
+!ENTRY oracle.eclipse.tools.common.services 2 2 2013-12-10 17:21:02.793
+!MESSAGE Unable to find file [12.artifact.sjo].
+
+!ENTRY org.eclipse.equinox.preferences 4 2 2013-12-10 17:21:02.803
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.equinox.preferences".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.html.core.internal.preferences.HTMLCorePreferenceInitializer.initializeDefaultPreferences(HTMLCorePreferenceInitializer.java:27)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper$1.run(PreferenceServiceRegistryHelper.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.runInitializer(PreferenceServiceRegistryHelper.java:303)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.applyRuntimeDefaults(PreferenceServiceRegistryHelper.java:131)
+	at org.eclipse.core.internal.preferences.PreferencesService.applyRuntimeDefaults(PreferencesService.java:368)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.applyRuntimeDefaults(DefaultPreferences.java:221)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.load(DefaultPreferences.java:274)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:409)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:670)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:812)
+	at org.eclipse.core.internal.preferences.RootPreferences.getNode(RootPreferences.java:111)
+	at org.eclipse.core.internal.preferences.RootPreferences.node(RootPreferences.java:90)
+	at org.eclipse.wst.sse.core.internal.encoding.ContentBasedPreferenceGateway.getDefaultPreferences(ContentBasedPreferenceGateway.java:75)
+	at org.eclipse.wst.sse.core.internal.encoding.ContentBasedPreferenceGateway.getDefaultPreferences(ContentBasedPreferenceGateway.java:96)
+	at org.eclipse.wst.sse.core.internal.encoding.ContentBasedPreferenceGateway.getPreferencesString(ContentBasedPreferenceGateway.java:141)
+	at org.eclipse.wst.sse.core.internal.encoding.ContentTypeEncodingPreferences.getUserSpecifiedDefaultEncodingPreference(ContentTypeEncodingPreferences.java:108)
+	at org.eclipse.wst.sse.core.internal.encoding.ContentTypeEncodingPreferences.getUserSpecifiedDefaultEncodingPreference(ContentTypeEncodingPreferences.java:94)
+	at org.eclipse.wst.sse.core.internal.encoding.NonContentBasedEncodingRules.useDefaultNameRules(NonContentBasedEncodingRules.java:112)
+	at org.eclipse.wst.css.core.internal.contenttype.CSSResourceEncodingDetector$NullMemento.<init>(CSSResourceEncodingDetector.java:40)
+	at org.eclipse.wst.css.core.internal.contenttype.CSSResourceEncodingDetector.getEncodingMemento(CSSResourceEncodingDetector.java:276)
+	at org.eclipse.wst.css.core.internal.contenttype.ContentDescriberForCSS.handleCalculations(ContentDescriberForCSS.java:108)
+	at org.eclipse.wst.css.core.internal.contenttype.ContentDescriberForCSS.calculateSupportedOptions(ContentDescriberForCSS.java:64)
+	at org.eclipse.wst.css.core.internal.contenttype.ContentDescriberForCSS.describe(ContentDescriberForCSS.java:36)
+	at org.eclipse.core.internal.content.ContentType.describe(ContentType.java:161)
+	at org.eclipse.core.internal.content.ContentType.internalGetDescriptionFor(ContentType.java:458)
+	at org.eclipse.core.internal.content.ContentTypeCatalog.getDescriptionFor(ContentTypeCatalog.java:356)
+	at org.eclipse.core.internal.content.ContentTypeCatalog.getDescriptionFor(ContentTypeCatalog.java:360)
+	at org.eclipse.core.internal.content.ContentTypeMatcher.getDescriptionFor(ContentTypeMatcher.java:86)
+	at org.eclipse.core.internal.resources.ContentDescriptionManager.readDescription(ContentDescriptionManager.java:445)
+	at org.eclipse.core.internal.resources.ContentDescriptionManager.getDescriptionFor(ContentDescriptionManager.java:355)
+	at org.eclipse.core.internal.resources.File.getContentDescription(File.java:271)
+	at oracle.eclipse.tools.common.services.dependency.artifact.AbstractResourceContext.getContentTypeId(AbstractResourceContext.java:41)
+	at oracle.eclipse.tools.common.services.dependency.artifact.collection.ContentTypeCollectionFilter.match(ContentTypeCollectionFilter.java:39)
+	at oracle.eclipse.tools.application.common.services.variables.internal.ImplicitVariableDiscoveryParticipant.discover(ImplicitVariableDiscoveryParticipant.java:44)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.DiscoveryParticipantList$SafeRunnerWithStatus.run(DiscoveryParticipantList.java:161)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.DiscoveryParticipantList.discover(DiscoveryParticipantList.java:96)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ResourceSetCommand.execute(ResourceSetCommand.java:97)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ProjectLoadCommand.execute(ProjectLoadCommand.java:53)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob$SafeRunnable.run(CommandSetJob.java:261)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.runCommand(CommandSetJob.java:196)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.run(CommandSetJob.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY oracle.eclipse.tools.common.services 2 2 2013-12-10 17:21:02.826
+!MESSAGE Plugin is shut down, resource change will not be processed
+
+!ENTRY oracle.eclipse.tools.common.services 4 2 2013-12-10 17:21:02.836
+!MESSAGE Problems occurred when invoking code from plug-in: "oracle.eclipse.tools.common.services".
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+	at org.eclipse.wst.html.core.internal.modelhandler.EmbeddedHTML.initializeFactoryRegistry(EmbeddedHTML.java:97)
+	at org.eclipse.jst.jsp.core.internal.modelhandler.JSPModelLoader.initEmbeddedTypePre(JSPModelLoader.java:511)
+	at org.eclipse.wst.sse.core.internal.model.AbstractModelLoader.createModel(AbstractModelLoader.java:125)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:852)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:811)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._doCommonGetModel(ModelManagerImpl.java:545)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:509)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:482)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.getModelForRead(ModelManagerImpl.java:1428)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.createModel(MergedModel.java:532)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.access$10(MergedModel.java:516)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel$2.run(MergedModel.java:330)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.getModelForRead(MergedModel.java:348)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider$GetModelRunnable.run(MergedModelManager.java:693)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider.getModelForRead(MergedModelManager.java:682)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getModelFromProvider(StructuredModelFactory.java:85)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getVisitableModelForRead(StructuredModelFactory.java:63)
+	at oracle.eclipse.tools.application.common.services.discovery.internal.StructuredDocumentResourceDiscoveryContext.getVisitableModel(StructuredDocumentResourceDiscoveryContext.java:51)
+	at oracle.eclipse.tools.application.common.services.discovery.internal.StructuredModelDiscoveryParticipant.discover(StructuredModelDiscoveryParticipant.java:115)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.DiscoveryParticipantList$SafeRunnerWithStatus.run(DiscoveryParticipantList.java:161)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.DiscoveryParticipantList.discover(DiscoveryParticipantList.java:96)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ResourceSetCommand.execute(ResourceSetCommand.java:97)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ProjectLoadCommand.execute(ProjectLoadCommand.java:53)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob$SafeRunnable.run(CommandSetJob.java:261)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.runCommand(CommandSetJob.java:196)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.run(CommandSetJob.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY oracle.eclipse.tools.common.services 4 2 2013-12-10 17:21:02.857
+!MESSAGE Problems occurred when invoking code from plug-in: "oracle.eclipse.tools.common.services".
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+	at org.eclipse.wst.html.core.internal.modelhandler.EmbeddedHTML.initializeFactoryRegistry(EmbeddedHTML.java:97)
+	at org.eclipse.jst.jsp.core.internal.modelhandler.JSPModelLoader.initEmbeddedTypePre(JSPModelLoader.java:511)
+	at org.eclipse.wst.sse.core.internal.model.AbstractModelLoader.createModel(AbstractModelLoader.java:125)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:852)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:811)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._doCommonGetModel(ModelManagerImpl.java:545)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:509)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:482)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.getModelForRead(ModelManagerImpl.java:1428)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.createModel(MergedModel.java:532)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.access$10(MergedModel.java:516)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel$2.run(MergedModel.java:330)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.getModelForRead(MergedModel.java:348)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider$GetModelRunnable.run(MergedModelManager.java:693)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider.getModelForRead(MergedModelManager.java:682)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getModelFromProvider(StructuredModelFactory.java:85)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getVisitableModelForRead(StructuredModelFactory.java:63)
+	at oracle.eclipse.tools.application.common.services.discovery.internal.StructuredDocumentResourceDiscoveryContext.getVisitableModel(StructuredDocumentResourceDiscoveryContext.java:51)
+	at oracle.eclipse.tools.application.common.services.discovery.internal.StructuredModelDiscoveryParticipant.discover(StructuredModelDiscoveryParticipant.java:115)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.DiscoveryParticipantList$SafeRunnerWithStatus.run(DiscoveryParticipantList.java:161)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.DiscoveryParticipantList.discover(DiscoveryParticipantList.java:96)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ResourceSetCommand.execute(ResourceSetCommand.java:97)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ProjectLoadCommand.execute(ProjectLoadCommand.java:53)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob$SafeRunnable.run(CommandSetJob.java:261)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.runCommand(CommandSetJob.java:196)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.run(CommandSetJob.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY oracle.eclipse.tools.common.services 4 2 2013-12-10 17:21:02.884
+!MESSAGE Problems occurred when invoking code from plug-in: "oracle.eclipse.tools.common.services".
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+	at org.eclipse.wst.html.core.internal.modelhandler.EmbeddedHTML.initializeFactoryRegistry(EmbeddedHTML.java:97)
+	at org.eclipse.jst.jsp.core.internal.modelhandler.JSPModelLoader.initEmbeddedTypePre(JSPModelLoader.java:511)
+	at org.eclipse.wst.sse.core.internal.model.AbstractModelLoader.createModel(AbstractModelLoader.java:125)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:852)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:811)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._doCommonGetModel(ModelManagerImpl.java:545)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:509)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:482)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.getModelForRead(ModelManagerImpl.java:1428)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.createModel(MergedModel.java:532)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.access$10(MergedModel.java:516)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel$2.run(MergedModel.java:330)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.getModelForRead(MergedModel.java:348)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider$GetModelRunnable.run(MergedModelManager.java:693)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider.getModelForRead(MergedModelManager.java:682)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getModelFromProvider(StructuredModelFactory.java:85)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getVisitableModelForRead(StructuredModelFactory.java:63)
+	at oracle.eclipse.tools.application.common.services.discovery.internal.StructuredDocumentResourceDiscoveryContext.getVisitableModel(StructuredDocumentResourceDiscoveryContext.java:51)
+	at oracle.eclipse.tools.application.common.services.discovery.internal.StructuredModelDiscoveryParticipant.discover(StructuredModelDiscoveryParticipant.java:115)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.DiscoveryParticipantList$SafeRunnerWithStatus.run(DiscoveryParticipantList.java:161)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.DiscoveryParticipantList.discover(DiscoveryParticipantList.java:96)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ResourceSetCommand.execute(ResourceSetCommand.java:97)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ProjectLoadCommand.execute(ProjectLoadCommand.java:53)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob$SafeRunnable.run(CommandSetJob.java:261)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.runCommand(CommandSetJob.java:196)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.run(CommandSetJob.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY oracle.eclipse.tools.common.services 4 2 2013-12-10 17:21:02.908
+!MESSAGE Problems occurred when invoking code from plug-in: "oracle.eclipse.tools.common.services".
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+	at org.eclipse.wst.html.core.internal.modelhandler.EmbeddedHTML.initializeFactoryRegistry(EmbeddedHTML.java:97)
+	at org.eclipse.jst.jsp.core.internal.modelhandler.JSPModelLoader.initEmbeddedTypePre(JSPModelLoader.java:511)
+	at org.eclipse.wst.sse.core.internal.model.AbstractModelLoader.createModel(AbstractModelLoader.java:125)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:852)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:811)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._doCommonGetModel(ModelManagerImpl.java:545)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:509)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:482)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.getModelForRead(ModelManagerImpl.java:1428)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.createModel(MergedModel.java:532)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.access$10(MergedModel.java:516)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel$2.run(MergedModel.java:330)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.getModelForRead(MergedModel.java:348)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider$GetModelRunnable.run(MergedModelManager.java:693)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider.getModelForRead(MergedModelManager.java:682)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getModelFromProvider(StructuredModelFactory.java:85)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getVisitableModelForRead(StructuredModelFactory.java:63)
+	at oracle.eclipse.tools.application.common.services.discovery.internal.StructuredDocumentResourceDiscoveryContext.getVisitableModel(StructuredDocumentResourceDiscoveryContext.java:51)
+	at oracle.eclipse.tools.application.common.services.discovery.internal.StructuredModelDiscoveryParticipant.discover(StructuredModelDiscoveryParticipant.java:115)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.DiscoveryParticipantList$SafeRunnerWithStatus.run(DiscoveryParticipantList.java:161)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.DiscoveryParticipantList.discover(DiscoveryParticipantList.java:96)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ResourceSetCommand.execute(ResourceSetCommand.java:97)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ProjectLoadCommand.execute(ProjectLoadCommand.java:53)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob$SafeRunnable.run(CommandSetJob.java:261)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.runCommand(CommandSetJob.java:196)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.run(CommandSetJob.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY oracle.eclipse.tools.common.services 4 2 2013-12-10 17:21:03.007
+!MESSAGE Problems occurred when invoking code from plug-in: "oracle.eclipse.tools.common.services".
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+	at org.eclipse.wst.html.core.internal.modelhandler.EmbeddedHTML.initializeFactoryRegistry(EmbeddedHTML.java:97)
+	at org.eclipse.jst.jsp.core.internal.modelhandler.JSPModelLoader.initEmbeddedTypePre(JSPModelLoader.java:511)
+	at org.eclipse.wst.sse.core.internal.model.AbstractModelLoader.createModel(AbstractModelLoader.java:125)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:852)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:811)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._doCommonGetModel(ModelManagerImpl.java:545)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:509)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:482)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.getModelForRead(ModelManagerImpl.java:1428)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.createModel(MergedModel.java:532)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.access$10(MergedModel.java:516)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel$2.run(MergedModel.java:330)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.getModelForRead(MergedModel.java:348)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider$GetModelRunnable.run(MergedModelManager.java:693)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider.getModelForRead(MergedModelManager.java:682)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getModelFromProvider(StructuredModelFactory.java:85)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getVisitableModelForRead(StructuredModelFactory.java:63)
+	at oracle.eclipse.tools.application.common.services.discovery.internal.StructuredDocumentResourceDiscoveryContext.getVisitableModel(StructuredDocumentResourceDiscoveryContext.java:51)
+	at oracle.eclipse.tools.application.common.services.discovery.internal.StructuredModelDiscoveryParticipant.discover(StructuredModelDiscoveryParticipant.java:115)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.DiscoveryParticipantList$SafeRunnerWithStatus.run(DiscoveryParticipantList.java:161)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.DiscoveryParticipantList.discover(DiscoveryParticipantList.java:96)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ResourceSetCommand.execute(ResourceSetCommand.java:97)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ProjectLoadCommand.execute(ProjectLoadCommand.java:53)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob$SafeRunnable.run(CommandSetJob.java:261)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.runCommand(CommandSetJob.java:196)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.run(CommandSetJob.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY oracle.eclipse.tools.common.services 4 2 2013-12-10 17:21:03.031
+!MESSAGE Problems occurred when invoking code from plug-in: "oracle.eclipse.tools.common.services".
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+	at org.eclipse.wst.html.core.internal.modelhandler.EmbeddedHTML.initializeFactoryRegistry(EmbeddedHTML.java:97)
+	at org.eclipse.jst.jsp.core.internal.modelhandler.JSPModelLoader.initEmbeddedTypePre(JSPModelLoader.java:511)
+	at org.eclipse.wst.sse.core.internal.model.AbstractModelLoader.createModel(AbstractModelLoader.java:125)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:852)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:811)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._doCommonGetModel(ModelManagerImpl.java:545)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:509)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:482)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.getModelForRead(ModelManagerImpl.java:1428)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.createModel(MergedModel.java:532)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.access$10(MergedModel.java:516)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel$2.run(MergedModel.java:330)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.getModelForRead(MergedModel.java:348)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider$GetModelRunnable.run(MergedModelManager.java:693)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider.getModelForRead(MergedModelManager.java:682)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getModelFromProvider(StructuredModelFactory.java:85)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getVisitableModelForRead(StructuredModelFactory.java:63)
+	at oracle.eclipse.tools.application.common.services.discovery.internal.StructuredDocumentResourceDiscoveryContext.getVisitableModel(StructuredDocumentResourceDiscoveryContext.java:51)
+	at oracle.eclipse.tools.application.common.services.discovery.internal.StructuredModelDiscoveryParticipant.discover(StructuredModelDiscoveryParticipant.java:115)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.DiscoveryParticipantList$SafeRunnerWithStatus.run(DiscoveryParticipantList.java:161)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.DiscoveryParticipantList.discover(DiscoveryParticipantList.java:96)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ResourceSetCommand.execute(ResourceSetCommand.java:97)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ProjectLoadCommand.execute(ProjectLoadCommand.java:53)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob$SafeRunnable.run(CommandSetJob.java:261)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.runCommand(CommandSetJob.java:196)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.run(CommandSetJob.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY oracle.eclipse.tools.common.services 4 2 2013-12-10 17:21:03.075
+!MESSAGE Problems occurred when invoking code from plug-in: "oracle.eclipse.tools.common.services".
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+	at org.eclipse.wst.html.core.internal.modelhandler.EmbeddedHTML.initializeFactoryRegistry(EmbeddedHTML.java:97)
+	at org.eclipse.jst.jsp.core.internal.modelhandler.JSPModelLoader.initEmbeddedTypePre(JSPModelLoader.java:511)
+	at org.eclipse.wst.sse.core.internal.model.AbstractModelLoader.createModel(AbstractModelLoader.java:125)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:852)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:811)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._doCommonGetModel(ModelManagerImpl.java:545)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:509)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:482)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.getModelForRead(ModelManagerImpl.java:1428)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.createModel(MergedModel.java:532)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.access$10(MergedModel.java:516)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel$2.run(MergedModel.java:330)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.getModelForRead(MergedModel.java:348)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider$GetModelRunnable.run(MergedModelManager.java:693)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider.getModelForRead(MergedModelManager.java:682)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getModelFromProvider(StructuredModelFactory.java:85)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getVisitableModelForRead(StructuredModelFactory.java:63)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredDocumentResourceCollectionContext.getVisitableModel(StructuredDocumentResourceCollectionContext.java:33)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredModelCollectionParticipant.collect(StructuredModelCollectionParticipant.java:138)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList$4.run(CollectionParticipantList.java:106)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList.collect(CollectionParticipantList.java:103)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ResourceSetCommand.execute(ResourceSetCommand.java:101)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ProjectLoadCommand.execute(ProjectLoadCommand.java:53)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob$SafeRunnable.run(CommandSetJob.java:261)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.runCommand(CommandSetJob.java:196)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.run(CommandSetJob.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY oracle.eclipse.tools.common.services 4 4 2013-12-10 17:21:03.084
+!MESSAGE Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+	at org.eclipse.wst.html.core.internal.modelhandler.EmbeddedHTML.initializeFactoryRegistry(EmbeddedHTML.java:97)
+	at org.eclipse.jst.jsp.core.internal.modelhandler.JSPModelLoader.initEmbeddedTypePre(JSPModelLoader.java:511)
+	at org.eclipse.wst.sse.core.internal.model.AbstractModelLoader.createModel(AbstractModelLoader.java:125)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:852)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:811)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._doCommonGetModel(ModelManagerImpl.java:545)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:509)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:482)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.getModelForRead(ModelManagerImpl.java:1428)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.createModel(MergedModel.java:532)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.access$10(MergedModel.java:516)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel$2.run(MergedModel.java:330)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.getModelForRead(MergedModel.java:348)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider$GetModelRunnable.run(MergedModelManager.java:693)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider.getModelForRead(MergedModelManager.java:682)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getModelFromProvider(StructuredModelFactory.java:85)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getVisitableModelForRead(StructuredModelFactory.java:63)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredDocumentResourceCollectionContext.getVisitableModel(StructuredDocumentResourceCollectionContext.java:33)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredModelCollectionParticipant.collect(StructuredModelCollectionParticipant.java:138)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList$4.run(CollectionParticipantList.java:106)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList.collect(CollectionParticipantList.java:103)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ResourceSetCommand.execute(ResourceSetCommand.java:101)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ProjectLoadCommand.execute(ProjectLoadCommand.java:53)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob$SafeRunnable.run(CommandSetJob.java:261)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.runCommand(CommandSetJob.java:196)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.run(CommandSetJob.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY oracle.eclipse.tools.common.services 4 2 2013-12-10 17:21:03.093
+!MESSAGE Problems occurred when invoking code from plug-in: "oracle.eclipse.tools.common.services".
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+	at org.eclipse.wst.html.core.internal.modelhandler.EmbeddedHTML.initializeFactoryRegistry(EmbeddedHTML.java:97)
+	at org.eclipse.jst.jsp.core.internal.modelhandler.JSPModelLoader.initEmbeddedTypePre(JSPModelLoader.java:511)
+	at org.eclipse.wst.sse.core.internal.model.AbstractModelLoader.createModel(AbstractModelLoader.java:125)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:852)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:811)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._doCommonGetModel(ModelManagerImpl.java:545)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:509)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:482)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.getModelForRead(ModelManagerImpl.java:1428)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.createModel(MergedModel.java:532)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.access$10(MergedModel.java:516)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel$2.run(MergedModel.java:330)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.getModelForRead(MergedModel.java:348)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider$GetModelRunnable.run(MergedModelManager.java:693)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider.getModelForRead(MergedModelManager.java:682)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getModelFromProvider(StructuredModelFactory.java:85)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getVisitableModelForRead(StructuredModelFactory.java:63)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredDocumentResourceCollectionContext.getVisitableModel(StructuredDocumentResourceCollectionContext.java:33)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredModelCollectionParticipant.collect(StructuredModelCollectionParticipant.java:138)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList$4.run(CollectionParticipantList.java:106)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList.collect(CollectionParticipantList.java:103)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ResourceSetCommand.execute(ResourceSetCommand.java:101)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ProjectLoadCommand.execute(ProjectLoadCommand.java:53)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob$SafeRunnable.run(CommandSetJob.java:261)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.runCommand(CommandSetJob.java:196)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.run(CommandSetJob.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY oracle.eclipse.tools.common.services 4 4 2013-12-10 17:21:03.100
+!MESSAGE Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+	at org.eclipse.wst.html.core.internal.modelhandler.EmbeddedHTML.initializeFactoryRegistry(EmbeddedHTML.java:97)
+	at org.eclipse.jst.jsp.core.internal.modelhandler.JSPModelLoader.initEmbeddedTypePre(JSPModelLoader.java:511)
+	at org.eclipse.wst.sse.core.internal.model.AbstractModelLoader.createModel(AbstractModelLoader.java:125)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:852)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:811)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._doCommonGetModel(ModelManagerImpl.java:545)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:509)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:482)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.getModelForRead(ModelManagerImpl.java:1428)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.createModel(MergedModel.java:532)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.access$10(MergedModel.java:516)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel$2.run(MergedModel.java:330)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.getModelForRead(MergedModel.java:348)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider$GetModelRunnable.run(MergedModelManager.java:693)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider.getModelForRead(MergedModelManager.java:682)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getModelFromProvider(StructuredModelFactory.java:85)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getVisitableModelForRead(StructuredModelFactory.java:63)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredDocumentResourceCollectionContext.getVisitableModel(StructuredDocumentResourceCollectionContext.java:33)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredModelCollectionParticipant.collect(StructuredModelCollectionParticipant.java:138)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList$4.run(CollectionParticipantList.java:106)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList.collect(CollectionParticipantList.java:103)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ResourceSetCommand.execute(ResourceSetCommand.java:101)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ProjectLoadCommand.execute(ProjectLoadCommand.java:53)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob$SafeRunnable.run(CommandSetJob.java:261)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.runCommand(CommandSetJob.java:196)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.run(CommandSetJob.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY oracle.eclipse.tools.common.services 4 2 2013-12-10 17:21:03.109
+!MESSAGE Problems occurred when invoking code from plug-in: "oracle.eclipse.tools.common.services".
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+	at org.eclipse.wst.html.core.internal.modelhandler.EmbeddedHTML.initializeFactoryRegistry(EmbeddedHTML.java:97)
+	at org.eclipse.jst.jsp.core.internal.modelhandler.JSPModelLoader.initEmbeddedTypePre(JSPModelLoader.java:511)
+	at org.eclipse.wst.sse.core.internal.model.AbstractModelLoader.createModel(AbstractModelLoader.java:125)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:852)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:811)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._doCommonGetModel(ModelManagerImpl.java:545)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:509)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:482)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.getModelForRead(ModelManagerImpl.java:1428)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.createModel(MergedModel.java:532)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.access$10(MergedModel.java:516)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel$2.run(MergedModel.java:330)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.getModelForRead(MergedModel.java:348)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider$GetModelRunnable.run(MergedModelManager.java:693)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider.getModelForRead(MergedModelManager.java:682)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getModelFromProvider(StructuredModelFactory.java:85)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getVisitableModelForRead(StructuredModelFactory.java:63)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredDocumentResourceCollectionContext.getVisitableModel(StructuredDocumentResourceCollectionContext.java:33)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredModelCollectionParticipant.collect(StructuredModelCollectionParticipant.java:138)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList$4.run(CollectionParticipantList.java:106)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList.collect(CollectionParticipantList.java:103)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ResourceSetCommand.execute(ResourceSetCommand.java:101)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ProjectLoadCommand.execute(ProjectLoadCommand.java:53)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob$SafeRunnable.run(CommandSetJob.java:261)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.runCommand(CommandSetJob.java:196)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.run(CommandSetJob.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY oracle.eclipse.tools.common.services 4 4 2013-12-10 17:21:03.116
+!MESSAGE Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+	at org.eclipse.wst.html.core.internal.modelhandler.EmbeddedHTML.initializeFactoryRegistry(EmbeddedHTML.java:97)
+	at org.eclipse.jst.jsp.core.internal.modelhandler.JSPModelLoader.initEmbeddedTypePre(JSPModelLoader.java:511)
+	at org.eclipse.wst.sse.core.internal.model.AbstractModelLoader.createModel(AbstractModelLoader.java:125)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:852)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:811)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._doCommonGetModel(ModelManagerImpl.java:545)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:509)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:482)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.getModelForRead(ModelManagerImpl.java:1428)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.createModel(MergedModel.java:532)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.access$10(MergedModel.java:516)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel$2.run(MergedModel.java:330)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.getModelForRead(MergedModel.java:348)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider$GetModelRunnable.run(MergedModelManager.java:693)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider.getModelForRead(MergedModelManager.java:682)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getModelFromProvider(StructuredModelFactory.java:85)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getVisitableModelForRead(StructuredModelFactory.java:63)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredDocumentResourceCollectionContext.getVisitableModel(StructuredDocumentResourceCollectionContext.java:33)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredModelCollectionParticipant.collect(StructuredModelCollectionParticipant.java:138)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList$4.run(CollectionParticipantList.java:106)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList.collect(CollectionParticipantList.java:103)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ResourceSetCommand.execute(ResourceSetCommand.java:101)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ProjectLoadCommand.execute(ProjectLoadCommand.java:53)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob$SafeRunnable.run(CommandSetJob.java:261)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.runCommand(CommandSetJob.java:196)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.run(CommandSetJob.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY oracle.eclipse.tools.common.services 4 2 2013-12-10 17:21:03.125
+!MESSAGE Problems occurred when invoking code from plug-in: "oracle.eclipse.tools.common.services".
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+	at org.eclipse.wst.html.core.internal.modelhandler.EmbeddedHTML.initializeFactoryRegistry(EmbeddedHTML.java:97)
+	at org.eclipse.jst.jsp.core.internal.modelhandler.JSPModelLoader.initEmbeddedTypePre(JSPModelLoader.java:511)
+	at org.eclipse.wst.sse.core.internal.model.AbstractModelLoader.createModel(AbstractModelLoader.java:125)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:852)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:811)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._doCommonGetModel(ModelManagerImpl.java:545)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:509)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:482)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.getModelForRead(ModelManagerImpl.java:1428)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.createModel(MergedModel.java:532)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.access$10(MergedModel.java:516)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel$2.run(MergedModel.java:330)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.getModelForRead(MergedModel.java:348)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider$GetModelRunnable.run(MergedModelManager.java:693)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider.getModelForRead(MergedModelManager.java:682)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getModelFromProvider(StructuredModelFactory.java:85)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getVisitableModelForRead(StructuredModelFactory.java:63)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredDocumentResourceCollectionContext.getVisitableModel(StructuredDocumentResourceCollectionContext.java:33)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredModelCollectionParticipant.collect(StructuredModelCollectionParticipant.java:138)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList$4.run(CollectionParticipantList.java:106)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList.collect(CollectionParticipantList.java:103)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ResourceSetCommand.execute(ResourceSetCommand.java:101)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ProjectLoadCommand.execute(ProjectLoadCommand.java:53)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob$SafeRunnable.run(CommandSetJob.java:261)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.runCommand(CommandSetJob.java:196)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.run(CommandSetJob.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY oracle.eclipse.tools.common.services 4 4 2013-12-10 17:21:03.132
+!MESSAGE Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+	at org.eclipse.wst.html.core.internal.modelhandler.EmbeddedHTML.initializeFactoryRegistry(EmbeddedHTML.java:97)
+	at org.eclipse.jst.jsp.core.internal.modelhandler.JSPModelLoader.initEmbeddedTypePre(JSPModelLoader.java:511)
+	at org.eclipse.wst.sse.core.internal.model.AbstractModelLoader.createModel(AbstractModelLoader.java:125)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:852)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:811)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._doCommonGetModel(ModelManagerImpl.java:545)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:509)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:482)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.getModelForRead(ModelManagerImpl.java:1428)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.createModel(MergedModel.java:532)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.access$10(MergedModel.java:516)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel$2.run(MergedModel.java:330)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.getModelForRead(MergedModel.java:348)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider$GetModelRunnable.run(MergedModelManager.java:693)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider.getModelForRead(MergedModelManager.java:682)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getModelFromProvider(StructuredModelFactory.java:85)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getVisitableModelForRead(StructuredModelFactory.java:63)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredDocumentResourceCollectionContext.getVisitableModel(StructuredDocumentResourceCollectionContext.java:33)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredModelCollectionParticipant.collect(StructuredModelCollectionParticipant.java:138)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList$4.run(CollectionParticipantList.java:106)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList.collect(CollectionParticipantList.java:103)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ResourceSetCommand.execute(ResourceSetCommand.java:101)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ProjectLoadCommand.execute(ProjectLoadCommand.java:53)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob$SafeRunnable.run(CommandSetJob.java:261)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.runCommand(CommandSetJob.java:196)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.run(CommandSetJob.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY oracle.eclipse.tools.common.services 4 2 2013-12-10 17:21:03.141
+!MESSAGE Problems occurred when invoking code from plug-in: "oracle.eclipse.tools.common.services".
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+	at org.eclipse.wst.html.core.internal.modelhandler.EmbeddedHTML.initializeFactoryRegistry(EmbeddedHTML.java:97)
+	at org.eclipse.jst.jsp.core.internal.modelhandler.JSPModelLoader.initEmbeddedTypePre(JSPModelLoader.java:511)
+	at org.eclipse.wst.sse.core.internal.model.AbstractModelLoader.createModel(AbstractModelLoader.java:125)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:852)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:811)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._doCommonGetModel(ModelManagerImpl.java:545)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:509)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:482)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.getModelForRead(ModelManagerImpl.java:1428)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.createModel(MergedModel.java:532)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.access$10(MergedModel.java:516)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel$2.run(MergedModel.java:330)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.getModelForRead(MergedModel.java:348)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider$GetModelRunnable.run(MergedModelManager.java:693)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider.getModelForRead(MergedModelManager.java:682)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getModelFromProvider(StructuredModelFactory.java:85)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getVisitableModelForRead(StructuredModelFactory.java:63)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredDocumentResourceCollectionContext.getVisitableModel(StructuredDocumentResourceCollectionContext.java:33)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredModelCollectionParticipant.collect(StructuredModelCollectionParticipant.java:138)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList$4.run(CollectionParticipantList.java:106)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList.collect(CollectionParticipantList.java:103)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ResourceSetCommand.execute(ResourceSetCommand.java:101)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ProjectLoadCommand.execute(ProjectLoadCommand.java:53)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob$SafeRunnable.run(CommandSetJob.java:261)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.runCommand(CommandSetJob.java:196)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.run(CommandSetJob.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY oracle.eclipse.tools.common.services 4 4 2013-12-10 17:21:03.148
+!MESSAGE Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+	at org.eclipse.wst.html.core.internal.modelhandler.EmbeddedHTML.initializeFactoryRegistry(EmbeddedHTML.java:97)
+	at org.eclipse.jst.jsp.core.internal.modelhandler.JSPModelLoader.initEmbeddedTypePre(JSPModelLoader.java:511)
+	at org.eclipse.wst.sse.core.internal.model.AbstractModelLoader.createModel(AbstractModelLoader.java:125)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:852)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:811)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._doCommonGetModel(ModelManagerImpl.java:545)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:509)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:482)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.getModelForRead(ModelManagerImpl.java:1428)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.createModel(MergedModel.java:532)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.access$10(MergedModel.java:516)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel$2.run(MergedModel.java:330)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.getModelForRead(MergedModel.java:348)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider$GetModelRunnable.run(MergedModelManager.java:693)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider.getModelForRead(MergedModelManager.java:682)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getModelFromProvider(StructuredModelFactory.java:85)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getVisitableModelForRead(StructuredModelFactory.java:63)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredDocumentResourceCollectionContext.getVisitableModel(StructuredDocumentResourceCollectionContext.java:33)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredModelCollectionParticipant.collect(StructuredModelCollectionParticipant.java:138)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList$4.run(CollectionParticipantList.java:106)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList.collect(CollectionParticipantList.java:103)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ResourceSetCommand.execute(ResourceSetCommand.java:101)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ProjectLoadCommand.execute(ProjectLoadCommand.java:53)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob$SafeRunnable.run(CommandSetJob.java:261)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.runCommand(CommandSetJob.java:196)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.run(CommandSetJob.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY oracle.eclipse.tools.common.services 4 2 2013-12-10 17:21:03.157
+!MESSAGE Problems occurred when invoking code from plug-in: "oracle.eclipse.tools.common.services".
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+	at org.eclipse.wst.html.core.internal.modelhandler.EmbeddedHTML.initializeFactoryRegistry(EmbeddedHTML.java:97)
+	at org.eclipse.jst.jsp.core.internal.modelhandler.JSPModelLoader.initEmbeddedTypePre(JSPModelLoader.java:511)
+	at org.eclipse.wst.sse.core.internal.model.AbstractModelLoader.createModel(AbstractModelLoader.java:125)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:852)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:811)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._doCommonGetModel(ModelManagerImpl.java:545)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:509)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:482)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.getModelForRead(ModelManagerImpl.java:1428)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.createModel(MergedModel.java:532)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.access$10(MergedModel.java:516)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel$2.run(MergedModel.java:330)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.getModelForRead(MergedModel.java:348)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider$GetModelRunnable.run(MergedModelManager.java:693)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider.getModelForRead(MergedModelManager.java:682)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getModelFromProvider(StructuredModelFactory.java:85)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getVisitableModelForRead(StructuredModelFactory.java:63)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredDocumentResourceCollectionContext.getVisitableModel(StructuredDocumentResourceCollectionContext.java:33)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredModelCollectionParticipant.collect(StructuredModelCollectionParticipant.java:138)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList$4.run(CollectionParticipantList.java:106)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList.collect(CollectionParticipantList.java:103)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ResourceSetCommand.execute(ResourceSetCommand.java:101)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ProjectLoadCommand.execute(ProjectLoadCommand.java:53)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob$SafeRunnable.run(CommandSetJob.java:261)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.runCommand(CommandSetJob.java:196)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.run(CommandSetJob.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY oracle.eclipse.tools.common.services 4 4 2013-12-10 17:21:03.168
+!MESSAGE Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+	at org.eclipse.wst.html.core.internal.modelhandler.EmbeddedHTML.initializeFactoryRegistry(EmbeddedHTML.java:97)
+	at org.eclipse.jst.jsp.core.internal.modelhandler.JSPModelLoader.initEmbeddedTypePre(JSPModelLoader.java:511)
+	at org.eclipse.wst.sse.core.internal.model.AbstractModelLoader.createModel(AbstractModelLoader.java:125)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:852)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:811)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._doCommonGetModel(ModelManagerImpl.java:545)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:509)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:482)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.getModelForRead(ModelManagerImpl.java:1428)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.createModel(MergedModel.java:532)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.access$10(MergedModel.java:516)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel$2.run(MergedModel.java:330)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.getModelForRead(MergedModel.java:348)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider$GetModelRunnable.run(MergedModelManager.java:693)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider.getModelForRead(MergedModelManager.java:682)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getModelFromProvider(StructuredModelFactory.java:85)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getVisitableModelForRead(StructuredModelFactory.java:63)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredDocumentResourceCollectionContext.getVisitableModel(StructuredDocumentResourceCollectionContext.java:33)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredModelCollectionParticipant.collect(StructuredModelCollectionParticipant.java:138)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList$4.run(CollectionParticipantList.java:106)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList.collect(CollectionParticipantList.java:103)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ResourceSetCommand.execute(ResourceSetCommand.java:101)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ProjectLoadCommand.execute(ProjectLoadCommand.java:53)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob$SafeRunnable.run(CommandSetJob.java:261)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.runCommand(CommandSetJob.java:196)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.run(CommandSetJob.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY oracle.eclipse.tools.common.services 4 2 2013-12-10 17:21:03.177
+!MESSAGE Problems occurred when invoking code from plug-in: "oracle.eclipse.tools.common.services".
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+	at org.eclipse.wst.html.core.internal.modelhandler.EmbeddedHTML.initializeFactoryRegistry(EmbeddedHTML.java:97)
+	at org.eclipse.jst.jsp.core.internal.modelhandler.JSPModelLoader.initEmbeddedTypePre(JSPModelLoader.java:511)
+	at org.eclipse.wst.sse.core.internal.model.AbstractModelLoader.createModel(AbstractModelLoader.java:125)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:852)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:811)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._doCommonGetModel(ModelManagerImpl.java:545)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:509)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:482)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.getModelForRead(ModelManagerImpl.java:1428)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.createModel(MergedModel.java:532)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.access$10(MergedModel.java:516)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel$2.run(MergedModel.java:330)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.getModelForRead(MergedModel.java:348)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider$GetModelRunnable.run(MergedModelManager.java:693)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider.getModelForRead(MergedModelManager.java:682)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getModelFromProvider(StructuredModelFactory.java:85)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getVisitableModelForRead(StructuredModelFactory.java:63)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredDocumentResourceCollectionContext.getVisitableModel(StructuredDocumentResourceCollectionContext.java:33)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredModelCollectionParticipant.collect(StructuredModelCollectionParticipant.java:138)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList$4.run(CollectionParticipantList.java:106)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList.collect(CollectionParticipantList.java:103)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ResourceSetCommand.execute(ResourceSetCommand.java:101)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ProjectLoadCommand.execute(ProjectLoadCommand.java:53)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob$SafeRunnable.run(CommandSetJob.java:261)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.runCommand(CommandSetJob.java:196)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.run(CommandSetJob.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY oracle.eclipse.tools.common.services 4 4 2013-12-10 17:21:03.192
+!MESSAGE Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+	at org.eclipse.wst.html.core.internal.modelhandler.EmbeddedHTML.initializeFactoryRegistry(EmbeddedHTML.java:97)
+	at org.eclipse.jst.jsp.core.internal.modelhandler.JSPModelLoader.initEmbeddedTypePre(JSPModelLoader.java:511)
+	at org.eclipse.wst.sse.core.internal.model.AbstractModelLoader.createModel(AbstractModelLoader.java:125)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:852)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:811)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._doCommonGetModel(ModelManagerImpl.java:545)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:509)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:482)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.getModelForRead(ModelManagerImpl.java:1428)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.createModel(MergedModel.java:532)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.access$10(MergedModel.java:516)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel$2.run(MergedModel.java:330)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.getModelForRead(MergedModel.java:348)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider$GetModelRunnable.run(MergedModelManager.java:693)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider.getModelForRead(MergedModelManager.java:682)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getModelFromProvider(StructuredModelFactory.java:85)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getVisitableModelForRead(StructuredModelFactory.java:63)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredDocumentResourceCollectionContext.getVisitableModel(StructuredDocumentResourceCollectionContext.java:33)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredModelCollectionParticipant.collect(StructuredModelCollectionParticipant.java:138)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList$4.run(CollectionParticipantList.java:106)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList.collect(CollectionParticipantList.java:103)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ResourceSetCommand.execute(ResourceSetCommand.java:101)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ProjectLoadCommand.execute(ProjectLoadCommand.java:53)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob$SafeRunnable.run(CommandSetJob.java:261)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.runCommand(CommandSetJob.java:196)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.run(CommandSetJob.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY oracle.eclipse.tools.common.services 4 2 2013-12-10 17:21:03.201
+!MESSAGE Problems occurred when invoking code from plug-in: "oracle.eclipse.tools.common.services".
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+	at org.eclipse.wst.html.core.internal.modelhandler.EmbeddedHTML.initializeFactoryRegistry(EmbeddedHTML.java:97)
+	at org.eclipse.jst.jsp.core.internal.modelhandler.JSPModelLoader.initEmbeddedTypePre(JSPModelLoader.java:511)
+	at org.eclipse.wst.sse.core.internal.model.AbstractModelLoader.createModel(AbstractModelLoader.java:125)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:852)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:811)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._doCommonGetModel(ModelManagerImpl.java:545)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:509)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:482)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.getModelForRead(ModelManagerImpl.java:1428)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.createModel(MergedModel.java:532)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.access$10(MergedModel.java:516)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel$2.run(MergedModel.java:330)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.getModelForRead(MergedModel.java:348)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider$GetModelRunnable.run(MergedModelManager.java:693)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider.getModelForRead(MergedModelManager.java:682)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getModelFromProvider(StructuredModelFactory.java:85)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getVisitableModelForRead(StructuredModelFactory.java:63)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredDocumentResourceCollectionContext.getVisitableModel(StructuredDocumentResourceCollectionContext.java:33)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredModelCollectionParticipant.collect(StructuredModelCollectionParticipant.java:138)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList$4.run(CollectionParticipantList.java:106)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList.collect(CollectionParticipantList.java:103)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ResourceSetCommand.execute(ResourceSetCommand.java:101)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ProjectLoadCommand.execute(ProjectLoadCommand.java:53)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob$SafeRunnable.run(CommandSetJob.java:261)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.runCommand(CommandSetJob.java:196)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.run(CommandSetJob.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY oracle.eclipse.tools.common.services 4 4 2013-12-10 17:21:03.208
+!MESSAGE Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+	at org.eclipse.wst.html.core.internal.modelhandler.EmbeddedHTML.initializeFactoryRegistry(EmbeddedHTML.java:97)
+	at org.eclipse.jst.jsp.core.internal.modelhandler.JSPModelLoader.initEmbeddedTypePre(JSPModelLoader.java:511)
+	at org.eclipse.wst.sse.core.internal.model.AbstractModelLoader.createModel(AbstractModelLoader.java:125)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:852)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:811)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._doCommonGetModel(ModelManagerImpl.java:545)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:509)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:482)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.getModelForRead(ModelManagerImpl.java:1428)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.createModel(MergedModel.java:532)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.access$10(MergedModel.java:516)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel$2.run(MergedModel.java:330)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.getModelForRead(MergedModel.java:348)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider$GetModelRunnable.run(MergedModelManager.java:693)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider.getModelForRead(MergedModelManager.java:682)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getModelFromProvider(StructuredModelFactory.java:85)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getVisitableModelForRead(StructuredModelFactory.java:63)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredDocumentResourceCollectionContext.getVisitableModel(StructuredDocumentResourceCollectionContext.java:33)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredModelCollectionParticipant.collect(StructuredModelCollectionParticipant.java:138)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList$4.run(CollectionParticipantList.java:106)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList.collect(CollectionParticipantList.java:103)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ResourceSetCommand.execute(ResourceSetCommand.java:101)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ProjectLoadCommand.execute(ProjectLoadCommand.java:53)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob$SafeRunnable.run(CommandSetJob.java:261)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.runCommand(CommandSetJob.java:196)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.run(CommandSetJob.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY oracle.eclipse.tools.common.services 4 2 2013-12-10 17:21:03.250
+!MESSAGE Problems occurred when invoking code from plug-in: "oracle.eclipse.tools.common.services".
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+	at org.eclipse.wst.html.core.internal.modelhandler.EmbeddedHTML.initializeFactoryRegistry(EmbeddedHTML.java:97)
+	at org.eclipse.jst.jsp.core.internal.modelhandler.JSPModelLoader.initEmbeddedTypePre(JSPModelLoader.java:511)
+	at org.eclipse.wst.sse.core.internal.model.AbstractModelLoader.createModel(AbstractModelLoader.java:125)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:852)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:811)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._doCommonGetModel(ModelManagerImpl.java:545)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:509)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:482)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.getModelForRead(ModelManagerImpl.java:1428)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.createModel(MergedModel.java:532)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.access$10(MergedModel.java:516)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel$2.run(MergedModel.java:330)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.getModelForRead(MergedModel.java:348)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider$GetModelRunnable.run(MergedModelManager.java:693)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider.getModelForRead(MergedModelManager.java:682)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getModelFromProvider(StructuredModelFactory.java:85)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getVisitableModelForRead(StructuredModelFactory.java:63)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredDocumentResourceCollectionContext.getVisitableModel(StructuredDocumentResourceCollectionContext.java:33)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredModelCollectionParticipant.collect(StructuredModelCollectionParticipant.java:138)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList$4.run(CollectionParticipantList.java:106)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList.collect(CollectionParticipantList.java:103)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ResourceSetCommand.execute(ResourceSetCommand.java:101)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ProjectLoadCommand.execute(ProjectLoadCommand.java:53)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob$SafeRunnable.run(CommandSetJob.java:261)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.runCommand(CommandSetJob.java:196)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.run(CommandSetJob.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY oracle.eclipse.tools.common.services 4 4 2013-12-10 17:21:03.264
+!MESSAGE Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+	at org.eclipse.wst.html.core.internal.modelhandler.EmbeddedHTML.initializeFactoryRegistry(EmbeddedHTML.java:97)
+	at org.eclipse.jst.jsp.core.internal.modelhandler.JSPModelLoader.initEmbeddedTypePre(JSPModelLoader.java:511)
+	at org.eclipse.wst.sse.core.internal.model.AbstractModelLoader.createModel(AbstractModelLoader.java:125)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:852)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:811)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._doCommonGetModel(ModelManagerImpl.java:545)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:509)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:482)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.getModelForRead(ModelManagerImpl.java:1428)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.createModel(MergedModel.java:532)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.access$10(MergedModel.java:516)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel$2.run(MergedModel.java:330)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.getModelForRead(MergedModel.java:348)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider$GetModelRunnable.run(MergedModelManager.java:693)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider.getModelForRead(MergedModelManager.java:682)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getModelFromProvider(StructuredModelFactory.java:85)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getVisitableModelForRead(StructuredModelFactory.java:63)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredDocumentResourceCollectionContext.getVisitableModel(StructuredDocumentResourceCollectionContext.java:33)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredModelCollectionParticipant.collect(StructuredModelCollectionParticipant.java:138)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList$4.run(CollectionParticipantList.java:106)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList.collect(CollectionParticipantList.java:103)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ResourceSetCommand.execute(ResourceSetCommand.java:101)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ProjectLoadCommand.execute(ProjectLoadCommand.java:53)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob$SafeRunnable.run(CommandSetJob.java:261)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.runCommand(CommandSetJob.java:196)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.run(CommandSetJob.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY oracle.eclipse.tools.common.services 4 2 2013-12-10 17:21:03.273
+!MESSAGE Problems occurred when invoking code from plug-in: "oracle.eclipse.tools.common.services".
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+	at org.eclipse.wst.html.core.internal.modelhandler.EmbeddedHTML.initializeFactoryRegistry(EmbeddedHTML.java:97)
+	at org.eclipse.jst.jsp.core.internal.modelhandler.JSPModelLoader.initEmbeddedTypePre(JSPModelLoader.java:511)
+	at org.eclipse.wst.sse.core.internal.model.AbstractModelLoader.createModel(AbstractModelLoader.java:125)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:852)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:811)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._doCommonGetModel(ModelManagerImpl.java:545)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:509)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:482)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.getModelForRead(ModelManagerImpl.java:1428)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.createModel(MergedModel.java:532)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.access$10(MergedModel.java:516)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel$2.run(MergedModel.java:330)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.getModelForRead(MergedModel.java:348)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider$GetModelRunnable.run(MergedModelManager.java:693)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider.getModelForRead(MergedModelManager.java:682)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getModelFromProvider(StructuredModelFactory.java:85)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getVisitableModelForRead(StructuredModelFactory.java:63)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredDocumentResourceCollectionContext.getVisitableModel(StructuredDocumentResourceCollectionContext.java:33)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredModelCollectionParticipant.collect(StructuredModelCollectionParticipant.java:138)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList$4.run(CollectionParticipantList.java:106)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList.collect(CollectionParticipantList.java:103)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ResourceSetCommand.execute(ResourceSetCommand.java:101)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ProjectLoadCommand.execute(ProjectLoadCommand.java:53)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob$SafeRunnable.run(CommandSetJob.java:261)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.runCommand(CommandSetJob.java:196)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.run(CommandSetJob.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY oracle.eclipse.tools.common.services 4 4 2013-12-10 17:21:03.280
+!MESSAGE Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.wst.html.core.internal.document.HTMLDocumentTypeAdapterFactory
+	at org.eclipse.wst.html.core.internal.modelhandler.EmbeddedHTML.initializeFactoryRegistry(EmbeddedHTML.java:97)
+	at org.eclipse.jst.jsp.core.internal.modelhandler.JSPModelLoader.initEmbeddedTypePre(JSPModelLoader.java:511)
+	at org.eclipse.wst.sse.core.internal.model.AbstractModelLoader.createModel(AbstractModelLoader.java:125)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:852)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:811)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._doCommonGetModel(ModelManagerImpl.java:545)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:509)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:482)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.getModelForRead(ModelManagerImpl.java:1428)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.createModel(MergedModel.java:532)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.access$10(MergedModel.java:516)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel$2.run(MergedModel.java:330)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModel.getModelForRead(MergedModel.java:348)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider$GetModelRunnable.run(MergedModelManager.java:693)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at oracle.eclipse.tools.webtier.common.services.jsp.include.model.MergedModelManager$ModelProvider.getModelForRead(MergedModelManager.java:682)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getModelFromProvider(StructuredModelFactory.java:85)
+	at oracle.eclipse.tools.common.services.dependency.structuredmodel.StructuredModelFactory.getVisitableModelForRead(StructuredModelFactory.java:63)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredDocumentResourceCollectionContext.getVisitableModel(StructuredDocumentResourceCollectionContext.java:33)
+	at oracle.eclipse.tools.application.common.services.collection.internal.StructuredModelCollectionParticipant.collect(StructuredModelCollectionParticipant.java:138)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList$4.run(CollectionParticipantList.java:106)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.CollectionParticipantList.collect(CollectionParticipantList.java:103)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ResourceSetCommand.execute(ResourceSetCommand.java:101)
+	at oracle.eclipse.tools.common.services.dependency.model.internal.ProjectLoadCommand.execute(ProjectLoadCommand.java:53)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob$SafeRunnable.run(CommandSetJob.java:261)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.runCommand(CommandSetJob.java:196)
+	at oracle.eclipse.tools.common.services.resources.internal.CommandSetJob.run(CommandSetJob.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.core.jobs 2 2 2013-12-10 17:21:05.262
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.m2e.core.internal.index.nexus.IndexUpdaterJob
+!SESSION 2014-10-22 07:36:52.448 -----------------------------------------------
+eclipse.buildId=4.3.0.I20130605-2000
+java.version=1.7.0_67
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2014-10-22 07:37:04.228
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2014-10-22 07:37:42.718
+!MESSAGE Started WebLogic Server Monitor [unknown]
+
+!ENTRY org.python.pydev.shared_core 4 4 2014-10-22 07:37:52.008
+!MESSAGE Info: Rebuilding internal caches: /practices/tune/dev/.metadata/.plugins/com.python.pydev.analysis/jython_v1_3mgerzi4ifoesuaq6xgyy1ajo/jython.pydevsysteminfo (Expected error to be provided and got no error!)
+
+!ENTRY oracle.eclipse.tools.weblogic 4 4 2014-10-22 07:38:00.169
+!MESSAGE "/u01/app/fmw/wlserver" does not contain a valid WebLogic Server installation.
+!STACK 0
+java.lang.RuntimeException: "/u01/app/fmw/wlserver" does not contain a valid WebLogic Server installation.
+	at oracle.eclipse.tools.weblogic.WebLogicServerInstall.assertValidInstall(WebLogicServerInstall.java:808)
+	at oracle.eclipse.tools.weblogic.WebLogicServerInstall.getVersion(WebLogicServerInstall.java:288)
+	at oracle.eclipse.tools.adf.view.internal.ADFRuntimeComponentProvider.getRuntimeComponents(ADFRuntimeComponentProvider.java:41)
+	at oracle.eclipse.tools.weblogic.internal.RuntimeComponentProvidersExtensionPoint$Funnel.getRuntimeComponents(RuntimeComponentProvidersExtensionPoint.java:118)
+	at org.eclipse.wst.server.core.internal.facets.RuntimeComponentProviderWrapper.getComponents(RuntimeComponentProviderWrapper.java:123)
+	at org.eclipse.wst.server.core.internal.facets.FacetMappingUtil.addFacetRuntimeComponents(FacetMappingUtil.java:69)
+	at org.eclipse.wst.server.core.internal.facets.RuntimeBridge$Stub.getRuntimeComponents(RuntimeBridge.java:136)
+	at org.eclipse.wst.common.project.facet.core.runtime.internal.BridgedRuntime.getRuntimeComponents(BridgedRuntime.java:61)
+	at oracle.eclipse.tools.weblogic.WlsRuntimeUtil.getWlsRuntimeComponent(WlsRuntimeUtil.java:84)
+	at oracle.eclipse.tools.weblogic.WlsRuntimeUtil.getWlsRuntimePath(WlsRuntimeUtil.java:130)
+	at oracle.eclipse.tools.weblogic.scripting.facets.internal.WlstFacetInstallDelegate.isWlstInterpreterCreated(WlstFacetInstallDelegate.java:94)
+	at oracle.eclipse.tools.weblogic.scripting.internal.WlstProjectImportUpgradeParticipant.check(WlstProjectImportUpgradeParticipant.java:43)
+	at oracle.eclipse.tools.common.upgrade.internal.UpgradeFrameworkImpl$CheckerThread.checkProject(UpgradeFrameworkImpl.java:844)
+	at oracle.eclipse.tools.common.upgrade.internal.UpgradeFrameworkImpl$CheckerThread.run(UpgradeFrameworkImpl.java:805)
+
+!ENTRY oracle.eclipse.tools.weblogic 4 4 2014-10-22 07:38:00.188
+!MESSAGE "/u01/app/fmw/wlserver" does not contain a valid WebLogic Server installation.
+!STACK 0
+java.lang.RuntimeException: "/u01/app/fmw/wlserver" does not contain a valid WebLogic Server installation.
+	at oracle.eclipse.tools.weblogic.WebLogicServerInstall.assertValidInstall(WebLogicServerInstall.java:808)
+	at oracle.eclipse.tools.weblogic.WebLogicServerInstall.getVersion(WebLogicServerInstall.java:288)
+	at oracle.eclipse.tools.weblogic.jpa.WebLogicServerJpaComponent.detect(WebLogicServerJpaComponent.java:70)
+	at oracle.eclipse.tools.weblogic.jpa.WebLogicServerJpaComponent.detect(WebLogicServerJpaComponent.java:41)
+	at oracle.eclipse.tools.weblogic.jpa.internal.WebLogicServerJpaComponentProvider.getRuntimeComponents(WebLogicServerJpaComponentProvider.java:26)
+	at oracle.eclipse.tools.weblogic.internal.RuntimeComponentProvidersExtensionPoint$Funnel.getRuntimeComponents(RuntimeComponentProvidersExtensionPoint.java:118)
+	at org.eclipse.wst.server.core.internal.facets.RuntimeComponentProviderWrapper.getComponents(RuntimeComponentProviderWrapper.java:123)
+	at org.eclipse.wst.server.core.internal.facets.FacetMappingUtil.addFacetRuntimeComponents(FacetMappingUtil.java:69)
+	at org.eclipse.wst.server.core.internal.facets.RuntimeBridge$Stub.getRuntimeComponents(RuntimeBridge.java:136)
+	at org.eclipse.wst.common.project.facet.core.runtime.internal.BridgedRuntime.getRuntimeComponents(BridgedRuntime.java:61)
+	at oracle.eclipse.tools.weblogic.WlsRuntimeUtil.getWlsRuntimeComponent(WlsRuntimeUtil.java:84)
+	at oracle.eclipse.tools.weblogic.WlsRuntimeUtil.getWlsRuntimePath(WlsRuntimeUtil.java:130)
+	at oracle.eclipse.tools.weblogic.scripting.facets.internal.WlstFacetInstallDelegate.isWlstInterpreterCreated(WlstFacetInstallDelegate.java:94)
+	at oracle.eclipse.tools.weblogic.scripting.internal.WlstProjectImportUpgradeParticipant.check(WlstProjectImportUpgradeParticipant.java:43)
+	at oracle.eclipse.tools.common.upgrade.internal.UpgradeFrameworkImpl$CheckerThread.checkProject(UpgradeFrameworkImpl.java:844)
+	at oracle.eclipse.tools.common.upgrade.internal.UpgradeFrameworkImpl$CheckerThread.run(UpgradeFrameworkImpl.java:805)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2014-10-22 07:38:18.167
+!MESSAGE Unable to update index for central|http://repo.maven.apache.org/maven2
+
+!ENTRY oracle.eclipse.tools.weblogic 4 4 2014-10-22 07:40:27.023
+!MESSAGE "/u01/app/fmw/wlserver" does not contain a valid WebLogic Server installation.
+!STACK 0
+java.lang.RuntimeException: "/u01/app/fmw/wlserver" does not contain a valid WebLogic Server installation.
+	at oracle.eclipse.tools.weblogic.WebLogicServerInstall.assertValidInstall(WebLogicServerInstall.java:808)
+	at oracle.eclipse.tools.weblogic.WebLogicServerInstall.getVersion(WebLogicServerInstall.java:288)
+	at oracle.eclipse.tools.adf.view.internal.ADFRuntimeComponentProvider.getRuntimeComponents(ADFRuntimeComponentProvider.java:41)
+	at oracle.eclipse.tools.weblogic.internal.RuntimeComponentProvidersExtensionPoint$Funnel.getRuntimeComponents(RuntimeComponentProvidersExtensionPoint.java:118)
+	at org.eclipse.wst.server.core.internal.facets.RuntimeComponentProviderWrapper.getComponents(RuntimeComponentProviderWrapper.java:123)
+	at org.eclipse.wst.server.core.internal.facets.FacetMappingUtil.addFacetRuntimeComponents(FacetMappingUtil.java:69)
+	at org.eclipse.wst.server.core.internal.facets.RuntimeBridge$Stub.getRuntimeComponents(RuntimeBridge.java:136)
+	at org.eclipse.wst.common.project.facet.core.runtime.internal.BridgedRuntime.getRuntimeComponents(BridgedRuntime.java:61)
+	at oracle.eclipse.tools.weblogic.server.properties.WebLogicServerModelResource$4.readUnderlyingList(WebLogicServerModelResource.java:310)
+	at org.eclipse.sapphire.modeling.LayeredListBindingImpl.read(LayeredListBindingImpl.java:34)
+	at org.eclipse.sapphire.modeling.ModelElementList.refresh(ModelElementList.java:126)
+	at org.eclipse.sapphire.modeling.ModelElementList.init(ModelElementList.java:76)
+	at org.eclipse.sapphire.modeling.ModelElement.refresh(ModelElement.java:699)
+	at org.eclipse.sapphire.modeling.ModelElement.refresh(ModelElement.java:572)
+	at org.eclipse.sapphire.modeling.ModelElement.refresh(ModelElement.java:550)
+	at org.eclipse.sapphire.modeling.ModelElement.read(ModelElement.java:181)
+	at org.eclipse.sapphire.modeling.ModelElement.read(ModelElement.java:158)
+	at org.eclipse.sapphire.ui.PropertyEditorPart.init(PropertyEditorPart.java:159)
+	at org.eclipse.sapphire.ui.SapphirePart.init(SapphirePart.java:179)
+	at org.eclipse.sapphire.ui.SapphirePart.create(SapphirePart.java:1206)
+	at org.eclipse.sapphire.ui.FormPart.initChildParts(FormPart.java:126)
+	at org.eclipse.sapphire.ui.FormPart.init(FormPart.java:42)
+	at org.eclipse.sapphire.ui.SapphirePart.init(SapphirePart.java:179)
+	at org.eclipse.sapphire.ui.SapphirePart.create(SapphirePart.java:1206)
+	at org.eclipse.sapphire.ui.swt.SapphireForm.<init>(SapphireForm.java:59)
+	at org.eclipse.sapphire.ui.swt.SapphirePropertyPage.createContents(SapphirePropertyPage.java:109)
+	at oracle.eclipse.tools.weblogic.ui.server.internal.property.RuntimePropertyPage.createContents(RuntimePropertyPage.java:21)
+	at org.eclipse.jface.preference.PreferencePage.createControl(PreferencePage.java:232)
+	at org.eclipse.sapphire.ui.swt.SapphirePropertyPage.createControl(SapphirePropertyPage.java:102)
+	at org.eclipse.jface.preference.PreferenceDialog.createPageControl(PreferenceDialog.java:1502)
+	at org.eclipse.jface.preference.PreferenceDialog$14.run(PreferenceDialog.java:1259)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:49)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+	at org.eclipse.jface.preference.PreferenceDialog.showPage(PreferenceDialog.java:1253)
+	at org.eclipse.ui.internal.dialogs.FilteredPreferenceDialog.showPage(FilteredPreferenceDialog.java:675)
+	at org.eclipse.jface.preference.PreferenceDialog$10.run(PreferenceDialog.java:709)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.preference.PreferenceDialog$9.selectionChanged(PreferenceDialog.java:705)
+	at org.eclipse.jface.viewers.StructuredViewer$3.run(StructuredViewer.java:888)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:49)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+	at org.eclipse.jface.viewers.StructuredViewer.firePostSelectionChanged(StructuredViewer.java:886)
+	at org.eclipse.jface.viewers.StructuredViewer.handlePostSelect(StructuredViewer.java:1226)
+	at org.eclipse.jface.viewers.StructuredViewer$5.widgetSelected(StructuredViewer.java:1251)
+	at org.eclipse.jface.util.OpenStrategy.firePostSelectionEvent(OpenStrategy.java:262)
+	at org.eclipse.jface.util.OpenStrategy.access$5(OpenStrategy.java:256)
+	at org.eclipse.jface.util.OpenStrategy$3.run(OpenStrategy.java:433)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3717)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3366)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:826)
+	at org.eclipse.jface.window.Window.open(Window.java:802)
+	at org.eclipse.wst.server.ui.internal.view.servers.PropertiesAction.perform(PropertiesAction.java:49)
+	at org.eclipse.wst.server.ui.internal.view.servers.AbstractServerAction.run(AbstractServerAction.java:64)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:499)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1392)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3742)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3363)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:138)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:610)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
+
+!ENTRY oracle.eclipse.tools.weblogic 4 4 2014-10-22 07:40:27.036
+!MESSAGE "/u01/app/fmw/wlserver" does not contain a valid WebLogic Server installation.
+!STACK 0
+java.lang.RuntimeException: "/u01/app/fmw/wlserver" does not contain a valid WebLogic Server installation.
+	at oracle.eclipse.tools.weblogic.WebLogicServerInstall.assertValidInstall(WebLogicServerInstall.java:808)
+	at oracle.eclipse.tools.weblogic.WebLogicServerInstall.getVersion(WebLogicServerInstall.java:288)
+	at oracle.eclipse.tools.weblogic.jpa.WebLogicServerJpaComponent.detect(WebLogicServerJpaComponent.java:70)
+	at oracle.eclipse.tools.weblogic.jpa.WebLogicServerJpaComponent.detect(WebLogicServerJpaComponent.java:41)
+	at oracle.eclipse.tools.weblogic.jpa.internal.WebLogicServerJpaComponentProvider.getRuntimeComponents(WebLogicServerJpaComponentProvider.java:26)
+	at oracle.eclipse.tools.weblogic.internal.RuntimeComponentProvidersExtensionPoint$Funnel.getRuntimeComponents(RuntimeComponentProvidersExtensionPoint.java:118)
+	at org.eclipse.wst.server.core.internal.facets.RuntimeComponentProviderWrapper.getComponents(RuntimeComponentProviderWrapper.java:123)
+	at org.eclipse.wst.server.core.internal.facets.FacetMappingUtil.addFacetRuntimeComponents(FacetMappingUtil.java:69)
+	at org.eclipse.wst.server.core.internal.facets.RuntimeBridge$Stub.getRuntimeComponents(RuntimeBridge.java:136)
+	at org.eclipse.wst.common.project.facet.core.runtime.internal.BridgedRuntime.getRuntimeComponents(BridgedRuntime.java:61)
+	at oracle.eclipse.tools.weblogic.server.properties.WebLogicServerModelResource$4.readUnderlyingList(WebLogicServerModelResource.java:310)
+	at org.eclipse.sapphire.modeling.LayeredListBindingImpl.read(LayeredListBindingImpl.java:34)
+	at org.eclipse.sapphire.modeling.ModelElementList.refresh(ModelElementList.java:126)
+	at org.eclipse.sapphire.modeling.ModelElementList.init(ModelElementList.java:76)
+	at org.eclipse.sapphire.modeling.ModelElement.refresh(ModelElement.java:699)
+	at org.eclipse.sapphire.modeling.ModelElement.refresh(ModelElement.java:572)
+	at org.eclipse.sapphire.modeling.ModelElement.refresh(ModelElement.java:550)
+	at org.eclipse.sapphire.modeling.ModelElement.read(ModelElement.java:181)
+	at org.eclipse.sapphire.modeling.ModelElement.read(ModelElement.java:158)
+	at org.eclipse.sapphire.ui.PropertyEditorPart.init(PropertyEditorPart.java:159)
+	at org.eclipse.sapphire.ui.SapphirePart.init(SapphirePart.java:179)
+	at org.eclipse.sapphire.ui.SapphirePart.create(SapphirePart.java:1206)
+	at org.eclipse.sapphire.ui.FormPart.initChildParts(FormPart.java:126)
+	at org.eclipse.sapphire.ui.FormPart.init(FormPart.java:42)
+	at org.eclipse.sapphire.ui.SapphirePart.init(SapphirePart.java:179)
+	at org.eclipse.sapphire.ui.SapphirePart.create(SapphirePart.java:1206)
+	at org.eclipse.sapphire.ui.swt.SapphireForm.<init>(SapphireForm.java:59)
+	at org.eclipse.sapphire.ui.swt.SapphirePropertyPage.createContents(SapphirePropertyPage.java:109)
+	at oracle.eclipse.tools.weblogic.ui.server.internal.property.RuntimePropertyPage.createContents(RuntimePropertyPage.java:21)
+	at org.eclipse.jface.preference.PreferencePage.createControl(PreferencePage.java:232)
+	at org.eclipse.sapphire.ui.swt.SapphirePropertyPage.createControl(SapphirePropertyPage.java:102)
+	at org.eclipse.jface.preference.PreferenceDialog.createPageControl(PreferenceDialog.java:1502)
+	at org.eclipse.jface.preference.PreferenceDialog$14.run(PreferenceDialog.java:1259)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:49)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+	at org.eclipse.jface.preference.PreferenceDialog.showPage(PreferenceDialog.java:1253)
+	at org.eclipse.ui.internal.dialogs.FilteredPreferenceDialog.showPage(FilteredPreferenceDialog.java:675)
+	at org.eclipse.jface.preference.PreferenceDialog$10.run(PreferenceDialog.java:709)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.preference.PreferenceDialog$9.selectionChanged(PreferenceDialog.java:705)
+	at org.eclipse.jface.viewers.StructuredViewer$3.run(StructuredViewer.java:888)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:49)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+	at org.eclipse.jface.viewers.StructuredViewer.firePostSelectionChanged(StructuredViewer.java:886)
+	at org.eclipse.jface.viewers.StructuredViewer.handlePostSelect(StructuredViewer.java:1226)
+	at org.eclipse.jface.viewers.StructuredViewer$5.widgetSelected(StructuredViewer.java:1251)
+	at org.eclipse.jface.util.OpenStrategy.firePostSelectionEvent(OpenStrategy.java:262)
+	at org.eclipse.jface.util.OpenStrategy.access$5(OpenStrategy.java:256)
+	at org.eclipse.jface.util.OpenStrategy$3.run(OpenStrategy.java:433)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3717)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3366)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:826)
+	at org.eclipse.jface.window.Window.open(Window.java:802)
+	at org.eclipse.wst.server.ui.internal.view.servers.PropertiesAction.perform(PropertiesAction.java:49)
+	at org.eclipse.wst.server.ui.internal.view.servers.AbstractServerAction.run(AbstractServerAction.java:64)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:499)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1392)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3742)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3363)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:138)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:610)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
+
+!ENTRY org.eclipse.jface 2 0 2014-10-22 07:40:47.467
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-10-22 07:40:47.468
+!MESSAGE A conflict occurred for ALT+CTRL+J:
+Binding(ALT+CTRL+J,
+	ParameterizedCommand(Command(org.eclipse.wst.server.openJobLogsView,Java Cloud Service Jobs,
+		,
+		Category(org.eclipse.wst.server.ui,Server,Server,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2d143784,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.serverViewScope,,,system)
+Binding(ALT+CTRL+J,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.join.lines,Join Lines,
+		Join lines of text,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@a48d23b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+!SESSION 2014-10-22 14:06:27.775 -----------------------------------------------
+eclipse.buildId=4.3.0.I20130605-2000
+java.version=1.7.0_67
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2014-10-22 14:06:54.229
+!MESSAGE Started WebLogic Server Monitor [unknown]
+
+!ENTRY oracle.eclipse.tools.weblogic 4 4 2014-10-22 14:07:06.093
+!MESSAGE "/u01/app/fmw/wlserver" does not contain a valid WebLogic Server installation.
+!STACK 0
+java.lang.RuntimeException: "/u01/app/fmw/wlserver" does not contain a valid WebLogic Server installation.
+	at oracle.eclipse.tools.weblogic.WebLogicServerInstall.assertValidInstall(WebLogicServerInstall.java:808)
+	at oracle.eclipse.tools.weblogic.WebLogicServerInstall.getVersion(WebLogicServerInstall.java:288)
+	at oracle.eclipse.tools.adf.view.internal.ADFRuntimeComponentProvider.getRuntimeComponents(ADFRuntimeComponentProvider.java:41)
+	at oracle.eclipse.tools.weblogic.internal.RuntimeComponentProvidersExtensionPoint$Funnel.getRuntimeComponents(RuntimeComponentProvidersExtensionPoint.java:118)
+	at org.eclipse.wst.server.core.internal.facets.RuntimeComponentProviderWrapper.getComponents(RuntimeComponentProviderWrapper.java:123)
+	at org.eclipse.wst.server.core.internal.facets.FacetMappingUtil.addFacetRuntimeComponents(FacetMappingUtil.java:69)
+	at org.eclipse.wst.server.core.internal.facets.RuntimeBridge$Stub.getRuntimeComponents(RuntimeBridge.java:136)
+	at org.eclipse.wst.common.project.facet.core.runtime.internal.BridgedRuntime.getRuntimeComponents(BridgedRuntime.java:61)
+	at oracle.eclipse.tools.weblogic.WlsRuntimeUtil.getWlsRuntimeComponent(WlsRuntimeUtil.java:84)
+	at oracle.eclipse.tools.weblogic.WlsRuntimeUtil.getWlsRuntimePath(WlsRuntimeUtil.java:130)
+	at oracle.eclipse.tools.weblogic.scripting.facets.internal.WlstFacetInstallDelegate.isWlstInterpreterCreated(WlstFacetInstallDelegate.java:94)
+	at oracle.eclipse.tools.weblogic.scripting.internal.WlstProjectImportUpgradeParticipant.check(WlstProjectImportUpgradeParticipant.java:43)
+	at oracle.eclipse.tools.common.upgrade.internal.UpgradeFrameworkImpl$CheckerThread.checkProject(UpgradeFrameworkImpl.java:844)
+	at oracle.eclipse.tools.common.upgrade.internal.UpgradeFrameworkImpl$CheckerThread.run(UpgradeFrameworkImpl.java:805)
+
+!ENTRY oracle.eclipse.tools.weblogic 4 4 2014-10-22 14:07:06.143
+!MESSAGE "/u01/app/fmw/wlserver" does not contain a valid WebLogic Server installation.
+!STACK 0
+java.lang.RuntimeException: "/u01/app/fmw/wlserver" does not contain a valid WebLogic Server installation.
+	at oracle.eclipse.tools.weblogic.WebLogicServerInstall.assertValidInstall(WebLogicServerInstall.java:808)
+	at oracle.eclipse.tools.weblogic.WebLogicServerInstall.getVersion(WebLogicServerInstall.java:288)
+	at oracle.eclipse.tools.weblogic.jpa.WebLogicServerJpaComponent.detect(WebLogicServerJpaComponent.java:70)
+	at oracle.eclipse.tools.weblogic.jpa.WebLogicServerJpaComponent.detect(WebLogicServerJpaComponent.java:41)
+	at oracle.eclipse.tools.weblogic.jpa.internal.WebLogicServerJpaComponentProvider.getRuntimeComponents(WebLogicServerJpaComponentProvider.java:26)
+	at oracle.eclipse.tools.weblogic.internal.RuntimeComponentProvidersExtensionPoint$Funnel.getRuntimeComponents(RuntimeComponentProvidersExtensionPoint.java:118)
+	at org.eclipse.wst.server.core.internal.facets.RuntimeComponentProviderWrapper.getComponents(RuntimeComponentProviderWrapper.java:123)
+	at org.eclipse.wst.server.core.internal.facets.FacetMappingUtil.addFacetRuntimeComponents(FacetMappingUtil.java:69)
+	at org.eclipse.wst.server.core.internal.facets.RuntimeBridge$Stub.getRuntimeComponents(RuntimeBridge.java:136)
+	at org.eclipse.wst.common.project.facet.core.runtime.internal.BridgedRuntime.getRuntimeComponents(BridgedRuntime.java:61)
+	at oracle.eclipse.tools.weblogic.WlsRuntimeUtil.getWlsRuntimeComponent(WlsRuntimeUtil.java:84)
+	at oracle.eclipse.tools.weblogic.WlsRuntimeUtil.getWlsRuntimePath(WlsRuntimeUtil.java:130)
+	at oracle.eclipse.tools.weblogic.scripting.facets.internal.WlstFacetInstallDelegate.isWlstInterpreterCreated(WlstFacetInstallDelegate.java:94)
+	at oracle.eclipse.tools.weblogic.scripting.internal.WlstProjectImportUpgradeParticipant.check(WlstProjectImportUpgradeParticipant.java:43)
+	at oracle.eclipse.tools.common.upgrade.internal.UpgradeFrameworkImpl$CheckerThread.checkProject(UpgradeFrameworkImpl.java:844)
+	at oracle.eclipse.tools.common.upgrade.internal.UpgradeFrameworkImpl$CheckerThread.run(UpgradeFrameworkImpl.java:805)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2014-10-22 14:07:23.230
+!MESSAGE Unable to update index for central|http://repo.maven.apache.org/maven2
+!SESSION 2014-10-24 06:36:12.450 -----------------------------------------------
+eclipse.buildId=4.4.1.M20140925-0400
+java.version=1.7.0_67
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.m2e.logback.configuration 2 0 2014-10-24 06:37:15.792
+!MESSAGE Exception while setting up logging:org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.eclipse.m2e.logback.configuration.LogHelper.logJavaProperties(LogHelper.java:26)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.loadConfiguration(LogPlugin.java:189)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.configureLogback(LogPlugin.java:144)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.access$2(LogPlugin.java:107)
+	at org.eclipse.m2e.logback.configuration.LogPlugin$1.run(LogPlugin.java:62)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2014-10-24 06:37:34.969
+!MESSAGE Started WebLogic Server Monitor [unknown]
+
+!ENTRY oracle.eclipse.tools.webtier.javawebapp 2 2 2014-10-24 06:38:19.721
+!MESSAGE Unable to find file [15.locale_jsf_2.1.sjo] on project AuctionDbLib
+
+!ENTRY oracle.eclipse.tools.webtier.javawebapp 2 2 2014-10-24 06:38:19.976
+!MESSAGE Unable to find file [15.locale_jsf_2.1.sjo] on project SimpleAuctionDBSLSB_EJBClient
+
+!ENTRY oracle.eclipse.tools.webtier.javawebapp 2 2 2014-10-24 06:38:20.065
+!MESSAGE Unable to find file [15.locale_jsf_2.1.sjo] on project SimpleAuctionWebAppDbSec
+
+!ENTRY oracle.eclipse.tools.webtier.javawebapp 2 2 2014-10-24 06:38:21.064
+!MESSAGE Unable to find file [15.locale_jsf_2.1.sjo] on project SimpleAuctionWebApp
+
+!ENTRY oracle.eclipse.tools.webtier.javawebapp 2 2 2014-10-24 06:38:21.367
+!MESSAGE Unable to find file [15.locale_jsf_2.1.sjo] on project SimpleAuctionWebAppSec
+
+!ENTRY oracle.eclipse.tools.webtier.javawebapp 2 2 2014-10-24 06:38:21.496
+!MESSAGE Unable to find file [15.locale_jsf_2.1.sjo] on project SaturateMemory
+
+!ENTRY oracle.eclipse.tools.webtier.javawebapp 2 2 2014-10-24 06:38:21.541
+!MESSAGE Unable to find file [15.locale_jsf_2.1.sjo] on project SimpleAuctionDbSFSB_WebApp
+
+!ENTRY oracle.eclipse.tools.webtier.javawebapp 2 2 2014-10-24 06:38:21.857
+!MESSAGE Unable to find file [15.locale_jsf_2.1.sjo] on project ShoppingCart
+
+!ENTRY oracle.eclipse.tools.webtier.javawebapp 2 2 2014-10-24 06:38:25.992
+!MESSAGE Unable to find file [15.locale_jsf_2.1.sjo] on project StuckThreads
+
+!ENTRY oracle.eclipse.tools.webtier.javawebapp 2 2 2014-10-24 06:38:26.766
+!MESSAGE Unable to find file [15.locale_jsf_2.1.sjo] on project SimpleAuctionDbSLSB_EJB
+
+!ENTRY oracle.eclipse.tools.webtier.javawebapp 2 2 2014-10-24 06:38:26.880
+!MESSAGE Unable to find file [15.locale_jsf_2.1.sjo] on project TestBatchUpdates
+
+!ENTRY oracle.eclipse.tools.webtier.javawebapp 2 2 2014-10-24 06:38:26.932
+!MESSAGE Unable to find file [15.locale_jsf_2.1.sjo] on project StressGC
+
+!ENTRY oracle.eclipse.tools.webtier.javawebapp 2 2 2014-10-24 06:38:27.082
+!MESSAGE Unable to find file [15.locale_jsf_2.1.sjo] on project AuctionWebAppSec
+
+!ENTRY oracle.eclipse.tools.webtier.javawebapp 2 2 2014-10-24 06:38:27.120
+!MESSAGE Unable to find file [15.locale_jsf_2.1.sjo] on project SimpleAuctionDbSFSB_EJBClient
+
+!ENTRY oracle.eclipse.tools.webtier.javawebapp 2 2 2014-10-24 06:38:27.134
+!MESSAGE Unable to find file [15.locale_jsf_2.1.sjo] on project WLSTProject
+
+!ENTRY oracle.eclipse.tools.webtier.javawebapp 2 2 2014-10-24 06:38:27.195
+!MESSAGE Unable to find file [15.locale_jsf_2.1.sjo] on project SimpleAuctionDbSLSB_WebApp
+
+!ENTRY oracle.eclipse.tools.webtier.javawebapp 2 2 2014-10-24 06:38:27.306
+!MESSAGE Unable to find file [15.locale_jsf_2.1.sjo] on project AuctionMemLib
+
+!ENTRY oracle.eclipse.tools.webtier.javawebapp 2 2 2014-10-24 06:38:27.444
+!MESSAGE Unable to find file [15.locale_jsf_2.1.sjo] on project AuctionWebApp
+
+!ENTRY oracle.eclipse.tools.webtier.javawebapp 2 2 2014-10-24 06:38:28.798
+!MESSAGE Unable to find file [15.locale_jsf_2.1.sjo] on project SimpleAuctionWebAppDb
+
+!ENTRY oracle.eclipse.tools.webtier.javawebapp 2 2 2014-10-24 06:38:29.715
+!MESSAGE Unable to find file [15.locale_jsf_2.1.sjo] on project SimpleAuctionDbSFSB_EJB
+
+!ENTRY oracle.eclipse.tools.weblogic 1 1 2014-10-24 06:45:39.880
+!MESSAGE [/u01/app/jdk/bin/java, weblogic.appc, -verbose, /practices/tune/practice09-01/SimpleAuctionWebAppDb.war]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2014-10-24 06:45:59.200
+!MESSAGE <Oct 24, 2014 6:45:43 AM PDT> <Info> <J2EE> <BEA-160230> <Created working directory: /tmp/appcgen_1414158341450_SimpleAuctionWebAppDb.war> 
+[JspcInvoker]Checking web app for compliance.
+[jspc]  -webapp specified, searching . for JSPs
+[jspc] Compiling /setup.jsp
+[jspc] Compiling /userRequired.jsp
+[jspc] Compiling /DetailServlet.jsp
+[jspc] Compiling /ListServlet.jsp
+[jspc] Compiling /createAuction.jsp
+[jspc] Compiling /index.jsp
+[jspc] Compiling /setupComplete.jsp
+[jspc] Compiling /templates/header.jsp
+<Oct 24, 2014 6:45:58 AM PDT> <Info> <J2EE> <BEA-160220> <Compilation completed successfully.> 
+
+
+!ENTRY org.eclipse.equinox.event 4 0 2014-10-24 06:46:37.635
+!MESSAGE Exception while dispatching event org.osgi.service.event.Event [topic=org/eclipse/e4/ui/LifeCycle/bringToTop] to handler org.eclipse.e4.ui.services.internal.events.UIEventHandler@310fbd7c
+!STACK 0
+java.lang.ClassCastException: org.eclipse.e4.ui.model.application.ui.basic.impl.PartImpl cannot be cast to org.eclipse.e4.ui.model.application.ui.MElementContainer
+	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.showStack(TrimStack.java:1014)
+	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack$5.handleEvent(TrimStack.java:378)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:187)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:156)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4590)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:218)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:36)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:81)
+	at org.eclipse.e4.ui.workbench.UIEvents.publishEvent(UIEvents.java:372)
+	at org.eclipse.e4.ui.workbench.UIEvents.publishEvent(UIEvents.java:341)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:456)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:694)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:674)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:615)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:603)
+	at org.eclipse.ui.internal.WorkbenchPage.activate(WorkbenchPage.java:986)
+	at org.eclipse.ui.internal.views.markers.ExtendedMarkersView.openMarkerInEditor(ExtendedMarkersView.java:1763)
+	at org.eclipse.ui.internal.views.markers.ExtendedMarkersView.openSelectedMarkers(ExtendedMarkersView.java:1242)
+	at org.eclipse.ui.internal.views.markers.ExtendedMarkersView$6.open(ExtendedMarkersView.java:606)
+	at org.eclipse.ui.OpenAndLinkWithEditorHelper$InternalListener.open(OpenAndLinkWithEditorHelper.java:48)
+	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:853)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:178)
+	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:850)
+	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1142)
+	at org.eclipse.jface.viewers.StructuredViewer$6.handleOpen(StructuredViewer.java:1249)
+	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:278)
+	at org.eclipse.jface.util.OpenStrategy.access$2(OpenStrategy.java:272)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:313)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4454)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1388)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3799)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3409)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+
+!ENTRY org.eclipse.ui 2 2 2014-10-24 06:52:35.795
+!MESSAGE Invalid preference category path: oracle.eclipse.tools.adf.mobile.preferences (bundle: oracle.eclipse.tools.adf.view.ui, page: oracle.eclipse.tools.adf.view.ui.OEPEPage)
+
+!ENTRY oracle.eclipse.tools.weblogic 1 1 2014-10-24 08:02:20.407
+!MESSAGE [/u01/app/jdk/bin/java, weblogic.appc, -verbose, /practices/tune/practice09-01/SimpleAuctionWebAppDb.war]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2014-10-24 08:02:44.672
+!MESSAGE <Oct 24, 2014 8:02:25 AM PDT> <Info> <J2EE> <BEA-160230> <Created working directory: /tmp/appcgen_1414162942235_SimpleAuctionWebAppDb.war> 
+[JspcInvoker]Checking web app for compliance.
+[jspc]  -webapp specified, searching . for JSPs
+[jspc] Compiling /setup.jsp
+[jspc] Compiling /userRequired.jsp
+[jspc] Compiling /DetailServlet.jsp
+[jspc] Compiling /ListServlet.jsp
+[jspc] Compiling /createAuction.jsp
+[jspc] Compiling /index.jsp
+[jspc] Compiling /setupComplete.jsp
+[jspc] Compiling /templates/header.jsp
+<Oct 24, 2014 8:02:44 AM PDT> <Info> <J2EE> <BEA-160220> <Compilation completed successfully.> 
+
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2014-10-24 08:18:21.979
+!MESSAGE Stopped WebLogic Server Monitor [unknown]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2014-10-24 08:19:28.712
+!MESSAGE Launching WebLogic config wizard with command:[xterm, -e, sh, /u01/app/fmw/oracle_common/common/bin/config.sh]
+in directory /u01/app/fmw/wlserver/common/bin
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2014-10-24 08:20:06.017
+!MESSAGE Launching WebLogic config wizard with command:[xterm, -e, sh, /u01/app/fmw/oracle_common/common/bin/config.sh]
+in directory /u01/app/fmw/wlserver/common/bin
+
+!ENTRY oracle.eclipse.tools.weblogic 1 0 2014-10-24 08:21:08.533
+!MESSAGE Executing WLST script:
+if __name__ == '__main__': 
+    from wlstModule import *#@UnusedWildImport
+    
+import os
+
+beaHome="/u01/app/fmw"
+wlHome="/u01/app/fmw/wlserver"
+password= "Welcome1"
+installJRF = "%INSTALL_JRF%"
+cfgGrpProfile = 'Compact'
+
+print "beaHome="+beaHome
+print "wlHome="+wlHome
+
+#===========================================================================
+# Open a domain template.
+#===========================================================================
+
+try:
+	readTemplate(wlHome + "/common/templates/wls/wls.jar", cfgGrpProfile)
+except:        
+    print 'Failed to read template '  + wlHome + "/common/templates/domains/wls.jar"
+    dumpStack()
+
+cd('Servers/AdminServer')
+set('ListenAddress','')
+set('ListenPort', 7001)
+
+create('AdminServer','SSL')
+cd('SSL/AdminServer')
+set('Enabled', 'True')
+set('ListenPort', 7002)
+
+#=======================================================================================
+# Define the user password for weblogic.
+#=======================================================================================
+print 'Setting WebLogic domain password'
+
+cd('/')
+cmo=cd('Security/base_domain/User/weblogic')
+# Please set password here before using this script, e.g. cmo.setPassword('value')
+cmo.setPassword( password )
+
+#===========================================================================
+# Set environment variables used by extension templates.
+#===========================================================================
+os.putenv('JDEV_HOME', beaHome + '/jdeveloper/')
+os.putenv('COMMON_COMPONENTS_HOME', beaHome + '/oracle_common/')
+os.putenv('DOMAIN_HOME', r'/u01/domains/devdomain/devdomain')
+
+
+#=======================================================================================
+# Add extension templates.
+#=======================================================================================
+addTemplate('/u01/app/fmw/wlserver/common/templates/wls/wls_coherence_template_12.1.3.jar')
+
+
+#=======================================================================================
+# Write the domain and close the domain template.
+#=======================================================================================
+
+setOption('OverwriteDomain', 'true')
+
+print 'Saving WebLogic domain'
+writeDomain( r'/u01/domains/devdomain/devdomain' )
+closeTemplate()
+print "script returns SUCCESS"   
+
+
+!ENTRY oracle.eclipse.tools.weblogic 1 1 2014-10-24 08:21:49.299
+!MESSAGE Creating WebLogic domain:
+if __name__ == '__main__': 
+    from wlstModule import *#@UnusedWildImport
+    
+import os
+
+beaHome="/u01/app/fmw"
+wlHome="/u01/app/fmw/wlserver"
+password= "Welcome1"
+installJRF = "%INSTALL_JRF%"
+cfgGrpProfile = 'Compact'
+
+print "beaHome="+beaHome
+print "wlHome="+wlHome
+
+#===========================================================================
+# Open a domain template.
+#===========================================================================
+
+try:
+	readTemplate(wlHome + "/common/templates/wls/wls.jar", cfgGrpProfile)
+except:        
+    print 'Failed to read template '  + wlHome + "/common/templates/domains/wls.jar"
+    dumpStack()
+
+cd('Servers/AdminServer')
+set('ListenAddress','')
+set('ListenPort', 7001)
+
+create('AdminServer','SSL')
+cd('SSL/AdminServer')
+set('Enabled', 'True')
+set('ListenPort', 7002)
+
+#=======================================================================================
+# Define the user password for weblogic.
+#=======================================================================================
+print 'Setting WebLogic domain password'
+
+cd('/')
+cmo=cd('Security/base_domain/User/weblogic')
+# Please set password here before using this script, e.g. cmo.setPassword('value')
+cmo.setPassword( password )
+
+#===========================================================================
+# Set environment variables used by extension templates.
+#===========================================================================
+os.putenv('JDEV_HOME', beaHome + '/jdeveloper/')
+os.putenv('COMMON_COMPONENTS_HOME', beaHome + '/oracle_common/')
+os.putenv('DOMAIN_HOME', r'/u01/domains/devdomain/devdomain')
+
+
+#=======================================================================================
+# Add extension templates.
+#=======================================================================================
+addTemplate('/u01/app/fmw/wlserver/common/templates/wls/wls_coherence_template_12.1.3.jar')
+
+
+#=======================================================================================
+# Write the domain and close the domain template.
+#=======================================================================================
+
+setOption('OverwriteDomain', 'true')
+
+print 'Saving WebLogic domain'
+writeDomain( r'/u01/domains/devdomain/devdomain' )
+closeTemplate()
+print "script returns SUCCESS"   
+
+
+
+!ENTRY oracle.eclipse.tools.weblogic 1 0 2014-10-24 08:24:30.198
+!MESSAGE Executing WLST script:
+if __name__ == '__main__': 
+    from wlstModule import *#@UnusedWildImport
+    
+import os
+
+beaHome="/u01/app/fmw"
+wlHome="/u01/app/fmw/wlserver"
+password= "Welcome1"
+installJRF = "%INSTALL_JRF%"
+cfgGrpProfile = 'Compact'
+
+print "beaHome="+beaHome
+print "wlHome="+wlHome
+
+#===========================================================================
+# Open a domain template.
+#===========================================================================
+
+try:
+	readTemplate(wlHome + "/common/templates/wls/wls.jar", cfgGrpProfile)
+except:        
+    print 'Failed to read template '  + wlHome + "/common/templates/domains/wls.jar"
+    dumpStack()
+
+cd('Servers/AdminServer')
+set('ListenAddress','')
+set('ListenPort', 7001)
+
+create('AdminServer','SSL')
+cd('SSL/AdminServer')
+set('Enabled', 'True')
+set('ListenPort', 7002)
+
+#=======================================================================================
+# Define the user password for weblogic.
+#=======================================================================================
+print 'Setting WebLogic domain password'
+
+cd('/')
+cmo=cd('Security/base_domain/User/weblogic')
+# Please set password here before using this script, e.g. cmo.setPassword('value')
+cmo.setPassword( password )
+
+#===========================================================================
+# Set environment variables used by extension templates.
+#===========================================================================
+os.putenv('JDEV_HOME', beaHome + '/jdeveloper/')
+os.putenv('COMMON_COMPONENTS_HOME', beaHome + '/oracle_common/')
+os.putenv('DOMAIN_HOME', r'/u01/domains/devdomain')
+
+
+#=======================================================================================
+# Add extension templates.
+#=======================================================================================
+addTemplate('/u01/app/fmw/wlserver/common/templates/wls/wls_coherence_template_12.1.3.jar')
+
+
+#=======================================================================================
+# Write the domain and close the domain template.
+#=======================================================================================
+
+setOption('OverwriteDomain', 'true')
+
+print 'Saving WebLogic domain'
+writeDomain( r'/u01/domains/devdomain' )
+closeTemplate()
+print "script returns SUCCESS"   
+
+
+!ENTRY oracle.eclipse.tools.weblogic 1 1 2014-10-24 08:25:04.450
+!MESSAGE Creating WebLogic domain:
+if __name__ == '__main__': 
+    from wlstModule import *#@UnusedWildImport
+    
+import os
+
+beaHome="/u01/app/fmw"
+wlHome="/u01/app/fmw/wlserver"
+password= "Welcome1"
+installJRF = "%INSTALL_JRF%"
+cfgGrpProfile = 'Compact'
+
+print "beaHome="+beaHome
+print "wlHome="+wlHome
+
+#===========================================================================
+# Open a domain template.
+#===========================================================================
+
+try:
+	readTemplate(wlHome + "/common/templates/wls/wls.jar", cfgGrpProfile)
+except:        
+    print 'Failed to read template '  + wlHome + "/common/templates/domains/wls.jar"
+    dumpStack()
+
+cd('Servers/AdminServer')
+set('ListenAddress','')
+set('ListenPort', 7001)
+
+create('AdminServer','SSL')
+cd('SSL/AdminServer')
+set('Enabled', 'True')
+set('ListenPort', 7002)
+
+#=======================================================================================
+# Define the user password for weblogic.
+#=======================================================================================
+print 'Setting WebLogic domain password'
+
+cd('/')
+cmo=cd('Security/base_domain/User/weblogic')
+# Please set password here before using this script, e.g. cmo.setPassword('value')
+cmo.setPassword( password )
+
+#===========================================================================
+# Set environment variables used by extension templates.
+#===========================================================================
+os.putenv('JDEV_HOME', beaHome + '/jdeveloper/')
+os.putenv('COMMON_COMPONENTS_HOME', beaHome + '/oracle_common/')
+os.putenv('DOMAIN_HOME', r'/u01/domains/devdomain')
+
+
+#=======================================================================================
+# Add extension templates.
+#=======================================================================================
+addTemplate('/u01/app/fmw/wlserver/common/templates/wls/wls_coherence_template_12.1.3.jar')
+
+
+#=======================================================================================
+# Write the domain and close the domain template.
+#=======================================================================================
+
+setOption('OverwriteDomain', 'true')
+
+print 'Saving WebLogic domain'
+writeDomain( r'/u01/domains/devdomain' )
+closeTemplate()
+print "script returns SUCCESS"   
+
+
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2014-10-24 08:25:32.125
+!MESSAGE Started WebLogic Server Monitor [devdomain@localhost:7001, Version:12.1.3.0.0]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2014-10-24 08:28:11.655
+!MESSAGE Stopped WebLogic Server Monitor [devdomain@localhost:7001, Version:12.1.3.0.0]
+!SESSION 2014-10-24 08:40:55.302 -----------------------------------------------
+eclipse.buildId=4.4.1.M20140925-0400
+java.version=1.7.0_67
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.m2e.logback.configuration 2 0 2014-10-24 08:41:06.641
+!MESSAGE Exception while setting up logging:org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.eclipse.m2e.logback.configuration.LogHelper.logJavaProperties(LogHelper.java:26)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.loadConfiguration(LogPlugin.java:189)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.configureLogback(LogPlugin.java:144)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.access$2(LogPlugin.java:107)
+	at org.eclipse.m2e.logback.configuration.LogPlugin$1.run(LogPlugin.java:62)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2014-10-24 08:41:44.679
+!MESSAGE Started WebLogic Server Monitor [devdomain@localhost:7001, Version:12.1.3.0.0]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 1 2014-10-24 09:08:52.099
+!MESSAGE [/u01/app/jdk/bin/java, weblogic.appc, -verbose, /practices/tune/practice09-01/SimpleAuctionWebAppDb.war]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2014-10-24 09:09:04.551
+!MESSAGE <Oct 24, 2014 9:08:54 AM PDT> <Info> <J2EE> <BEA-160230> <Created working directory: /tmp/appcgen_1414166933029_SimpleAuctionWebAppDb.war> 
+[JspcInvoker]Checking web app for compliance.
+[jspc]  -webapp specified, searching . for JSPs
+[jspc] Compiling /setup.jsp
+[jspc] Compiling /userRequired.jsp
+[jspc] Compiling /DetailServlet.jsp
+[jspc] Compiling /ListServlet.jsp
+[jspc] Compiling /createAuction.jsp
+[jspc] Compiling /index.jsp
+[jspc] Compiling /setupComplete.jsp
+[jspc] Compiling /templates/header.jsp
+<Oct 24, 2014 9:09:04 AM PDT> <Info> <J2EE> <BEA-160220> <Compilation completed successfully.> 
+

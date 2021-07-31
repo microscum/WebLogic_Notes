@@ -1,0 +1,228 @@
+2014-10-30 04:03:16,797 INFO  com-1 : The Grinder version 3.11
+2014-10-30 04:03:16,801 INFO  com-1 : Java(TM) SE Runtime Environment 1.7.0_67-b01: Java HotSpot(TM) 64-Bit Server VM (24.65-b04, mixed mode) on Linux amd64 2.6.32-279.19.1.el6.x86_64
+2014-10-30 04:03:16,804 INFO  com-1 : time zone is PDT (-0700)
+2014-10-30 04:03:16,931 INFO  com-1 : worker process 1
+2014-10-30 04:03:17,036 INFO  com-1 : instrumentation agents: byte code transforming instrumenter for Jython 2.5; byte code transforming instrumenter for Java
+2014-10-30 04:03:20,359 INFO  com-1 : registered plug-in net.grinder.plugin.http.HTTPPlugin
+2014-10-30 04:03:20,663 INFO  com-1 : running "grinder.py" using Jython 2.5.3 (2.5:c56500f08d34+, Aug 13 2012, 14:54:35) 
+[Java HotSpot(TM) 64-Bit Server VM (Oracle Corporation)]
+2014-10-30 04:03:21,176 INFO  com-1 thread-1: starting, will do 250 runs
+2014-10-30 04:03:21,176 INFO  com-1 thread-4: starting, will do 250 runs
+2014-10-30 04:03:21,176 INFO  com-1 thread-0: starting, will do 250 runs
+2014-10-30 04:03:21,176 INFO  com-1 thread-2: starting, will do 250 runs
+2014-10-30 04:03:21,176 INFO  com-1 thread-3: starting, will do 250 runs
+2014-10-30 04:03:21,176 INFO  com-1 : start time is 1414667001176 ms since Epoch
+2014-10-30 04:03:21,178 INFO  com-1 thread-2: sleeping for 811 ms
+2014-10-30 04:03:21,178 INFO  com-1 thread-0: sleeping for 2335 ms
+2014-10-30 04:03:21,179 INFO  com-1 thread-4: sleeping for 2486 ms
+2014-10-30 04:03:21,179 INFO  com-1 thread-1: sleeping for 1180 ms
+2014-10-30 04:03:21,179 INFO  com-1 thread-3: sleeping for 1348 ms
+2014-10-30 04:03:22,030 INFO  com-1 thread-2 [ run-0, test-101 ]: http://host01.example.com:7011/benefits -> 302 Moved Temporarily, 277 bytes [Redirect, ensure the next URL is http://host01.example.com:7011/benefits/]
+2014-10-30 04:03:22,033 INFO  com-1 thread-2 [ run-0 ]: sleeping for 12 ms
+2014-10-30 04:03:22,052 INFO  com-1 thread-2 [ run-0, test-102 ]: http://host01.example.com:7011/benefits/ -> 200 OK, 1630 bytes
+2014-10-30 04:03:22,056 INFO  com-1 thread-2 [ run-0 ]: sleeping for 115 ms
+2014-10-30 04:03:22,173 INFO  com-1 thread-2 [ run-0, test-103 ]: http://host01.example.com:7011/benefits/css/styles.css -> 200 OK, 532 bytes
+2014-10-30 04:03:22,173 INFO  com-1 thread-2 [ run-0 ]: sleeping for 116 ms
+2014-10-30 04:03:22,326 INFO  com-1 thread-2 [ run-0, test-104 ]: http://host01.example.com:7011/favicon.ico -> 404 Not Found, 1164 bytes
+2014-10-30 04:03:22,329 INFO  com-1 thread-2 [ run-0, test-105 ]: http://host01.example.com:7011/favicon.ico -> 404 Not Found, 1164 bytes
+2014-10-30 04:03:22,329 INFO  com-1 thread-2 [ run-0 ]: sleeping for 6918 ms
+2014-10-30 04:03:22,362 INFO  com-1 thread-1 [ run-0, test-101 ]: http://host01.example.com:7011/benefits -> 302 Moved Temporarily, 277 bytes [Redirect, ensure the next URL is http://host01.example.com:7011/benefits/]
+2014-10-30 04:03:22,362 INFO  com-1 thread-1 [ run-0 ]: sleeping for 12 ms
+2014-10-30 04:03:22,376 INFO  com-1 thread-1 [ run-0, test-102 ]: http://host01.example.com:7011/benefits/ -> 200 OK, 1630 bytes
+2014-10-30 04:03:22,376 INFO  com-1 thread-1 [ run-0 ]: sleeping for 113 ms
+2014-10-30 04:03:22,492 INFO  com-1 thread-1 [ run-0, test-103 ]: http://host01.example.com:7011/benefits/css/styles.css -> 200 OK, 532 bytes
+2014-10-30 04:03:22,492 INFO  com-1 thread-1 [ run-0 ]: sleeping for 114 ms
+2014-10-30 04:03:22,529 INFO  com-1 thread-3 [ run-0, test-101 ]: http://host01.example.com:7011/benefits -> 302 Moved Temporarily, 277 bytes [Redirect, ensure the next URL is http://host01.example.com:7011/benefits/]
+2014-10-30 04:03:22,530 INFO  com-1 thread-3 [ run-0 ]: sleeping for 12 ms
+2014-10-30 04:03:22,543 INFO  com-1 thread-3 [ run-0, test-102 ]: http://host01.example.com:7011/benefits/ -> 200 OK, 1630 bytes
+2014-10-30 04:03:22,543 INFO  com-1 thread-3 [ run-0 ]: sleeping for 123 ms
+2014-10-30 04:03:22,608 INFO  com-1 thread-1 [ run-0, test-104 ]: http://host01.example.com:7011/favicon.ico -> 404 Not Found, 1164 bytes
+2014-10-30 04:03:22,610 INFO  com-1 thread-1 [ run-0, test-105 ]: http://host01.example.com:7011/favicon.ico -> 404 Not Found, 1164 bytes
+2014-10-30 04:03:22,611 INFO  com-1 thread-1 [ run-0 ]: sleeping for 7602 ms
+2014-10-30 04:03:22,669 INFO  com-1 thread-3 [ run-0, test-103 ]: http://host01.example.com:7011/benefits/css/styles.css -> 200 OK, 532 bytes
+2014-10-30 04:03:22,669 INFO  com-1 thread-3 [ run-0 ]: sleeping for 106 ms
+2014-10-30 04:03:22,777 INFO  com-1 thread-3 [ run-0, test-104 ]: http://host01.example.com:7011/favicon.ico -> 404 Not Found, 1164 bytes
+2014-10-30 04:03:22,781 INFO  com-1 thread-3 [ run-0, test-105 ]: http://host01.example.com:7011/favicon.ico -> 404 Not Found, 1164 bytes
+2014-10-30 04:03:22,784 INFO  com-1 thread-3 [ run-0 ]: sleeping for 7520 ms
+2014-10-30 04:03:23,517 INFO  com-1 thread-0 [ run-0, test-101 ]: http://host01.example.com:7011/benefits -> 302 Moved Temporarily, 277 bytes [Redirect, ensure the next URL is http://host01.example.com:7011/benefits/]
+2014-10-30 04:03:23,517 INFO  com-1 thread-0 [ run-0 ]: sleeping for 12 ms
+2014-10-30 04:03:23,531 INFO  com-1 thread-0 [ run-0, test-102 ]: http://host01.example.com:7011/benefits/ -> 200 OK, 1630 bytes
+2014-10-30 04:03:23,531 INFO  com-1 thread-0 [ run-0 ]: sleeping for 109 ms
+2014-10-30 04:03:23,643 INFO  com-1 thread-0 [ run-0, test-103 ]: http://host01.example.com:7011/benefits/css/styles.css -> 200 OK, 532 bytes
+2014-10-30 04:03:23,643 INFO  com-1 thread-0 [ run-0 ]: sleeping for 124 ms
+2014-10-30 04:03:23,668 INFO  com-1 thread-4 [ run-0, test-101 ]: http://host01.example.com:7011/benefits -> 302 Moved Temporarily, 277 bytes [Redirect, ensure the next URL is http://host01.example.com:7011/benefits/]
+2014-10-30 04:03:23,669 INFO  com-1 thread-4 [ run-0 ]: sleeping for 12 ms
+2014-10-30 04:03:23,682 INFO  com-1 thread-4 [ run-0, test-102 ]: http://host01.example.com:7011/benefits/ -> 200 OK, 1630 bytes
+2014-10-30 04:03:23,682 INFO  com-1 thread-4 [ run-0 ]: sleeping for 120 ms
+2014-10-30 04:03:23,769 INFO  com-1 thread-0 [ run-0, test-104 ]: http://host01.example.com:7011/favicon.ico -> 404 Not Found, 1164 bytes
+2014-10-30 04:03:23,771 INFO  com-1 thread-0 [ run-0, test-105 ]: http://host01.example.com:7011/favicon.ico -> 404 Not Found, 1164 bytes
+2014-10-30 04:03:23,771 INFO  com-1 thread-0 [ run-0 ]: sleeping for 7348 ms
+2014-10-30 04:03:23,804 INFO  com-1 thread-4 [ run-0, test-103 ]: http://host01.example.com:7011/benefits/css/styles.css -> 200 OK, 532 bytes
+2014-10-30 04:03:23,804 INFO  com-1 thread-4 [ run-0 ]: sleeping for 101 ms
+2014-10-30 04:03:23,907 INFO  com-1 thread-4 [ run-0, test-104 ]: http://host01.example.com:7011/favicon.ico -> 404 Not Found, 1164 bytes
+2014-10-30 04:03:23,912 INFO  com-1 thread-4 [ run-0, test-105 ]: http://host01.example.com:7011/favicon.ico -> 404 Not Found, 1164 bytes
+2014-10-30 04:03:23,912 INFO  com-1 thread-4 [ run-0 ]: sleeping for 7187 ms
+2014-10-30 04:03:44,641 INFO  com-1 thread-1 [ run-0, test-201 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 1485 bytes
+2014-10-30 04:03:44,644 INFO  com-1 thread-1 [ run-0 ]: sleeping for 9090 ms
+2014-10-30 04:03:44,643 INFO  com-1 thread-3 [ run-0, test-201 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 1485 bytes
+2014-10-30 04:03:44,644 INFO  com-1 thread-0 [ run-0, test-201 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 1485 bytes
+2014-10-30 04:03:44,644 INFO  com-1 thread-3 [ run-0 ]: sleeping for 9662 ms
+2014-10-30 04:03:44,642 INFO  com-1 thread-4 [ run-0, test-201 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 1485 bytes
+2014-10-30 04:03:44,644 INFO  com-1 thread-0 [ run-0 ]: sleeping for 8556 ms
+2014-10-30 04:03:44,645 INFO  com-1 thread-4 [ run-0 ]: sleeping for 9012 ms
+2014-10-30 04:03:44,647 INFO  com-1 thread-2 [ run-0, test-201 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 1485 bytes
+2014-10-30 04:03:44,647 INFO  com-1 thread-2 [ run-0 ]: sleeping for 7420 ms
+2014-10-30 04:03:52,070 INFO  com-1 thread-2 [ run-0, test-301 ]: http://host01.example.com:7011/benefits/welcome.html -> 200 OK, 1630 bytes
+2014-10-30 04:03:52,071 INFO  com-1 thread-2 [ run-0 ]: sleeping for 2796 ms
+2014-10-30 04:03:53,203 INFO  com-1 thread-0 [ run-0, test-301 ]: http://host01.example.com:7011/benefits/welcome.html -> 200 OK, 1630 bytes
+2014-10-30 04:03:53,203 INFO  com-1 thread-0 [ run-0 ]: sleeping for 2644 ms
+2014-10-30 04:03:53,659 INFO  com-1 thread-4 [ run-0, test-301 ]: http://host01.example.com:7011/benefits/welcome.html -> 200 OK, 1630 bytes
+2014-10-30 04:03:53,659 INFO  com-1 thread-4 [ run-0 ]: sleeping for 2669 ms
+2014-10-30 04:03:53,736 INFO  com-1 thread-1 [ run-0, test-301 ]: http://host01.example.com:7011/benefits/welcome.html -> 200 OK, 1630 bytes
+2014-10-30 04:03:53,736 INFO  com-1 thread-1 [ run-0 ]: sleeping for 2465 ms
+2014-10-30 04:03:54,308 INFO  com-1 thread-3 [ run-0, test-301 ]: http://host01.example.com:7011/benefits/welcome.html -> 200 OK, 1630 bytes
+2014-10-30 04:03:54,309 INFO  com-1 thread-3 [ run-0 ]: sleeping for 2714 ms
+2014-10-30 04:04:04,979 INFO  com-1 thread-2 [ run-0, test-401 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 709 bytes
+2014-10-30 04:04:04,980 INFO  com-1 thread-2 [ run-0 ]: sleeping for 6024 ms
+2014-10-30 04:04:05,987 INFO  com-1 thread-0 [ run-0, test-401 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 709 bytes
+2014-10-30 04:04:05,988 INFO  com-1 thread-0 [ run-0 ]: sleeping for 5939 ms
+2014-10-30 04:04:06,390 INFO  com-1 thread-1 [ run-0, test-401 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 709 bytes
+2014-10-30 04:04:06,391 INFO  com-1 thread-1 [ run-0 ]: sleeping for 5931 ms
+2014-10-30 04:04:06,470 INFO  com-1 thread-4 [ run-0, test-401 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 709 bytes
+2014-10-30 04:04:06,471 INFO  com-1 thread-4 [ run-0 ]: sleeping for 5748 ms
+2014-10-30 04:04:07,592 INFO  com-1 thread-3 [ run-0, test-401 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 709 bytes
+2014-10-30 04:04:07,593 INFO  com-1 thread-3 [ run-0 ]: sleeping for 5985 ms
+2014-10-30 04:04:21,096 INFO  com-1 thread-2 [ run-0, test-501 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 279 bytes
+2014-10-30 04:04:21,097 INFO  com-1 thread-2 [ run-0 ]: sleeping for 3672 ms
+2014-10-30 04:04:22,038 INFO  com-1 thread-0 [ run-0, test-501 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 279 bytes
+2014-10-30 04:04:22,038 INFO  com-1 thread-0 [ run-0 ]: sleeping for 3805 ms
+2014-10-30 04:04:25,506 INFO  com-1 thread-1 [ run-0, test-501 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 279 bytes
+2014-10-30 04:04:25,507 INFO  com-1 thread-1 [ run-0 ]: sleeping for 3674 ms
+2014-10-30 04:04:26,190 INFO  com-1 thread-4 [ run-0, test-501 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 279 bytes
+2014-10-30 04:04:26,190 INFO  com-1 thread-4 [ run-0 ]: sleeping for 3560 ms
+2014-10-30 04:04:28,466 INFO  com-1 thread-3 [ run-0, test-501 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 279 bytes
+2014-10-30 04:04:28,467 INFO  com-1 thread-3 [ run-0 ]: sleeping for 3690 ms
+2014-10-30 04:04:35,648 INFO  com-1 thread-2 [ run-0, test-601 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 319 bytes
+2014-10-30 04:04:35,648 INFO  com-1 thread-2 [ run-0 ]: sleeping for 4642 ms
+2014-10-30 04:04:36,243 INFO  com-1 thread-0 [ run-0, test-601 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 319 bytes
+2014-10-30 04:04:36,244 INFO  com-1 thread-0 [ run-0 ]: sleeping for 4180 ms
+2014-10-30 04:04:39,463 INFO  com-1 thread-1 [ run-0, test-601 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 319 bytes
+2014-10-30 04:04:39,463 INFO  com-1 thread-1 [ run-0 ]: sleeping for 4224 ms
+2014-10-30 04:04:40,253 INFO  com-1 thread-4 [ run-0, test-601 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 319 bytes
+2014-10-30 04:04:40,254 INFO  com-1 thread-4 [ run-0 ]: sleeping for 4725 ms
+2014-10-30 04:04:42,278 INFO  com-1 thread-3 [ run-0, test-601 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 319 bytes
+2014-10-30 04:04:42,278 INFO  com-1 thread-3 [ run-0 ]: sleeping for 4299 ms
+2014-10-30 04:04:50,872 INFO  com-1 thread-2 [ run-0, test-701 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 364 bytes
+2014-10-30 04:04:50,873 INFO  com-1 thread-2 [ run-0 ]: sleeping for 5518 ms
+2014-10-30 04:04:51,100 INFO  com-1 thread-0 [ run-0, test-701 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 364 bytes
+2014-10-30 04:04:51,100 INFO  com-1 thread-0 [ run-0 ]: sleeping for 6510 ms
+2014-10-30 04:04:53,849 INFO  com-1 thread-1 [ run-0, test-701 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 364 bytes
+2014-10-30 04:04:53,850 INFO  com-1 thread-1 [ run-0 ]: sleeping for 6551 ms
+2014-10-30 04:04:55,264 INFO  com-1 thread-4 [ run-0, test-701 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 364 bytes
+2014-10-30 04:04:55,265 INFO  com-1 thread-4 [ run-0 ]: sleeping for 5787 ms
+2014-10-30 04:04:56,820 INFO  com-1 thread-3 [ run-0, test-701 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 364 bytes
+2014-10-30 04:04:56,820 INFO  com-1 thread-3 [ run-0 ]: sleeping for 6382 ms
+2014-10-30 04:05:06,595 INFO  com-1 thread-2 [ run-0, test-801 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 1485 bytes
+2014-10-30 04:05:06,595 INFO  com-1 thread-2 [ run-0 ]: sleeping for 6285 ms
+2014-10-30 04:05:07,726 INFO  com-1 thread-0 [ run-0, test-801 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 1485 bytes
+2014-10-30 04:05:07,726 INFO  com-1 thread-0 [ run-0 ]: sleeping for 6453 ms
+2014-10-30 04:05:10,917 INFO  com-1 thread-1 [ run-0, test-801 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 1485 bytes
+2014-10-30 04:05:10,918 INFO  com-1 thread-1 [ run-0 ]: sleeping for 6680 ms
+2014-10-30 04:05:11,293 INFO  com-1 thread-4 [ run-0, test-801 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 1485 bytes
+2014-10-30 04:05:11,293 INFO  com-1 thread-4 [ run-0 ]: sleeping for 5915 ms
+2014-10-30 04:05:14,873 INFO  com-1 thread-3 [ run-0, test-801 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 1485 bytes
+2014-10-30 04:05:14,873 INFO  com-1 thread-3 [ run-0 ]: sleeping for 6528 ms
+2014-10-30 04:05:23,001 INFO  com-1 thread-2 [ run-0, test-901 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 414 bytes
+2014-10-30 04:05:23,005 INFO  com-1 thread-2 [ run-1, test-101 ]: http://host01.example.com:7011/benefits -> 302 Moved Temporarily, 277 bytes [Redirect, ensure the next URL is http://host01.example.com:7011/benefits/]
+2014-10-30 04:05:23,005 INFO  com-1 thread-2 [ run-1 ]: sleeping for 12 ms
+2014-10-30 04:05:23,020 INFO  com-1 thread-2 [ run-1, test-102 ]: http://host01.example.com:7011/benefits/ -> 200 OK, 1630 bytes
+2014-10-30 04:05:23,020 INFO  com-1 thread-2 [ run-1 ]: sleeping for 108 ms
+2014-10-30 04:05:23,130 INFO  com-1 thread-2 [ run-1, test-103 ]: http://host01.example.com:7011/benefits/css/styles.css -> 200 OK, 532 bytes
+2014-10-30 04:05:23,130 INFO  com-1 thread-2 [ run-1 ]: sleeping for 105 ms
+2014-10-30 04:05:23,237 INFO  com-1 thread-2 [ run-1, test-104 ]: http://host01.example.com:7011/favicon.ico -> 404 Not Found, 1164 bytes
+2014-10-30 04:05:23,239 INFO  com-1 thread-2 [ run-1, test-105 ]: http://host01.example.com:7011/favicon.ico -> 404 Not Found, 1164 bytes
+2014-10-30 04:05:23,239 INFO  com-1 thread-2 [ run-1 ]: sleeping for 6765 ms
+2014-10-30 04:05:24,717 INFO  com-1 thread-0 [ run-0, test-901 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 414 bytes
+2014-10-30 04:05:24,720 INFO  com-1 thread-0 [ run-1, test-101 ]: http://host01.example.com:7011/benefits -> 302 Moved Temporarily, 277 bytes [Redirect, ensure the next URL is http://host01.example.com:7011/benefits/]
+2014-10-30 04:05:24,720 INFO  com-1 thread-0 [ run-1 ]: sleeping for 12 ms
+2014-10-30 04:05:24,735 INFO  com-1 thread-0 [ run-1, test-102 ]: http://host01.example.com:7011/benefits/ -> 200 OK, 1630 bytes
+2014-10-30 04:05:24,735 INFO  com-1 thread-0 [ run-1 ]: sleeping for 111 ms
+2014-10-30 04:05:24,849 INFO  com-1 thread-0 [ run-1, test-103 ]: http://host01.example.com:7011/benefits/css/styles.css -> 200 OK, 532 bytes
+2014-10-30 04:05:24,849 INFO  com-1 thread-0 [ run-1 ]: sleeping for 115 ms
+2014-10-30 04:05:24,966 INFO  com-1 thread-0 [ run-1, test-104 ]: http://host01.example.com:7011/favicon.ico -> 404 Not Found, 1164 bytes
+2014-10-30 04:05:24,970 INFO  com-1 thread-0 [ run-1, test-105 ]: http://host01.example.com:7011/favicon.ico -> 404 Not Found, 1164 bytes
+2014-10-30 04:05:24,970 INFO  com-1 thread-0 [ run-1 ]: sleeping for 8036 ms
+2014-10-30 04:05:27,440 INFO  com-1 thread-4 [ run-0, test-901 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 414 bytes
+2014-10-30 04:05:27,443 INFO  com-1 thread-4 [ run-1, test-101 ]: http://host01.example.com:7011/benefits -> 302 Moved Temporarily, 277 bytes [Redirect, ensure the next URL is http://host01.example.com:7011/benefits/]
+2014-10-30 04:05:27,443 INFO  com-1 thread-4 [ run-1 ]: sleeping for 12 ms
+2014-10-30 04:05:27,458 INFO  com-1 thread-4 [ run-1, test-102 ]: http://host01.example.com:7011/benefits/ -> 200 OK, 1630 bytes
+2014-10-30 04:05:27,458 INFO  com-1 thread-4 [ run-1 ]: sleeping for 112 ms
+2014-10-30 04:05:27,573 INFO  com-1 thread-4 [ run-1, test-103 ]: http://host01.example.com:7011/benefits/css/styles.css -> 200 OK, 532 bytes
+2014-10-30 04:05:27,573 INFO  com-1 thread-4 [ run-1 ]: sleeping for 111 ms
+2014-10-30 04:05:27,685 INFO  com-1 thread-4 [ run-1, test-104 ]: http://host01.example.com:7011/favicon.ico -> 404 Not Found, 1164 bytes
+2014-10-30 04:05:27,687 INFO  com-1 thread-4 [ run-1, test-105 ]: http://host01.example.com:7011/favicon.ico -> 404 Not Found, 1164 bytes
+2014-10-30 04:05:27,687 INFO  com-1 thread-4 [ run-1 ]: sleeping for 7540 ms
+2014-10-30 04:05:27,811 INFO  com-1 thread-1 [ run-0, test-901 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 414 bytes
+2014-10-30 04:05:27,813 INFO  com-1 thread-1 [ run-1, test-101 ]: http://host01.example.com:7011/benefits -> 302 Moved Temporarily, 277 bytes [Redirect, ensure the next URL is http://host01.example.com:7011/benefits/]
+2014-10-30 04:05:27,814 INFO  com-1 thread-1 [ run-1 ]: sleeping for 12 ms
+2014-10-30 04:05:27,827 INFO  com-1 thread-1 [ run-1, test-102 ]: http://host01.example.com:7011/benefits/ -> 200 OK, 1630 bytes
+2014-10-30 04:05:27,827 INFO  com-1 thread-1 [ run-1 ]: sleeping for 111 ms
+2014-10-30 04:05:27,940 INFO  com-1 thread-1 [ run-1, test-103 ]: http://host01.example.com:7011/benefits/css/styles.css -> 200 OK, 532 bytes
+2014-10-30 04:05:27,940 INFO  com-1 thread-1 [ run-1 ]: sleeping for 112 ms
+2014-10-30 04:05:28,053 INFO  com-1 thread-1 [ run-1, test-104 ]: http://host01.example.com:7011/favicon.ico -> 404 Not Found, 1164 bytes
+2014-10-30 04:05:28,055 INFO  com-1 thread-1 [ run-1, test-105 ]: http://host01.example.com:7011/favicon.ico -> 404 Not Found, 1164 bytes
+2014-10-30 04:05:28,055 INFO  com-1 thread-1 [ run-1 ]: sleeping for 6663 ms
+2014-10-30 04:05:31,946 INFO  com-1 thread-3 [ run-0, test-901 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 414 bytes
+2014-10-30 04:05:31,948 INFO  com-1 thread-3 [ run-1, test-101 ]: http://host01.example.com:7011/benefits -> 302 Moved Temporarily, 277 bytes [Redirect, ensure the next URL is http://host01.example.com:7011/benefits/]
+2014-10-30 04:05:31,949 INFO  com-1 thread-3 [ run-1 ]: sleeping for 12 ms
+2014-10-30 04:05:31,963 INFO  com-1 thread-3 [ run-1, test-102 ]: http://host01.example.com:7011/benefits/ -> 200 OK, 1630 bytes
+2014-10-30 04:05:31,964 INFO  com-1 thread-3 [ run-1 ]: sleeping for 108 ms
+2014-10-30 04:05:32,073 INFO  com-1 thread-3 [ run-1, test-103 ]: http://host01.example.com:7011/benefits/css/styles.css -> 200 OK, 532 bytes
+2014-10-30 04:05:32,074 INFO  com-1 thread-3 [ run-1 ]: sleeping for 112 ms
+2014-10-30 04:05:32,187 INFO  com-1 thread-3 [ run-1, test-104 ]: http://host01.example.com:7011/favicon.ico -> 404 Not Found, 1164 bytes
+2014-10-30 04:05:32,189 INFO  com-1 thread-3 [ run-1, test-105 ]: http://host01.example.com:7011/favicon.ico -> 404 Not Found, 1164 bytes
+2014-10-30 04:05:32,189 INFO  com-1 thread-3 [ run-1 ]: sleeping for 7072 ms
+2014-10-30 04:05:40,697 INFO  com-1 thread-2 [ run-1, test-201 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 1485 bytes
+2014-10-30 04:05:40,698 INFO  com-1 thread-2 [ run-1 ]: sleeping for 8698 ms
+2014-10-30 04:05:43,186 INFO  com-1 thread-0 [ run-1, test-201 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 1485 bytes
+2014-10-30 04:05:43,186 INFO  com-1 thread-0 [ run-1 ]: sleeping for 9032 ms
+2014-10-30 04:05:44,873 INFO  com-1 thread-1 [ run-1, test-201 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 1485 bytes
+2014-10-30 04:05:44,873 INFO  com-1 thread-1 [ run-1 ]: sleeping for 8445 ms
+2014-10-30 04:05:45,438 INFO  com-1 thread-4 [ run-1, test-201 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 1485 bytes
+2014-10-30 04:05:45,438 INFO  com-1 thread-4 [ run-1 ]: sleeping for 8754 ms
+2014-10-30 04:05:49,400 INFO  com-1 thread-2 [ run-1, test-301 ]: http://host01.example.com:7011/benefits/welcome.html -> 200 OK, 1630 bytes
+2014-10-30 04:05:49,400 INFO  com-1 thread-2 [ run-1 ]: sleeping for 2340 ms
+2014-10-30 04:05:49,836 INFO  com-1 thread-3 [ run-1, test-201 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 1485 bytes
+2014-10-30 04:05:49,837 INFO  com-1 thread-3 [ run-1 ]: sleeping for 9647 ms
+2014-10-30 04:05:52,220 INFO  com-1 thread-0 [ run-1, test-301 ]: http://host01.example.com:7011/benefits/welcome.html -> 200 OK, 1630 bytes
+2014-10-30 04:05:52,220 INFO  com-1 thread-0 [ run-1 ]: sleeping for 2809 ms
+2014-10-30 04:05:53,392 INFO  com-1 thread-1 [ run-1, test-301 ]: http://host01.example.com:7011/benefits/welcome.html -> 200 OK, 1630 bytes
+2014-10-30 04:05:53,392 INFO  com-1 thread-1 [ run-1 ]: sleeping for 2817 ms
+2014-10-30 04:05:54,194 INFO  com-1 thread-4 [ run-1, test-301 ]: http://host01.example.com:7011/benefits/welcome.html -> 200 OK, 1630 bytes
+2014-10-30 04:05:54,194 INFO  com-1 thread-4 [ run-1 ]: sleeping for 2537 ms
+2014-10-30 04:05:59,486 INFO  com-1 thread-3 [ run-1, test-301 ]: http://host01.example.com:7011/benefits/welcome.html -> 200 OK, 1630 bytes
+2014-10-30 04:05:59,486 INFO  com-1 thread-3 [ run-1 ]: sleeping for 2586 ms
+2014-10-30 04:06:01,911 INFO  com-1 thread-2 [ run-1, test-401 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 709 bytes
+2014-10-30 04:06:01,912 INFO  com-1 thread-2 [ run-1 ]: sleeping for 5906 ms
+2014-10-30 04:06:05,188 INFO  com-1 thread-0 [ run-1, test-401 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 709 bytes
+2014-10-30 04:06:05,189 INFO  com-1 thread-0 [ run-1 ]: sleeping for 5799 ms
+2014-10-30 04:06:06,416 INFO  com-1 thread-1 [ run-1, test-401 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 709 bytes
+2014-10-30 04:06:06,416 INFO  com-1 thread-1 [ run-1 ]: sleeping for 6308 ms
+2014-10-30 04:06:06,913 INFO  com-1 thread-4 [ run-1, test-401 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 709 bytes
+2014-10-30 04:06:06,913 INFO  com-1 thread-4 [ run-1 ]: sleeping for 5751 ms
+2014-10-30 04:06:12,304 INFO  com-1 thread-3 [ run-1, test-401 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 709 bytes
+2014-10-30 04:06:12,305 INFO  com-1 thread-3 [ run-1 ]: sleeping for 5320 ms
+2014-10-30 04:06:18,437 INFO  com-1 thread-2 [ run-1, test-501 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 279 bytes
+2014-10-30 04:06:18,438 INFO  com-1 thread-2 [ run-1 ]: sleeping for 3556 ms
+2014-10-30 04:06:21,649 INFO  com-1 thread-0 [ run-1, test-501 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 279 bytes
+2014-10-30 04:06:21,650 INFO  com-1 thread-0 [ run-1 ]: sleeping for 4024 ms
+2014-10-30 04:06:22,930 INFO  com-1 thread-4 [ run-1, test-501 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 279 bytes
+2014-10-30 04:06:22,931 INFO  com-1 thread-4 [ run-1 ]: sleeping for 3923 ms
+2014-10-30 04:06:23,076 INFO  com-1 thread-1 [ run-1, test-501 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 279 bytes
+2014-10-30 04:06:23,076 INFO  com-1 thread-1 [ run-1 ]: sleeping for 3661 ms
+2014-10-30 04:06:27,814 INFO  com-1 thread-3 [ run-1, test-501 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 279 bytes
+2014-10-30 04:06:27,815 INFO  com-1 thread-3 [ run-1 ]: sleeping for 3807 ms
+2014-10-30 04:06:32,717 INFO  com-1 thread-2 [ run-1, test-601 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 319 bytes
+2014-10-30 04:06:32,718 INFO  com-1 thread-2 [ run-1 ]: sleeping for 4194 ms
+2014-10-30 04:06:35,963 INFO  com-1 thread-0 [ run-1, test-601 ]: http://host01.example.com:7011/benefits/servlet -> 200 OK, 319 bytes
+2014-10-30 04:06:35,964 INFO  com-1 thread-0 [ run-1 ]: sleeping for 3960 ms

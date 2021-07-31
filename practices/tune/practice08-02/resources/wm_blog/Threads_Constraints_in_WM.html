@@ -1,0 +1,379 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0076)https://blogs.oracle.com/WebLogicServer/entry/threads_constraints_in_work_ma -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!-- Page Info -->
+		
+		<meta name="description" content="Blogs.Oracle.Com - The WebLogic Server Blog">
+  <meta name="keywords" content="blogs, oracle, blogs.oracle, blogging, bloggers">
+		            <title>Threads Constraints in Work Managers (The WebLogic Server Blog)</title>
+                           <meta http-equiv="Content-Language" content="en">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="imagetoolbar" content="no">
+
+        
+            <link rel="alternate" type="application/atom+xml" title="Recent Entries (Atom)" href="https://blogs.oracle.com/WebLogicServer/feed/entries/atom">
+    <link rel="alternate" type="application/rss+xml" title="Recent Entries (RSS)" href="https://blogs.oracle.com/WebLogicServer/feed/entries/rss">
+    <link rel="alternate" type="application/atom+xml" title="Recent Comments (Atom)" href="https://blogs.oracle.com/WebLogicServer/feed/comments/atom">
+    <link rel="alternate" type="application/rss+xml" title="Recent Comments (RSS)" href="https://blogs.oracle.com/WebLogicServer/feed/comments/rss">
+
+    
+    
+<!-- Stylesheets -->
+<link rel="stylesheet" href="./Threads_Constraints_in_WM_files/theme.css" type="text/css" media="screen">
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="https://blogs.oracle.com/WebLogicServer/resource/6corporate-2col/favicon.gif">    	</head>
+	<body>
+		<div id="container" class="two-columns"> <!-- Note: Change the class from "two-columns" to "three-columns" if needed -->
+			
+			<!-- Header -->
+			<div id="header">
+				<ul id="nav">
+					<li id="logo"><h6><a href="http://www.oracle.com/">Oracle</a></h6></li>
+					<li class="current"><a href="https://blogs.oracle.com/">Blogs Home</a></li>
+					<li><a href="http://www.oracle.com/us/products/index.html">Products &amp; Services</a></li>
+					<li><a href="http://www.oracle.com/technetwork/indexes/downloads/index.html">Downloads</a></li>
+					<li><a href="http://www.oracle.com/us/support/index.html">Support</a></li>
+					<li><a href="http://www.oracle.com/us/partnerships/index.html">Partners</a></li>
+					<li><a href="http://www.oracle.com/us/community/index.html">Communities</a></li>
+					<li><a href="http://www.oracle.com/us/corporate/index.html">About</a></li>
+                                            <li id="signIn"><a href="https://blogs.oracle.com/roller-ui/logout.rol">Logout</a></li>
+                    				</ul>
+				<div id="jumbotron">
+					<h4>Oracle Blog</h4>
+          <h5><a href="https://blogs.oracle.com/WebLogicServer/">The WebLogic Server Blog</a></h5>
+          <h5 class="subhead"> </h5>
+				</div>
+                																										</div>
+			
+			<!-- Content -->
+			<div id="content">
+                <div id="mainColumn">
+                    
+                    <!-- Previous and Next Entries -->
+                    <div id="pager">
+                                                    « <a href="https://blogs.oracle.com/WebLogicServer/entry/developing_custom_mbeans_to_manage_j2ee_applications_part_ii">Developing custom...</a> |  
+                <a href="https://blogs.oracle.com/WebLogicServer/">Main</a>
+                | <a href="https://blogs.oracle.com/WebLogicServer/entry/getting_started_with_weblogic">Getting started with...</a> »
+                        </div>
+
+                    <!-- Entries -->
+				    
+                <div class="day">
+
+
+	<div class="entry" id="threads_constraints_in_work_ma">
+
+	<h3 class="entry-title">
+			Threads Constraints in Work Managers
+	    </h3>
+
+    <h4 class="entry-meta">By Anthony Lai on <a href="https://blogs.oracle.com/WebLogicServer/entry/threads_constraints_in_work_ma#">Dec 01, 2009</a></h4>
+
+    <div class="entry-body">
+                                        	<p>WLS work manager configuration supports three different types of constraints - minimum threads, maximum threads, and capacity constraints. Here we are going to focus on some issues related to using the minimum and maximum threads constraints.</p><p>First a brief introduction on the self-tuning thread pool in WLS. Each WLS server instance maintains a single thread pool to be shared by all work managers defined on that WLS instance. This is different from the OC4J thread pool model in which separate thread pools are created for each configured thread pool. The self-tuning thread pool would also adjust its pool size automatically based on the throughput history that WLS gathers every 2 seconds. Thus there is no need to preset the minimum and maximum number of threads in the self-tuning thread pool.</p><p><strong>Minimum Threads Constraint</strong></p><p>According to the WLS documentation, the minimum threads constraint "guarantees the number of threads the server will allocate to affected requests to avoid deadlocks." It makes sure that during periods of high workloads, there would still be a certain number of threads from the self-tuning thread pool available to process work requests for all work managers that reference the minimum threads constraint.</p><p>Suppose we have a work manager called WM1 with no minimum threads constraint configured, and a new work request is scheduled for WM1 during times of high work load where all the threads in the self-tuning thread pool are already working on servicing other work requests. The new work request will be added to a queue waiting for some threads in the thread pool to be freed up before it can be processed.</p><p>Suppose WM1 is modified to reference a minimum threads constraint C1 with a value of 2, and that it is the only work manager referencing C1. If a work request for WM1 is scheduled when there are available threads in the thread pool, WLS will pick an idle thread for processing the work regardless of whether WM1 references any minimum threads constraint. However, if the work is scheduled during times of high work load and that there are no available threads in the self-tuning thread pool, WLS will first check and see how many threads in the thread pool are currently processing work requests for WM1. In this example, if there are fewer than 2 threads, WLS would create a new thread to handle the work request for WM1. However, if there are already 2 threads in the self tuning thread pool that are executing work on behalf of WM1, the new work request would be put into a queue just like in the case when there is no minimum threads constraint being configured.</p><p>It should be noted that after the work request is finished, the newly created thread will be returned to the self-tuning thread pool and would be available for processing requests from any work manger. So using the minimum threads constraint could result in increasing the number of threads in the self-tuning thread pool. This may not be desirable as it might result in degraded overall server throughput due to the additional context switching among threads, at least before the self-tuning thread pool adjusts to its optimal pool size again. Another possible side-effect of using the minimum threads constraint is that work requests that would have otherwise be put on a queue would instead be executed in a new thread. This would result in more work requests being processed for such work manager than its configured value in the fair share request class if one is configured. Thus the minimum threads constraint should be used only sparingly.</p><p>What the minimum threads constraint will not do for the work manager is that no threads will be created specifically for it in the self tuning thread pool during WLS startup. There will not be any threads set aside in the self-tuning thread pool waiting to handle work requests for WM1. Any idle threads in the self-tuning thread pool would be available to process work requests for any work manager.</p><p>Multiple work managers can reference the same minimum threads constraint, but the constraint will be applied to all the work managers that are referencing it. Suppose two work managers WM1 and WM2 both reference the same minimum threads constraint C1 with a configured value of 2. The self-tuning thread pool will create new thread for processing work requests for WM1 or WM2 only when there is no more idle threads in the thread pool and that there are fewer than 2 threads currently processing requests for either work managers. In other words, if there are already 2 threads processing work for WM1, the self-tuning thread pool will not create a new thread for the new incoming request for WM2. To have a minimum of 2 threads for each of the two work managers, each work manager would need to reference a different minimum threads constraint, each configured to have a value of 2.</p><p>The minimum threads constraint in WLS work manager is most suitable for making sure threads are available for processing work for a work manager during a period of high work load. Users should consider adding a minimum threads constraint to a work manager configuration when it is critical that progress must be made for an application even when the WLS server is under very heavy load, such as work that would have resulted in server-to-server deadlock if not being processed promptly. It is not to be used as a mean of prioritizing workload among different work managers. Users should be looking into using either the fair share request class or the response time request class for that purpose instead.</p><p><strong>Maximum Threads Constraint</strong></p><p>The maximum threads constraint "limits the number of concurrent threads executing requests from the constrained work set" according to the WLS documentation. It limits the number of threads in the self-tuning thread pool that can be used at any time for executing work for all work managers that references the same constraint. It is not, however, used for limiting the size of the self-tuning thread pool.</p><p>More than one work manager can reference the same maximum threads constraint, and any threads processing requests from any of these work manager would count against the limit configured in the maximum threads constraint. This is useful for limiting thread usages for related work managers.</p><p>Suppose a maximum threads constraint C2 is defined with a value of 10 and only one work manager WM3 is defined to use C2 as its maximum threads constraint. When 10 threads from the thread pool are already processing work requests for WM3, any additional work requests for WM3 will be put on a queue for C2 even if there are idle threads available in the self-tuning thread pool. The queued requests will be picked up for processing in the same order as they arrived when work requests for WM3 are completed.</p><p>Note that when the maximum threads constraint is reached, WLS may no longer able to honor the ratios as defined in the fair share or response time request classes. This is because fewer work requests will be processed for work managers with maximum threads constraint defined that would be otherwise allowed according to the configured values in the request classes. Suppose work manager WM3 in our previous example is defined with a fair share request class of value 80, while another work manager WM4 is defined with a fair share request class of value 20. During a period of sufficient load, WLS would likely process fewer requests for WM3 and have a thread-usage ratio lower than the configured 80:20 ratio between WM3 and WM4 once the maximum threads constraint for WM3 is reached.</p><p>What happens to this ratio if both WM3 and WM4 both reference the same maximum threads constraint C2? Assuming the system is under sufficient load, and that the maximum threads constraint is reached, additional requests from both WM3 and WM4 will be added to the same queue. The requests for both work managers will then be processed in the same order as they arrive and would not be according to the configured request class ratio. Thus the thread-usage ratio will not be maintained in this case either.</p><p>Like the minimum threads constraint, the maximum threads constraint is not designed as a mean to prioritize workloads among different work managers. It is most useful when there are other known limitations where a hard upper limit should be put on the number of threads that should be assigned for processing work requests, and that allocating more threads for processing the workload would not increase the overall throughput. One such example would be when the throughput of an application is limited by the size of an underlying resource pool.</p><p><strong>Conclusion</strong></p><p>It is important to understand how the minimum and maximum threads constrains work in WLS work managers. They are each useful in specific use cases. But for general work load balancing among various work managers, fair share and response time request classes should be used instead. Please refer to the <a href="http://download.oracle.com/docs/cd/E12840_01/wls/docs103/config_wls/self_tuned.html">documentation</a>  for more information on work managers.</p>
+        
+    </div>
+
+    <div class="entry-footer">
+        <p class="entry-category">Category: Oracle</p>
+        <p class="entry-tags">Tags:  none </p>
+        <p class="entry-links">
+        <a href="./Threads_Constraints_in_WM_files/Threads_Constraints_in_WM.html">Permanent link to this entry</a>
+                        </p>
+    </div>
+
+	    
+	</div>
+
+</div>    
+    
+                                
+                    <!-- Previous and Next Entries -->
+                    <div id="pagerBottom">
+                                                    « <a href="https://blogs.oracle.com/WebLogicServer/entry/developing_custom_mbeans_to_manage_j2ee_applications_part_ii">Developing custom...</a> |  
+                <a href="https://blogs.oracle.com/WebLogicServer/">Main</a>
+                | <a href="https://blogs.oracle.com/WebLogicServer/entry/getting_started_with_weblogic">Getting started with...</a> »
+                        </div> 
+                    
+                    <!-- Comments -->
+                                                <a name="comments"></a>
+    <div class="comments" id="comments">
+
+            <div class="comments-head">Comments:</div>
+            
+    <br>
+        </div>
+                        
+    <div class="comments-form">
+    <div class="comments-head">Post a Comment:</div>
+    <a name="comment-form"></a>
+
+    <span class="status">Comments are closed for this entry.</span>
+
+    </div>
+                    				</div>
+
+                <!-- Sidebar -->
+                           <!-- Right Sidebar -->
+<div id="rightColumn">
+
+<!-- About -->
+  <div id="aboutSection">    
+    <h5 class="section-title">About</h5>
+    <div class="section-body">
+                  <p>The official blog for Oracle WebLogic Server fans and followers!
+<br>
+</p><h5 class="section-titleTop">Stay Connected</h5>
+<div class="section-body" style="text-align:center">
+  <iframe height="70" frameborder="0" src="about:blank">
+  </iframe>
+</div>
+
+<a href="http://bit.ly/caflaunch"><img src="./Threads_Constraints_in_WM_files/caf_launch_185x220.jpg" border="0"></a>
+
+<ul>
+<li><a href="http://www.oracle.com/technetwork/middleware/weblogic/overview/index.html">WebLogic Server on OTN</a></li>
+<li><a href="http://www.oracle.com/technetwork/java/javaee/overview/index.html">Java EE on OTN</a></li>
+<li><a href="http://forums.oracle.com/forums/category.jspa?categoryID=193">Community</a></li>
+<li><a href="https://codesamples.samplecode.oracle.com/servlets/Scarab/action/ExecuteQuery?query=weblogic_server">Sample Code</a></li>
+</ul><p></p>
+            </div>
+  </div>  
+<!-- End About -->
+
+<!-- Search -->
+  <div id="searchSection">  
+    <h5 class="section-title">Search</h5>
+    <div class="section-body">
+        <script type="text/javascript">
+    function prepareSearchForm() {
+        document.getElementById("searchForm").searchQuery.name = "oq";
+        document.getElementById("searchFilter").innerHTML = "<input type='hidden' id='searchFilteredQuery' name='q' value=''>" +
+                "<br /><input type='checkbox' id='searchScope' checked='true' /><label for='searchScope'>Search only this blog</label>";
+    }
+    function submitSearchForm() {
+        var form = document.getElementById("searchForm");
+        var query = form.searchQuery.value;
+        var urlSearchOp = form.searchOp.value; //searchOp
+        var urlGroup = form.searchGroup.value; //group
+         
+        if (query == null || query == "") {
+            return false;
+        }
+        var filter = " weblog:WebLogicServer";
+        var curUrl = window.location.href;
+        if (form.searchScope.checked && form.searchQuery.value.indexOf(filter) == -1) {
+            form.searchFilteredQuery.value = form.searchQuery.value + filter;
+        }
+        else {
+            form.searchFilteredQuery.value = form.searchQuery.value;
+        }
+
+        						 form.action="https://search.oracle.com/search/search";
+				
+        window.location = form.action + "?search_p_main_operator=" + urlSearchOp + "&group=" + urlGroup +"&q=" + form.searchFilteredQuery.value;
+        return false;
+    }
+</script>
+<form id="searchForm" action="http://search.oracle.com/search/search" onsubmit="return submitSearchForm();" method="get">
+    <input type="hidden" id="searchOp" name="search_p_main_operator" value="all">
+    <input type="hidden" id="searchGroup" name="group" value="Blogs">
+    <label for="searchQuery" title="Enter search term">Enter search term:</label>
+    <br>
+    <input type="text" id="searchQuery" name="oq" class="text" alt="Enter Search Term">
+    <input type="image" class="input-image" id="searchSubmit" alt="Submit Search" title="Submit Search" src="./Threads_Constraints_in_WM_files/search-button.gif">
+    <span id="searchFilter"><input type="hidden" id="searchFilteredQuery" name="q" value=""><br><input type="checkbox" id="searchScope" checked="true"><label for="searchScope">Search only this blog</label></span>
+</form>
+<script type="text/javascript">prepareSearchForm();</script>
+    </div>
+  </div>    
+<!-- End Search -->
+
+<!-- Recent Posts -->
+  <div id="recentSection">  
+                <h5 class="section-title">Recent Posts</h5>
+        <div class="section-body">
+            <ul>
+                                    <li><a href="https://blogs.oracle.com/WebLogicServer/entry/so_what_is_active_gridlink">So what is Active GridLink for RAC?</a></li>
+                                    <li><a href="https://blogs.oracle.com/WebLogicServer/entry/oracle_weblogic_server_and_oracle">Oracle WebLogic Server and Oracle Database: A Robust Infrastructure for your Applications</a></li>
+                                    <li><a href="https://blogs.oracle.com/WebLogicServer/entry/whitepaper_the_department_of_defense">Whitepaper: The Department of Defense (DoD) and Open Source Software</a></li>
+                                    <li><a href="https://blogs.oracle.com/WebLogicServer/entry/virtual_developer_day_for_weblogic">Virtual Developer Day for WebLogic: November 5th</a></li>
+                                    <li><a href="https://blogs.oracle.com/WebLogicServer/entry/avocent_s_vp_of_engineering">Avocent's VP of Engineering: Leveraging WebLogic &amp; More for DCIM Offering </a></li>
+                                    <li><a href="https://blogs.oracle.com/WebLogicServer/entry/another_not_to_miss_openworld">Another not-to-miss OpenWorld Session: WebLogic on Oracle Database Appliance</a></li>
+                                    <li><a href="https://blogs.oracle.com/WebLogicServer/entry/intelligent_integration_weblogic_active_gridlink">OpenWorld Session: Intelligent Integration - WebLogic &amp; Active GridLink for RAC</a></li>
+                                    <li><a href="https://blogs.oracle.com/WebLogicServer/entry/insuring_high_level_of_performance">Ensuring high level of performance with WebLogic JDBC</a></li>
+                                    <li><a href="https://blogs.oracle.com/WebLogicServer/entry/therap_services_helps_support_individuals">Therap Services at OpenWorld: Highlights Support for Individuals with Developmental Disabilities</a></li>
+                                    <li><a href="https://blogs.oracle.com/WebLogicServer/entry/limitations_of_pdb_switching_with">Limitations of PDB Switching with Oracle Database 12.1</a></li>
+                            </ul>
+        </div>
+      </div>    
+<!-- End Recent Posts -->
+
+
+<!-- Top Tags -->
+  <div id="tagsSection">  
+            <h5 class="section-title">Top Tags</h5>
+    <div class="tags section-body">
+        <ul class="tag-cloud">
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/12.1.2" title="2" class="weight-1">12.1.2</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/12c" title="5" class="weight-2">12c</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/6" title="1" class="weight-1">6</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/active" title="7" class="weight-2">active</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/administration" title="2" class="weight-1">administration</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/app" title="6" class="weight-2">app</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/appliance" title="5" class="weight-2">appliance</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/application" title="14" class="weight-3">application</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/Application_Libraries" title="4" class="weight-2">Application_Libraries</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/Application_Management" title="2" class="weight-1">Application_Management</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/application_server" title="2" class="weight-1">application_server</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/Application_Server" title="1" class="weight-1">Application_Server</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/AWS" title="1" class="weight-1">AWS</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/cloud" title="5" class="weight-2">cloud</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/Cloud" title="1" class="weight-1">Cloud</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/coherence" title="5" class="weight-2">coherence</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/data" title="3" class="weight-1">data</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/database" title="20" class="weight-4">database</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/datasource" title="16" class="weight-4">datasource</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/director" title="3" class="weight-1">director</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/EC2" title="1" class="weight-1">EC2</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/eclipse" title="2" class="weight-1">eclipse</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/foundation" title="4" class="weight-2">foundation</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/gridlink" title="7" class="weight-2">gridlink</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/high" title="3" class="weight-1">high</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/in" title="2" class="weight-1">in</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/java" title="5" class="weight-2">java</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/jdbc" title="13" class="weight-3">jdbc</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/jms" title="3" class="weight-1">jms</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/JMX" title="6" class="weight-2">JMX</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/manager" title="2" class="weight-1">manager</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/maven" title="3" class="weight-1">maven</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/memory" title="2" class="weight-1">memory</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/oda" title="4" class="weight-2">oda</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/openworld" title="3" class="weight-1">openworld</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/oracle" title="18" class="weight-4">oracle</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/oracle_coherence" title="2" class="weight-1">oracle_coherence</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/oracle_weblogic" title="3" class="weight-1">oracle_weblogic</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/otd" title="2" class="weight-1">otd</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/rac" title="6" class="weight-2">rac</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/security" title="4" class="weight-2">security</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/server" title="20" class="weight-4">server</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/source" title="2" class="weight-1">source</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/traffic" title="3" class="weight-1">traffic</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/troubleshooting" title="2" class="weight-1">troubleshooting</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/weblogic" title="65" class="weight-5">weblogic</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/WebLogic_Connector_JCA_OC4J" title="2" class="weight-1">WebLogic_Connector_JCA_OC4J</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/weblogic_server" title="11" class="weight-3">weblogic_server</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/WebLogic_Server" title="7" class="weight-2">WebLogic_Server</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/tags/weekly" title="12" class="weight-3">weekly</a></li>
+                </ul>
+    </div>
+    </div>    
+<!-- End Top Tags -->
+    
+
+<!-- Categories -->
+  <div id="categoriesSection">
+    <h5 class="section-title">Categories</h5>
+    <div class="section-body">
+                        <ul class="rCategory">
+                                                                            <li><a href="https://blogs.oracle.com/WebLogicServer/category/Messaging">Messaging</a></li>
+                                                                                            <li><a href="https://blogs.oracle.com/WebLogicServer/category/Oracle">Oracle</a></li>
+            <ul class="rCategory">
+                                                                            <li><a href="https://blogs.oracle.com/WebLogicServer/category/Oracle/Add+category">Add category</a></li>
+                                                                                                            <li><a href="https://blogs.oracle.com/WebLogicServer/category/Oracle/Announcement">Announcement</a></li>
+                                                                                                            <li><a href="https://blogs.oracle.com/WebLogicServer/category/Oracle/Support">Support</a></li>
+                                                                                                            <li><a href="https://blogs.oracle.com/WebLogicServer/category/Oracle/Technical">Technical</a></li>
+                                                                        </ul>
+                                                                    <li><a href="https://blogs.oracle.com/WebLogicServer/category/Persistence">Persistence</a></li>
+                                                                                                            <li><a href="https://blogs.oracle.com/WebLogicServer/category/Weekly">Weekly</a></li>
+                                                                            </ul>
+        </div>
+  </div>
+<!-- End Categories -->
+
+
+<!-- Archives -->
+   <div id="archiveSection">
+    <h5 class="section-title">Archives</h5>
+    <div class="section-body">
+        <table cellspacing="0" border="0" summary="Blog Archive Calendar" class="hCalendarTable"><tbody><tr><td colspan="7" align="center" class="hCalendarMonthYearRow"><a href="https://blogs.oracle.com/WebLogicServer/date/201309" title="Prev" class="hCalendarNavBar">«</a> October 2013</td></tr><tr><th class="hCalendarDayNameRow" align="center">Sun</th><th class="hCalendarDayNameRow" align="center">Mon</th><th class="hCalendarDayNameRow" align="center">Tue</th><th class="hCalendarDayNameRow" align="center">Wed</th><th class="hCalendarDayNameRow" align="center">Thu</th><th class="hCalendarDayNameRow" align="center">Fri</th><th class="hCalendarDayNameRow" align="center">Sat</th></tr><tr><td class="hCalendarDayNotInMonth">&nbsp;</td><td class="hCalendarDayNotInMonth">&nbsp;</td><td class="hCalendarDay"><div class="hCalendarDayTitle">1</div></td><td class="hCalendarDay"><div class="hCalendarDayTitle">2</div></td><td class="hCalendarDayLinked"><div class="hCalendarDayTitle"><a href="https://blogs.oracle.com/WebLogicServer/date/20131003">3</a></div></td><td class="hCalendarDay"><div class="hCalendarDayTitle">4</div></td><td class="hCalendarDay"><div class="hCalendarDayTitle">5</div></td></tr><tr><td class="hCalendarDay"><div class="hCalendarDayTitle">6</div></td><td class="hCalendarDay"><div class="hCalendarDayTitle">7</div></td><td class="hCalendarDay"><div class="hCalendarDayTitle">8</div></td><td class="hCalendarDay"><div class="hCalendarDayTitle">9</div></td><td class="hCalendarDay"><div class="hCalendarDayTitle">10</div></td><td class="hCalendarDayLinked"><div class="hCalendarDayTitle"><a href="https://blogs.oracle.com/WebLogicServer/date/20131011">11</a></div></td><td class="hCalendarDay"><div class="hCalendarDayTitle">12</div></td></tr><tr><td class="hCalendarDay"><div class="hCalendarDayTitle">13</div></td><td class="hCalendarDayLinked"><div class="hCalendarDayTitle"><a href="https://blogs.oracle.com/WebLogicServer/date/20131014">14</a></div></td><td class="hCalendarDay"><div class="hCalendarDayTitle">15</div></td><td class="hCalendarDayLinked"><div class="hCalendarDayTitle"><a href="https://blogs.oracle.com/WebLogicServer/date/20131016">16</a></div></td><td class="hCalendarDayLinked"><div class="hCalendarDayTitle"><a href="https://blogs.oracle.com/WebLogicServer/date/20131017">17</a></div></td><td class="hCalendarDay"><div class="hCalendarDayTitle">18</div></td><td class="hCalendarDay"><div class="hCalendarDayTitle">19</div></td></tr><tr><td class="hCalendarDay"><div class="hCalendarDayTitle">20</div></td><td class="hCalendarDay"><div class="hCalendarDayTitle">21</div></td><td class="hCalendarDay"><div class="hCalendarDayTitle">22</div></td><td class="hCalendarDayCurrent"><div class="hCalendarDayTitle">23</div></td><td class="hCalendarDay"><div class="hCalendarDayTitle">24</div></td><td class="hCalendarDay"><div class="hCalendarDayTitle">25</div></td><td class="hCalendarDay"><div class="hCalendarDayTitle">26</div></td></tr><tr><td class="hCalendarDay"><div class="hCalendarDayTitle">27</div></td><td class="hCalendarDay"><div class="hCalendarDayTitle">28</div></td><td class="hCalendarDay"><div class="hCalendarDayTitle">29</div></td><td class="hCalendarDay"><div class="hCalendarDayTitle">30</div></td><td class="hCalendarDay"><div class="hCalendarDayTitle">31</div></td><td class="hCalendarDayNotInMonth">&nbsp;</td><td class="hCalendarDayNotInMonth">&nbsp;</td></tr><tr><td class="hCalendarDayNotInMonth">&nbsp;</td><td class="hCalendarDayNotInMonth">&nbsp;</td><td class="hCalendarDayNotInMonth">&nbsp;</td><td class="hCalendarDayNotInMonth">&nbsp;</td><td class="hCalendarDayNotInMonth">&nbsp;</td><td class="hCalendarDayNotInMonth">&nbsp;</td><td class="hCalendarDayNotInMonth">&nbsp;</td></tr><tr class="hCalendarNextPrev"><td colspan="7" align="center"><a href="https://blogs.oracle.com/WebLogicServer/" class="hCalendarNavBar">Today</a></td></tr></tbody></table>
+    </div>
+  </div>
+<!-- End Archives -->
+
+<!-- Bookmarks -->
+   <div id="bookmarkSection">
+                    <h5 class="section-title">Useful Links</h5>
+        <div class="section-body">
+                    <ul class="rFolder">
+                    <li class="rFolderItem">
+                                <a href="http://www.oracle.com/technetwork/middleware/weblogic/learnmore/weblogic-javaee6-webcasts-358613.html" title="$bookmark.description" class="rBookmark0">Java EE 6 Support in WebLogic Server</a>
+                </li>
+                    </ul>
+                </div>
+      </div>    
+<!-- End Bookmarks -->
+
+<!-- Blog and Author Menu -->
+   <div id="menuSection">
+    <h5 class="section-title">Menu</h5>
+    <div class="section-body">
+            <ul class="rNavigationBar">
+        <li class="rNavItem">
+            <a href="https://blogs.oracle.com/"><span>Blogs Home</span></a>
+        </li>
+        <li class="rNavItem">
+            <a href="https://blogs.oracle.com/WebLogicServer/"><span>Weblog</span></a>
+        </li>
+                                                                                                                            <li class="rNavItem">
+                    <a href="https://blogs.oracle.com/roller-ui/logout.rol"><span>Logout</span></a>
+                </li>
+                        </ul>
+            </div>
+  </div>    
+<!-- End Blog and Author Menu -->
+
+    
+<!-- Feeds -->
+   <div id="feedsSection">   
+    <h5 class="section-title">Feeds</h5>
+    <div class="section-body">
+        <b>RSS</b>
+            <ul class="rFeeds">
+    <li><a href="https://blogs.oracle.com/WebLogicServer/feed/entries/rss">All</a></li>
+                        <li><a href="https://blogs.oracle.com/WebLogicServer/feed/entries/rss?cat=%2FMessaging">/Messaging</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/feed/entries/rss?cat=%2FOracle">/Oracle</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/feed/entries/rss?cat=%2FPersistence">/Persistence</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/feed/entries/rss?cat=%2FWeekly">/Weekly</a></li>
+        <li><a href="https://blogs.oracle.com/WebLogicServer/feed/comments/rss">Comments</a></li>
+    </ul>
+        <b>Atom</b>    
+            <ul class="rFeeds">
+    <li><a href="https://blogs.oracle.com/WebLogicServer/feed/entries/atom">All</a></li>
+                        <li><a href="https://blogs.oracle.com/WebLogicServer/feed/entries/atom?cat=%2FMessaging">/Messaging</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/feed/entries/atom?cat=%2FOracle">/Oracle</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/feed/entries/atom?cat=%2FPersistence">/Persistence</a></li>
+                    <li><a href="https://blogs.oracle.com/WebLogicServer/feed/entries/atom?cat=%2FWeekly">/Weekly</a></li>
+        <li><a href="https://blogs.oracle.com/WebLogicServer/feed/comments/atom">Comments</a></li>
+    </ul>
+    </div>
+  </div>          
+<!-- End Feeds -->    
+    
+</div>    			</div>
+
+			<!-- Footer -->
+			<div id="footer">
+				<p>The views expressed on this blog are those of the author and do not necessarily reflect the views of Oracle. <a href="http://www.oracle.com/html/terms.html">Terms of Use</a> | <a href="http://www.oracle.com/html/privacy.html">Your Privacy Rights</a> | <span id="teconsent"><script defer="defer" async="async" src="./Threads_Constraints_in_WM_files/notice"></script><script type="text/javascript" src="./Threads_Constraints_in_WM_files/notice(1)"></script>   <a id="icon-id08286851758603007" style="cursor: pointer;">Cookie Preferences</a></span>  </p>
+			</div>
+			<!-- Omniture Script --> 
+<!-- Start SiteCatalyst code -->
+
+<script language="JavaScript" src="./Threads_Constraints_in_WM_files/ora_blogs.js"></script><script type="text/javascript" src="./Threads_Constraints_in_WM_files/ora_code_blogs.js"></script><script type="text/javascript" src="./Threads_Constraints_in_WM_files/ora_code.js"></script>
+
+<!-- End SiteCatalyst code -->
+		</div>
+	
+</body></html>

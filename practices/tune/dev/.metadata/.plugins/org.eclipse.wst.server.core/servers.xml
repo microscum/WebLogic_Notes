@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="1" hostname="localhost" id="Oracle WebLogic Server 12c (12.1.3) at localhost [devdomain]" name="Oracle WebLogic Server 12c (12.1.3) at localhost [devdomain]" runtime-id="Oracle WebLogic Server 12c (12.1.3)" server-type="com.bea.weblogic1213.server" server-type-id="com.bea.weblogic1213.server" start-timeout="480" start_with_debug="true" stop-timeout="240" timestamp="0" weblogic_domain_path="/u01/domains/devdomain/" weblogic_host_name="localhost" weblogic_is_remote="false" weblogic_port="7001" weblogic_use_bootprop="true" weblogic_use_config_xml="true"/>
+</servers>

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!-- ========================================================================
+  == DISCLAIMER:
+  ==    This script is provided for educational purposes only. It is NOT
+  ==    supported by Oracle World Wide Technical Support.
+  ==    The script has been tested and appears to work as intended.
+  ==    You should always run new scripts on a test instance initially.
+  ==
+  ======================================================================== -->
+
+<deployment-plan xmlns="http://xmlns.oracle.com/weblogic/deployment-plan" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.oracle.com/weblogic/deployment-plan http://xmlns.oracle.com/weblogic/deployment-plan/1.0/deployment-plan.xsd" global-variables="false">
+  <application-name>SimpleAuctionWebAppDb2.war</application-name>
+  <variable-definition>
+    <variable>
+      <name>SimpleAuctionWeb_DispatchPolicy</name>
+      <value>LowPriorityWM</value>
+    </variable>
+  </variable-definition>
+  <module-override>
+    <module-name>SimpleAuctionWebAppDb2.war</module-name>
+    <module-type>war</module-type>
+    <module-descriptor external="false">
+      <root-element>weblogic-web-app</root-element>
+      <uri>WEB-INF/weblogic.xml</uri>
+      <variable-assignment>
+        <name>SimpleAuctionWeb_DispatchPolicy</name>
+        <xpath>/weblogic-web-app/wl-dispatch-policy</xpath>
+      </variable-assignment>
+    </module-descriptor>
+  </module-override>
+  <config-root></config-root>
+</deployment-plan>

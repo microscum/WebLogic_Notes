@@ -1,0 +1,21 @@
+INDEX VERSION 1.3+/practices/tune/dev/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+756726097.index
+3241686597.index
+270998949.index
+4170272474.index
+1572568175.index
+1735250605.index
+2263982847.index
+1669708125.index
+151810969.index
+3414171311.index
+1067187081.index
+2583590833.index
+4205673551.index
+1530193312.index
+3354658503.index
+1567836353.index
+2794746451.index
+1246877704.index
+1868221451.index
+203920087.index

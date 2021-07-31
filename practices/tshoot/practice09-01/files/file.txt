@@ -1,0 +1,1 @@
+wlsadmin=/u01/domains/wlsadmin

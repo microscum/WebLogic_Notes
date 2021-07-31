@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="SimpleAuctionDbSLSB_EJB">
+        <wb-resource deploy-path="/" source-path="/ejbModule" tag="defaultRootSource"/>
+        <property name="ClientProject" value="SimpleAuctionDBSLSB_EJBClient"/>
+        <property name="ClientJARURI" value="SimpleAuctionDBSLSB_EJBClient.jar"/>
+        <property name="java-output-path" value="/SimpleAuctionDbSLSB_EJB/build/classes"/>
+    </wb-module>
+</project-modules>

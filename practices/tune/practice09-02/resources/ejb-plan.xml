@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!-- ========================================================================
+  == DISCLAIMER:
+  ==    This script is provided for educational purposes only. It is NOT
+  ==    supported by Oracle World Wide Technical Support.
+  ==    The script has been tested and appears to work as intended.
+  ==    You should always run new scripts on a test instance initially.
+  ==
+  ======================================================================== -->
+
+<deployment-plan xmlns="http://xmlns.oracle.com/weblogic/deployment-plan" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.oracle.com/weblogic/deployment-plan http://xmlns.oracle.com/weblogic/deployment-plan/1.0/deployment-plan.xsd" global-variables="false">
+  <application-name>SimpleAuctionDbSLSB_EAR.ear</application-name>
+  <variable-definition>
+    <variable>
+      <name>EJB_initBeansInFreePool</name>
+      <value>15</value>
+    </variable>
+    <variable>
+      <name>EJB_maxBeansInFreePool</name>
+      <value>30</value>
+    </variable>
+  </variable-definition>
+  <module-override>
+    <module-name>SimpleAuctionDbSLSB_EJB.jar</module-name>
+    <module-type>ejb</module-type>
+    <module-descriptor external="false">
+      <root-element>weblogic-ejb-jar</root-element>
+      <uri>META-INF/weblogic-ejb-jar.xml</uri>
+      <variable-assignment>
+        <name>EJB_initBeansInFreePool</name>
+        <xpath>/weblogic-ejb-jar/weblogic-enterprise-bean/[ejb-name="AuctionService"]/stateless-session-descriptor/pool/initial-beans-in-free-pool</xpath>
+      </variable-assignment>
+      <variable-assignment>
+        <name>EJB_initBeansInFreePool</name>
+        <xpath>/weblogic-ejb-jar/weblogic-enterprise-bean/[ejb-name="ImageService"]/stateless-session-descriptor/pool/initial-beans-in-free-pool</xpath>
+      </variable-assignment>
+      <variable-assignment>
+        <name>EJB_maxBeansInFreePool</name>
+        <xpath>/weblogic-ejb-jar/weblogic-enterprise-bean/[ejb-name="AuctionService"]/stateless-session-descriptor/pool/max-beans-in-free-pool</xpath>
+      </variable-assignment>
+      <variable-assignment>
+        <name>EJB_maxBeansInFreePool</name>
+        <xpath>/weblogic-ejb-jar/weblogic-enterprise-bean/[ejb-name="ImageService"]/stateless-session-descriptor/pool/max-beans-in-free-pool</xpath>
+      </variable-assignment>
+    </module-descriptor>
+  </module-override>
+  <config-root></config-root>
+</deployment-plan>
+

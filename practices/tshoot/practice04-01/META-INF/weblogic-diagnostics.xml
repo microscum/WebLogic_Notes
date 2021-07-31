@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<wldf-resource xmlns="http://www.bea.com/ns/weblogic/90/diagnostics">
+  <instrumentation>
+    <enabled>true</enabled>
+  </instrumentation>
+</wldf-resource>

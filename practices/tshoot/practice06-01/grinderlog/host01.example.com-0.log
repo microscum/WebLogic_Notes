@@ -1,0 +1,150 @@
+2014-10-30 04:32:08,785 INFO  com-0 : The Grinder version 3.11
+2014-10-30 04:32:08,788 INFO  com-0 : Java(TM) SE Runtime Environment 1.7.0_67-b01: Java HotSpot(TM) 64-Bit Server VM (24.65-b04, mixed mode) on Linux amd64 2.6.32-279.19.1.el6.x86_64
+2014-10-30 04:32:08,792 INFO  com-0 : time zone is PDT (-0700)
+2014-10-30 04:32:08,857 INFO  com-0 : worker process 0
+2014-10-30 04:32:08,915 INFO  com-0 : instrumentation agents: byte code transforming instrumenter for Jython 2.5; byte code transforming instrumenter for Java
+2014-10-30 04:32:11,276 INFO  com-0 : registered plug-in net.grinder.plugin.http.HTTPPlugin
+2014-10-30 04:32:11,520 INFO  com-0 : running "grinder.py" using Jython 2.5.3 (2.5:c56500f08d34+, Aug 13 2012, 14:54:35) 
+[Java HotSpot(TM) 64-Bit Server VM (Oracle Corporation)]
+2014-10-30 04:32:11,576 INFO  com-0 thread-5: starting, will do 250 runs
+2014-10-30 04:32:11,576 INFO  com-0 thread-3: starting, will do 250 runs
+2014-10-30 04:32:11,576 INFO  com-0 thread-4: starting, will do 250 runs
+2014-10-30 04:32:11,577 INFO  com-0 thread-2: starting, will do 250 runs
+2014-10-30 04:32:11,577 INFO  com-0 thread-6: starting, will do 250 runs
+2014-10-30 04:32:11,577 INFO  com-0 thread-1: starting, will do 250 runs
+2014-10-30 04:32:11,577 INFO  com-0 thread-0: starting, will do 250 runs
+2014-10-30 04:32:11,578 INFO  com-0 thread-7: starting, will do 250 runs
+2014-10-30 04:32:11,579 INFO  com-0 thread-8: starting, will do 250 runs
+2014-10-30 04:32:11,580 INFO  com-0 thread-9: starting, will do 250 runs
+2014-10-30 04:32:11,581 INFO  com-0 thread-10: starting, will do 250 runs
+2014-10-30 04:32:11,581 INFO  com-0 thread-11: starting, will do 250 runs
+2014-10-30 04:32:11,582 INFO  com-0 thread-12: starting, will do 250 runs
+2014-10-30 04:32:11,583 INFO  com-0 thread-13: starting, will do 250 runs
+2014-10-30 04:32:11,585 INFO  com-0 thread-14: starting, will do 250 runs
+2014-10-30 04:32:11,585 INFO  com-0 thread-15: starting, will do 250 runs
+2014-10-30 04:32:11,586 INFO  com-0 thread-16: starting, will do 250 runs
+2014-10-30 04:32:11,586 INFO  com-0 thread-17: starting, will do 250 runs
+2014-10-30 04:32:11,588 INFO  com-0 thread-18: starting, will do 250 runs
+2014-10-30 04:32:11,588 INFO  com-0 thread-19: starting, will do 250 runs
+2014-10-30 04:32:11,588 INFO  com-0 : start time is 1414668731588 ms since Epoch
+2014-10-30 04:32:11,591 INFO  com-0 thread-3: sleeping for 1483 ms
+2014-10-30 04:32:11,591 INFO  com-0 thread-4: sleeping for 861 ms
+2014-10-30 04:32:11,591 INFO  com-0 thread-2: sleeping for 2499 ms
+2014-10-30 04:32:11,591 INFO  com-0 thread-5: sleeping for 1570 ms
+2014-10-30 04:32:11,591 INFO  com-0 thread-6: sleeping for 566 ms
+2014-10-30 04:32:11,591 INFO  com-0 thread-0: sleeping for 357 ms
+2014-10-30 04:32:11,591 INFO  com-0 thread-7: sleeping for 1937 ms
+2014-10-30 04:32:11,591 INFO  com-0 thread-8: sleeping for 21 ms
+2014-10-30 04:32:11,591 INFO  com-0 thread-9: sleeping for 3724 ms
+2014-10-30 04:32:11,591 INFO  com-0 thread-10: sleeping for 1768 ms
+2014-10-30 04:32:11,591 INFO  com-0 thread-11: sleeping for 327 ms
+2014-10-30 04:32:11,591 INFO  com-0 thread-12: sleeping for 596 ms
+2014-10-30 04:32:11,592 INFO  com-0 thread-13: sleeping for 36 ms
+2014-10-30 04:32:11,592 INFO  com-0 thread-14: sleeping for 4668 ms
+2014-10-30 04:32:11,592 INFO  com-0 thread-15: sleeping for 2009 ms
+2014-10-30 04:32:11,592 INFO  com-0 thread-16: sleeping for 1996 ms
+2014-10-30 04:32:11,592 INFO  com-0 thread-17: sleeping for 2377 ms
+2014-10-30 04:32:11,591 INFO  com-0 thread-1: sleeping for 4090 ms
+2014-10-30 04:32:11,592 INFO  com-0 thread-18: sleeping for 3185 ms
+2014-10-30 04:32:11,592 INFO  com-0 thread-19: sleeping for 3246 ms
+2014-10-30 04:32:11,675 INFO  com-0 thread-13 [ run-0, test-101 ]: http://host01.example.com:7011/contacts -> 302 Moved Temporarily, 277 bytes [Redirect, ensure the next URL is http://host01.example.com:7011/contacts/]
+2014-10-30 04:32:11,675 INFO  com-0 thread-8 [ run-0, test-101 ]: http://host01.example.com:7011/contacts -> 302 Moved Temporarily, 277 bytes [Redirect, ensure the next URL is http://host01.example.com:7011/contacts/]
+2014-10-30 04:32:11,688 INFO  com-0 thread-13 [ run-0, test-102 ]: http://host01.example.com:7011/contacts/ -> 200 OK, 405 bytes
+2014-10-30 04:32:11,688 INFO  com-0 thread-8 [ run-0, test-102 ]: http://host01.example.com:7011/contacts/ -> 200 OK, 405 bytes
+2014-10-30 04:32:11,691 INFO  com-0 thread-13 [ run-0 ]: sleeping for 19 ms
+2014-10-30 04:32:11,691 INFO  com-0 thread-8 [ run-0 ]: sleeping for 20 ms
+2014-10-30 04:32:11,714 INFO  com-0 thread-13 [ run-0, test-103 ]: http://host01.example.com:7011/contacts/css/styles.css -> 200 OK, 532 bytes
+2014-10-30 04:32:11,714 INFO  com-0 thread-13 [ run-0 ]: sleeping for 4961 ms
+2014-10-30 04:32:11,714 INFO  com-0 thread-8 [ run-0, test-103 ]: http://host01.example.com:7011/contacts/css/styles.css -> 200 OK, 532 bytes
+2014-10-30 04:32:11,715 INFO  com-0 thread-8 [ run-0 ]: sleeping for 4764 ms
+2014-10-30 04:32:11,922 INFO  com-0 thread-11 [ run-0, test-101 ]: http://host01.example.com:7011/contacts -> 302 Moved Temporarily, 277 bytes [Redirect, ensure the next URL is http://host01.example.com:7011/contacts/]
+2014-10-30 04:32:11,924 INFO  com-0 thread-11 [ run-0, test-102 ]: http://host01.example.com:7011/contacts/ -> 200 OK, 405 bytes
+2014-10-30 04:32:11,925 INFO  com-0 thread-11 [ run-0 ]: sleeping for 20 ms
+2014-10-30 04:32:11,947 INFO  com-0 thread-11 [ run-0, test-103 ]: http://host01.example.com:7011/contacts/css/styles.css -> 200 OK, 532 bytes
+2014-10-30 04:32:11,947 INFO  com-0 thread-11 [ run-0 ]: sleeping for 4852 ms
+2014-10-30 04:32:11,951 INFO  com-0 thread-0 [ run-0, test-101 ]: http://host01.example.com:7011/contacts -> 302 Moved Temporarily, 277 bytes [Redirect, ensure the next URL is http://host01.example.com:7011/contacts/]
+2014-10-30 04:32:11,953 INFO  com-0 thread-0 [ run-0, test-102 ]: http://host01.example.com:7011/contacts/ -> 200 OK, 405 bytes
+2014-10-30 04:32:11,954 INFO  com-0 thread-0 [ run-0 ]: sleeping for 20 ms
+2014-10-30 04:32:11,976 INFO  com-0 thread-0 [ run-0, test-103 ]: http://host01.example.com:7011/contacts/css/styles.css -> 200 OK, 532 bytes
+2014-10-30 04:32:11,976 INFO  com-0 thread-0 [ run-0 ]: sleeping for 4627 ms
+2014-10-30 04:32:12,160 INFO  com-0 thread-6 [ run-0, test-101 ]: http://host01.example.com:7011/contacts -> 302 Moved Temporarily, 277 bytes [Redirect, ensure the next URL is http://host01.example.com:7011/contacts/]
+2014-10-30 04:32:12,161 INFO  com-0 thread-6 [ run-0, test-102 ]: http://host01.example.com:7011/contacts/ -> 200 OK, 405 bytes
+2014-10-30 04:32:12,162 INFO  com-0 thread-6 [ run-0 ]: sleeping for 20 ms
+2014-10-30 04:32:12,184 INFO  com-0 thread-6 [ run-0, test-103 ]: http://host01.example.com:7011/contacts/css/styles.css -> 200 OK, 532 bytes
+2014-10-30 04:32:12,185 INFO  com-0 thread-6 [ run-0 ]: sleeping for 4805 ms
+2014-10-30 04:32:12,191 INFO  com-0 thread-12 [ run-0, test-101 ]: http://host01.example.com:7011/contacts -> 302 Moved Temporarily, 277 bytes [Redirect, ensure the next URL is http://host01.example.com:7011/contacts/]
+2014-10-30 04:32:12,193 INFO  com-0 thread-12 [ run-0, test-102 ]: http://host01.example.com:7011/contacts/ -> 200 OK, 405 bytes
+2014-10-30 04:32:12,194 INFO  com-0 thread-12 [ run-0 ]: sleeping for 19 ms
+2014-10-30 04:32:12,217 INFO  com-0 thread-12 [ run-0, test-103 ]: http://host01.example.com:7011/contacts/css/styles.css -> 200 OK, 532 bytes
+2014-10-30 04:32:12,219 INFO  com-0 thread-12 [ run-0 ]: sleeping for 4722 ms
+2014-10-30 04:32:12,454 INFO  com-0 thread-4 [ run-0, test-101 ]: http://host01.example.com:7011/contacts -> 302 Moved Temporarily, 277 bytes [Redirect, ensure the next URL is http://host01.example.com:7011/contacts/]
+2014-10-30 04:32:12,456 INFO  com-0 thread-4 [ run-0, test-102 ]: http://host01.example.com:7011/contacts/ -> 200 OK, 405 bytes
+2014-10-30 04:32:12,457 INFO  com-0 thread-4 [ run-0 ]: sleeping for 20 ms
+2014-10-30 04:32:12,479 INFO  com-0 thread-4 [ run-0, test-103 ]: http://host01.example.com:7011/contacts/css/styles.css -> 200 OK, 532 bytes
+2014-10-30 04:32:12,479 INFO  com-0 thread-4 [ run-0 ]: sleeping for 4629 ms
+2014-10-30 04:32:13,078 INFO  com-0 thread-3 [ run-0, test-101 ]: http://host01.example.com:7011/contacts -> 302 Moved Temporarily, 277 bytes [Redirect, ensure the next URL is http://host01.example.com:7011/contacts/]
+2014-10-30 04:32:13,080 INFO  com-0 thread-3 [ run-0, test-102 ]: http://host01.example.com:7011/contacts/ -> 200 OK, 405 bytes
+2014-10-30 04:32:13,081 INFO  com-0 thread-3 [ run-0 ]: sleeping for 19 ms
+2014-10-30 04:32:13,102 INFO  com-0 thread-3 [ run-0, test-103 ]: http://host01.example.com:7011/contacts/css/styles.css -> 200 OK, 532 bytes
+2014-10-30 04:32:13,102 INFO  com-0 thread-3 [ run-0 ]: sleeping for 4829 ms
+2014-10-30 04:32:13,163 INFO  com-0 thread-5 [ run-0, test-101 ]: http://host01.example.com:7011/contacts -> 302 Moved Temporarily, 277 bytes [Redirect, ensure the next URL is http://host01.example.com:7011/contacts/]
+2014-10-30 04:32:13,165 INFO  com-0 thread-5 [ run-0, test-102 ]: http://host01.example.com:7011/contacts/ -> 200 OK, 405 bytes
+2014-10-30 04:32:13,166 INFO  com-0 thread-5 [ run-0 ]: sleeping for 20 ms
+2014-10-30 04:32:13,188 INFO  com-0 thread-5 [ run-0, test-103 ]: http://host01.example.com:7011/contacts/css/styles.css -> 200 OK, 532 bytes
+2014-10-30 04:32:13,188 INFO  com-0 thread-5 [ run-0 ]: sleeping for 5041 ms
+2014-10-30 04:32:13,362 INFO  com-0 thread-10 [ run-0, test-101 ]: http://host01.example.com:7011/contacts -> 302 Moved Temporarily, 277 bytes [Redirect, ensure the next URL is http://host01.example.com:7011/contacts/]
+2014-10-30 04:32:13,364 INFO  com-0 thread-10 [ run-0, test-102 ]: http://host01.example.com:7011/contacts/ -> 200 OK, 405 bytes
+2014-10-30 04:32:13,364 INFO  com-0 thread-10 [ run-0 ]: sleeping for 21 ms
+2014-10-30 04:32:13,388 INFO  com-0 thread-10 [ run-0, test-103 ]: http://host01.example.com:7011/contacts/css/styles.css -> 200 OK, 532 bytes
+2014-10-30 04:32:13,388 INFO  com-0 thread-10 [ run-0 ]: sleeping for 4662 ms
+2014-10-30 04:32:13,531 INFO  com-0 thread-7 [ run-0, test-101 ]: http://host01.example.com:7011/contacts -> 302 Moved Temporarily, 277 bytes [Redirect, ensure the next URL is http://host01.example.com:7011/contacts/]
+2014-10-30 04:32:13,532 INFO  com-0 thread-7 [ run-0, test-102 ]: http://host01.example.com:7011/contacts/ -> 200 OK, 405 bytes
+2014-10-30 04:32:13,535 INFO  com-0 thread-7 [ run-0 ]: sleeping for 20 ms
+2014-10-30 04:32:13,557 INFO  com-0 thread-7 [ run-0, test-103 ]: http://host01.example.com:7011/contacts/css/styles.css -> 200 OK, 532 bytes
+2014-10-30 04:32:13,558 INFO  com-0 thread-7 [ run-0 ]: sleeping for 4770 ms
+2014-10-30 04:32:13,591 INFO  com-0 thread-16 [ run-0, test-101 ]: http://host01.example.com:7011/contacts -> 302 Moved Temporarily, 277 bytes [Redirect, ensure the next URL is http://host01.example.com:7011/contacts/]
+2014-10-30 04:32:13,593 INFO  com-0 thread-16 [ run-0, test-102 ]: http://host01.example.com:7011/contacts/ -> 200 OK, 405 bytes
+2014-10-30 04:32:13,593 INFO  com-0 thread-16 [ run-0 ]: sleeping for 18 ms
+2014-10-30 04:32:13,603 INFO  com-0 thread-15 [ run-0, test-101 ]: http://host01.example.com:7011/contacts -> 302 Moved Temporarily, 277 bytes [Redirect, ensure the next URL is http://host01.example.com:7011/contacts/]
+2014-10-30 04:32:13,605 INFO  com-0 thread-15 [ run-0, test-102 ]: http://host01.example.com:7011/contacts/ -> 200 OK, 405 bytes
+2014-10-30 04:32:13,605 INFO  com-0 thread-15 [ run-0 ]: sleeping for 20 ms
+2014-10-30 04:32:13,613 INFO  com-0 thread-16 [ run-0, test-103 ]: http://host01.example.com:7011/contacts/css/styles.css -> 200 OK, 532 bytes
+2014-10-30 04:32:13,613 INFO  com-0 thread-16 [ run-0 ]: sleeping for 4255 ms
+2014-10-30 04:32:13,627 INFO  com-0 thread-15 [ run-0, test-103 ]: http://host01.example.com:7011/contacts/css/styles.css -> 200 OK, 532 bytes
+2014-10-30 04:32:13,627 INFO  com-0 thread-15 [ run-0 ]: sleeping for 5449 ms
+2014-10-30 04:32:13,972 INFO  com-0 thread-17 [ run-0, test-101 ]: http://host01.example.com:7011/contacts -> 302 Moved Temporarily, 277 bytes [Redirect, ensure the next URL is http://host01.example.com:7011/contacts/]
+2014-10-30 04:32:13,974 INFO  com-0 thread-17 [ run-0, test-102 ]: http://host01.example.com:7011/contacts/ -> 200 OK, 405 bytes
+2014-10-30 04:32:13,975 INFO  com-0 thread-17 [ run-0 ]: sleeping for 19 ms
+2014-10-30 04:32:13,996 INFO  com-0 thread-17 [ run-0, test-103 ]: http://host01.example.com:7011/contacts/css/styles.css -> 200 OK, 532 bytes
+2014-10-30 04:32:13,996 INFO  com-0 thread-17 [ run-0 ]: sleeping for 5141 ms
+2014-10-30 04:32:14,093 INFO  com-0 thread-2 [ run-0, test-101 ]: http://host01.example.com:7011/contacts -> 302 Moved Temporarily, 277 bytes [Redirect, ensure the next URL is http://host01.example.com:7011/contacts/]
+2014-10-30 04:32:14,094 INFO  com-0 thread-2 [ run-0, test-102 ]: http://host01.example.com:7011/contacts/ -> 200 OK, 405 bytes
+2014-10-30 04:32:14,095 INFO  com-0 thread-2 [ run-0 ]: sleeping for 21 ms
+2014-10-30 04:32:14,118 INFO  com-0 thread-2 [ run-0, test-103 ]: http://host01.example.com:7011/contacts/css/styles.css -> 200 OK, 532 bytes
+2014-10-30 04:32:14,118 INFO  com-0 thread-2 [ run-0 ]: sleeping for 4791 ms
+2014-10-30 04:32:14,780 INFO  com-0 thread-18 [ run-0, test-101 ]: http://host01.example.com:7011/contacts -> 302 Moved Temporarily, 277 bytes [Redirect, ensure the next URL is http://host01.example.com:7011/contacts/]
+2014-10-30 04:32:14,782 INFO  com-0 thread-18 [ run-0, test-102 ]: http://host01.example.com:7011/contacts/ -> 200 OK, 405 bytes
+2014-10-30 04:32:14,783 INFO  com-0 thread-18 [ run-0 ]: sleeping for 18 ms
+2014-10-30 04:32:14,803 INFO  com-0 thread-18 [ run-0, test-103 ]: http://host01.example.com:7011/contacts/css/styles.css -> 200 OK, 532 bytes
+2014-10-30 04:32:14,803 INFO  com-0 thread-18 [ run-0 ]: sleeping for 4626 ms
+2014-10-30 04:32:14,840 INFO  com-0 thread-19 [ run-0, test-101 ]: http://host01.example.com:7011/contacts -> 302 Moved Temporarily, 277 bytes [Redirect, ensure the next URL is http://host01.example.com:7011/contacts/]
+2014-10-30 04:32:14,842 INFO  com-0 thread-19 [ run-0, test-102 ]: http://host01.example.com:7011/contacts/ -> 200 OK, 405 bytes
+2014-10-30 04:32:14,843 INFO  com-0 thread-19 [ run-0 ]: sleeping for 20 ms
+2014-10-30 04:32:14,865 INFO  com-0 thread-19 [ run-0, test-103 ]: http://host01.example.com:7011/contacts/css/styles.css -> 200 OK, 532 bytes
+2014-10-30 04:32:14,865 INFO  com-0 thread-19 [ run-0 ]: sleeping for 4951 ms
+2014-10-30 04:32:15,319 INFO  com-0 thread-9 [ run-0, test-101 ]: http://host01.example.com:7011/contacts -> 302 Moved Temporarily, 277 bytes [Redirect, ensure the next URL is http://host01.example.com:7011/contacts/]
+2014-10-30 04:32:15,321 INFO  com-0 thread-9 [ run-0, test-102 ]: http://host01.example.com:7011/contacts/ -> 200 OK, 405 bytes
+2014-10-30 04:32:15,322 INFO  com-0 thread-9 [ run-0 ]: sleeping for 20 ms
+2014-10-30 04:32:15,343 INFO  com-0 thread-9 [ run-0, test-103 ]: http://host01.example.com:7011/contacts/css/styles.css -> 200 OK, 532 bytes
+2014-10-30 04:32:15,344 INFO  com-0 thread-9 [ run-0 ]: sleeping for 5437 ms
+2014-10-30 04:32:15,684 INFO  com-0 thread-1 [ run-0, test-101 ]: http://host01.example.com:7011/contacts -> 302 Moved Temporarily, 277 bytes [Redirect, ensure the next URL is http://host01.example.com:7011/contacts/]
+2014-10-30 04:32:15,686 INFO  com-0 thread-1 [ run-0, test-102 ]: http://host01.example.com:7011/contacts/ -> 200 OK, 405 bytes
+2014-10-30 04:32:15,687 INFO  com-0 thread-1 [ run-0 ]: sleeping for 19 ms
+2014-10-30 04:32:15,707 INFO  com-0 thread-1 [ run-0, test-103 ]: http://host01.example.com:7011/contacts/css/styles.css -> 200 OK, 532 bytes
+2014-10-30 04:32:15,707 INFO  com-0 thread-1 [ run-0 ]: sleeping for 5201 ms
+2014-10-30 04:32:16,262 INFO  com-0 thread-14 [ run-0, test-101 ]: http://host01.example.com:7011/contacts -> 302 Moved Temporarily, 277 bytes [Redirect, ensure the next URL is http://host01.example.com:7011/contacts/]
+2014-10-30 04:32:16,264 INFO  com-0 thread-14 [ run-0, test-102 ]: http://host01.example.com:7011/contacts/ -> 200 OK, 405 bytes
+2014-10-30 04:32:16,265 INFO  com-0 thread-14 [ run-0 ]: sleeping for 20 ms
+2014-10-30 04:32:16,287 INFO  com-0 thread-14 [ run-0, test-103 ]: http://host01.example.com:7011/contacts/css/styles.css -> 200 OK, 532 bytes
+2014-10-30 04:32:16,287 INFO  com-0 thread-14 [ run-0 ]: sleeping for 5405 ms
+2014-10-30 04:35:59,014 INFO  com-0 : communication shut down
