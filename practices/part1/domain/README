@@ -1,0 +1,18 @@
+This folder contains the original domain that is created by students up to practice 6-1.
+
+It is available to enable an easy way to return the domain to a working original state
+in case anything goes wrong or a domain becomes corrupted.
+
+Use the following commands to restore the original domain:
+
+Host01:
+rm -rf /u01/domains/part1/wlsadmin
+cd /practices/part1/domain
+unzip wlsadmin.host01.zip -d /u01/domains/part1
+
+Host02:
+rm -rf /u01/domains/part1/wlsadmin
+cd /practices/part1/domain
+unzip wlsadmin.host02.zip -d /u01/domains/part1
+
+

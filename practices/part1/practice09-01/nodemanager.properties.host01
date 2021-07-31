@@ -1,0 +1,27 @@
+#Thu Feb 28 14:29:01 UTC 2013
+#Node manager properties
+#Mon Feb 25 14:39:14 UTC 2013
+DomainsFile=/u01/domains/part1/wlsadmin/nodemanager/nodemanager.domains
+LogLimit=0
+PropertiesVersion=12.1.2
+AuthenticationEnabled=true
+NodeManagerHome=/u01/domains/part1/wlsadmin/nodemanager
+JavaHome=/u01/app/jdk
+LogLevel=INFO
+DomainsFileEnabled=true
+StartScriptName=startWebLogic.sh
+ListenAddress=host01.example.com
+NativeVersionEnabled=true
+ListenPort=5556
+LogToStderr=true
+SecureListener=false
+LogCount=1
+StopScriptEnabled=false
+QuitEnabled=false
+LogAppend=true
+StateCheckInterval=500
+CrashRecoveryEnabled=false
+StartScriptEnabled=true
+LogFile=/u01/domains/part1/wlsadmin/nodemanager/nodemanager.log
+LogFormatter=weblogic.nodemanager.server.LogFormatter
+ListenBacklog=50
