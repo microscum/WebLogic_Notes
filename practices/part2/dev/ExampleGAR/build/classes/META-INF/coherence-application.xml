@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ========================================================================
+  == DISCLAIMER:
+  ==    This script is provided for educational purposes only. It is NOT
+  ==    supported by Oracle World Wide Technical Support.
+  ==    The script has been tested and appears to work as intended.
+  ==    You should always run new scripts on a test instance initially.
+  ==
+  ======================================================================== -->
+
+<coherence-application xmlns="http://xmlns.oracle.com/weblogic/coherence-application" >
+<!-- 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://xmlns.oracle.com/weblogic/coherence-application http://xmlns.oracle.com/weblogic/coherence-application/1.0/coherence-application.xsd">
+ -->
+
+  <cache-configuration-ref override-property = "cache-config/ExamplesGar">META-INF/container-cache-config.xml</cache-configuration-ref>  
+  <pof-configuration-ref>META-INF/pof-config.xml</pof-configuration-ref>
+  <application-lifecycle-listener>
+      <class-name>com.tangosol.examples.container.gar.LifecycleReactor</class-name>
+  </application-lifecycle-listener>
+</coherence-application>

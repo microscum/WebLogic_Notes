@@ -1,0 +1,59 @@
+# Modify these values as necessary
+url = 'host01:7011'
+username = 'weblogic'
+password = 'Welcome1'
+wmNames = ['HighPriorityWM','LowPriorityWM']
+rqNames = ['FairShare90','FairShare10']
+rqFairShare = [90,10]
+targetName = 'cluster1'
+
+# Connect to administration server
+connect(username, password, url)
+
+edit()
+startEdit()
+cd('/')
+
+# Check if first work manager already exists
+for i, wmname in enumerate(wmNames):
+  try:
+    cd('/SelfTuning/' + domainName + '/WorkManagers/' + wmname)
+  except WLSTException:
+    print 'The Work Manager ' + wmname + ' does not exist. Nothing to delete.'
+    continue
+
+  #Process each work manager
+  rqname = rqNames[i]
+  rqshare = rqFairShare[i]
+
+  stMBean=getMBean('/SelfTuning/' + domainName)
+  
+edit()
+startEdit()
+stMBean=getMBean("/SelfTuning/" + domainName)
+for workManager in wmNames:
+    wmMBean=getMBean("/SelfTuning/" + domainName + "/WorkManagers/" + workManager['NAME'])
+    if wmMBean != None:
+        stMBean.destroyWorkManager(wmMBean)
+
+for fairShare in rqNames:
+    fsMBean=getMBean("/SelfTuning/" + domainName + "/MaxThreadsConstraints/" + fairShare['NAME'])
+    if fsMBean != None:
+        print "destroying max threads constraints...."
+        stMBean.destroyMaxThreadsConstraint(mtcMBean)
+        print "destroyed max threads constraint"
+ 
+
+
+
+
+
+
+#Activate changes, if any
+save()
+activate(block='true')
+print 'Work Managers deleted successfully.'
+
+
+
+

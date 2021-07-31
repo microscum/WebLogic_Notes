@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ShoppingCart/WebContent/pages/css/dizzycomm.css&apos; to &apos;shoppingcart.css&apos;" description="Rename resource &apos;dizzycomm.css&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/pages/css/dizzycomm.css" name="shoppingcart.css" stamp="1360320769365" updateReferences="true"/>
+</session>

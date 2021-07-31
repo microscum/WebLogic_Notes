@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ========================================================================
+  == DISCLAIMER:
+  ==    This script is provided for educational purposes only. It is NOT
+  ==    supported by Oracle World Wide Technical Support.
+  ==    The script has been tested and appears to work as intended.
+  ==    You should always run new scripts on a test instance initially.
+  ==
+  ======================================================================== -->
+
+<faceted-project>
+  <runtime name="Oracle WebLogic Server 12c (12.1.2)"/>
+  <fixed facet="wst.jsdt.web"/>
+  <fixed facet="java"/>
+  <fixed facet="jst.web"/>
+  <installed facet="java" version="1.7"/>
+  <installed facet="jst.web" version="3.0"/>
+  <installed facet="wls.web" version="12.1.2"/>
+  <installed facet="wst.jsdt.web" version="1.0"/>
+</faceted-project>

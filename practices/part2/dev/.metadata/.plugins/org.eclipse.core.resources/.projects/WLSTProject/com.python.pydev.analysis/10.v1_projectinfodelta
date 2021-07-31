@@ -1,0 +1,10 @@
+INSTUPjdbc.deleteMultiDataSource
+/practices/part2/dev/WLSTProject/wlst/jdbc/deleteMultiDataSource.py
+INFOS:&&3|1|2|0&&3|3|2|0&&3|4|2|0&&3|5|2|0&&3|6|2|0&&3|7|2|0
+username=3
+dsJNDIName=6
+targetName=7
+dsName=5
+password=4
+url=1
+jdbc.deleteMultiDataSource=2

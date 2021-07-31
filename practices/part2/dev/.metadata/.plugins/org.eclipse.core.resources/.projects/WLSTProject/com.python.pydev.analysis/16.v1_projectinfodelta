@@ -1,0 +1,16 @@
+INSTUPmonitor.monitorapp
+/practices/part2/dev/WLSTProject/wlst/monitor/monitorapp.py
+INFOS:&&3|1|2|0&&3|3|2|0&&3|4|2|0&&3|5|2|0&&3|6|2|0&&3|7|2|0&&3|8|2|0&&3|9|2|0&&3|10|2|0&&3|11|2|0&&3|12|2|0&&3|8|2|0&&3|13|2|0&&3|9|2|0
+appWM=13
+sessions=8
+appWebRoot=6
+monitor.monitorapp=2
+webModule=12
+password=4
+url=1
+rc=11
+appName=5
+invokeCount=9
+username=3
+servers=10
+wmName=7

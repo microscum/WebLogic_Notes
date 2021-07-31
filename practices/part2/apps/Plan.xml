@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!-- ========================================================================
+  == DISCLAIMER:
+  ==    This script is provided for educational purposes only. It is NOT
+  ==    supported by Oracle World Wide Technical Support.
+  ==    The script has been tested and appears to work as intended.
+  ==    You should always run new scripts on a test instance initially.
+  ==
+  ======================================================================== -->
+
+<deployment-plan xmlns="http://xmlns.oracle.com/weblogic/deployment-plan" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.oracle.com/weblogic/deployment-plan http://xmlns.oracle.com/weblogic/deployment-plan/1.0/deployment-plan.xsd">
+  <application-name>SimpleAuctionWebAppDbSec.war</application-name>
+  <variable-definition>
+    <variable>
+      <name>ServletDescriptor_AuctionImageServlet_ServletName_13620078440150</name>
+      <value>AuctionImageServlet</value>
+    </variable>
+    <variable>
+      <name>ServletDescriptor_BidServlet_ServletName_13620078440181</name>
+      <value>BidServlet</value>
+    </variable>
+    <variable>
+      <name>ServletDescriptor_CreateAuctionServlet_ServletName_13620078440212</name>
+      <value>CreateAuctionServlet</value>
+    </variable>
+    <variable>
+      <name>ServletDescriptor_SetupServlet_ServletName_13620078440243</name>
+      <value>SetupServlet</value>
+    </variable>
+    <variable>
+      <name>ServletDescriptor_LogoutServlet_ServletName_13620078440274</name>
+      <value>LogoutServlet</value>
+    </variable>
+    <variable>
+      <name>ServletDescriptor_ListServlet_ServletName_13620078440305</name>
+      <value>ListServlet</value>
+    </variable>
+    <variable>
+      <name>ServletDescriptor_DetailServlet_ServletName_13620078440336</name>
+      <value>DetailServlet</value>
+    </variable>
+    <variable>
+      <name>PersistenceUnit_AuctionPU_jtaDataSource_13620081523747</name>
+      <value>jdbc/AuctionDB</value>
+    </variable>
+  </variable-definition>
+  <module-override>
+    <module-name>SimpleAuctionWebAppDbSec.war</module-name>
+    <module-type>war</module-type>
+    <module-descriptor external="false">
+      <root-element>weblogic-web-app</root-element>
+      <uri>WEB-INF/weblogic.xml</uri>
+      <variable-assignment>
+        <name>ServletDescriptor_AuctionImageServlet_ServletName_13620078440150</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="AuctionImageServlet"]/servlet-name</xpath>
+        <origin>planbased</origin>
+      </variable-assignment>
+      <variable-assignment>
+        <name>ServletDescriptor_BidServlet_ServletName_13620078440181</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="BidServlet"]/servlet-name</xpath>
+        <origin>planbased</origin>
+      </variable-assignment>
+      <variable-assignment>
+        <name>ServletDescriptor_CreateAuctionServlet_ServletName_13620078440212</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="CreateAuctionServlet"]/servlet-name</xpath>
+        <origin>planbased</origin>
+      </variable-assignment>
+      <variable-assignment>
+        <name>ServletDescriptor_SetupServlet_ServletName_13620078440243</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="SetupServlet"]/servlet-name</xpath>
+        <origin>planbased</origin>
+      </variable-assignment>
+      <variable-assignment>
+        <name>ServletDescriptor_LogoutServlet_ServletName_13620078440274</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="LogoutServlet"]/servlet-name</xpath>
+        <origin>planbased</origin>
+      </variable-assignment>
+      <variable-assignment>
+        <name>ServletDescriptor_ListServlet_ServletName_13620078440305</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="ListServlet"]/servlet-name</xpath>
+        <origin>planbased</origin>
+      </variable-assignment>
+      <variable-assignment>
+        <name>ServletDescriptor_DetailServlet_ServletName_13620078440336</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="DetailServlet"]/servlet-name</xpath>
+        <origin>planbased</origin>
+      </variable-assignment>
+    </module-descriptor>
+    <module-descriptor external="false">
+      <root-element>web-app</root-element>
+      <uri>WEB-INF/web.xml</uri>
+    </module-descriptor>
+    <module-descriptor external="true">
+      <root-element>wldf-resource</root-element>
+      <uri>META-INF/weblogic-diagnostics.xml</uri>
+    </module-descriptor>
+    <module-descriptor external="true">
+      <root-element>persistence-configuration</root-element>
+      <uri>WEB-INF/classes/META-INF/persistence-configuration.xml</uri>
+    </module-descriptor>
+    <module-descriptor external="false">
+      <root-element>persistence</root-element>
+      <uri>WEB-INF/classes/META-INF/persistence.xml</uri>
+      <variable-assignment>
+        <name>PersistenceUnit_AuctionPU_jtaDataSource_13620081523747</name>
+        <xpath>/persistence/persistence-unit[name="AuctionPU"]/jta-data-source</xpath>
+      </variable-assignment>
+    </module-descriptor>
+  </module-override>
+  <config-root>/practices/part2/apps/solution/plan</config-root>
+</deployment-plan>

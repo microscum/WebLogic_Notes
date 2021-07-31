@@ -1,0 +1,8 @@
+/u01/app/fmw/wlserver/common/wlst
+/u01/app/fmw/wlserver/common/wlst/modules
+/u01/app/fmw/wlserver/common/wlst/lib/
+/u01/app/fmw/wlserver/common/wlst/modules/jython-modules/Lib
+/u01/app/fmw/oracle_common/common/wlst
+/u01/app/fmw/oracle_common/common/wlst/lib/
+/u01/app/fmw/oracle_common/common/wlst/resources
+/u01/app/fmw/jdk1.7.0_10/jre/lib/rt.jar

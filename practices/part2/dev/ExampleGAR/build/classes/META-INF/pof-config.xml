@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<!-- ========================================================================
+  == DISCLAIMER:
+  ==    This script is provided for educational purposes only. It is NOT
+  ==    supported by Oracle World Wide Technical Support.
+  ==    The script has been tested and appears to work as intended.
+  ==    You should always run new scripts on a test instance initially.
+  ==
+  ======================================================================== -->
+
+
+<pof-config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xmlns="http://xmlns.oracle.com/coherence/coherence-pof-config"
+              xsi:schemaLocation="http://xmlns.oracle.com/coherence/coherence-pof-config coherence-pof-config.xsd">
+              
+  <user-type-list>
+
+    <!-- coherence POF user types -->
+    <include>coherence-pof-config.xml</include>
+
+    <!-- com.tangosol.examples package -->
+    <user-type>
+      <type-id>1001</type-id>
+      <class-name>com.tangosol.examples.pof.ContactId</class-name>
+    </user-type>
+    <user-type>
+      <type-id>1002</type-id>
+      <class-name>com.tangosol.examples.pof.Contact</class-name>
+    </user-type>
+    <user-type>
+      <type-id>1003</type-id>
+      <class-name>com.tangosol.examples.pof.Address</class-name>
+    </user-type>
+    <user-type>
+    <type-id>1004</type-id>
+      <class-name>com.tangosol.examples.pof.PhoneNumber</class-name>
+    </user-type>
+   
+  </user-type-list>
+
+  <allow-interfaces>true</allow-interfaces>
+  <allow-subclasses>true</allow-subclasses>
+</pof-config>

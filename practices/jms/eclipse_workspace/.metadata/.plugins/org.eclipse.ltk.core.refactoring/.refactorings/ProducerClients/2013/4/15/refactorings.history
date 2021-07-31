@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;GenericProducerClient.java&apos; to &apos;ProducerClients/src/com.example.jms&apos;&#x0A;- Original project: &apos;ProducerClients&apos;&#x0A;- Destination element: &apos;ProducerClients/src/com.example.jms&apos;&#x0A;- Original element: &apos;com.example.jms.GenericProducerClient.java&apos;" description="Copy compilation unit" destination="/src&lt;com.example.jms" element1="/src&lt;com.example.jms{GenericProducerClient.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1365755092578" units="1" version="1.0"/>
+</session>

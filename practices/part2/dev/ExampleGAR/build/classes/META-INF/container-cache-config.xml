@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+<!-- ========================================================================
+  == DISCLAIMER:
+  ==    This script is provided for educational purposes only. It is NOT
+  ==    supported by Oracle World Wide Technical Support.
+  ==    The script has been tested and appears to work as intended.
+  ==    You should always run new scripts on a test instance initially.
+  ==
+  ======================================================================== -->
+
+<!--
+ This cache configuration file is for the storage enabled and disabled members in the container example.
+-->
+<cache-config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xmlns="http://xmlns.oracle.com/coherence/coherence-cache-config"
+              xsi:schemaLocation="http://xmlns.oracle.com/coherence/coherence-cache-config coherence-cache-config.xsd">
+              
+  <defaults>
+    <serializer>pof</serializer>
+  </defaults>
+
+  <caching-scheme-mapping>
+    <cache-mapping>
+      <cache-name>contacts</cache-name>
+      <scheme-name>ExamplesPartitionedPofScheme</scheme-name>
+    </cache-mapping>
+  </caching-scheme-mapping>
+
+  <caching-schemes>
+    <distributed-scheme>
+      <scheme-name>ExamplesPartitionedPofScheme</scheme-name>
+      <service-name>PartitionedPofCache</service-name>
+      <thread-count>5</thread-count>
+      <backing-map-scheme>
+        <local-scheme>
+          <!-- each node will be limited to 32MB -->
+          <high-units>3200000</high-units>
+          <unit-calculator>binary</unit-calculator>
+        </local-scheme>
+      </backing-map-scheme>
+      <autostart>true</autostart>
+    </distributed-scheme>
+
+ </caching-schemes>
+</cache-config>

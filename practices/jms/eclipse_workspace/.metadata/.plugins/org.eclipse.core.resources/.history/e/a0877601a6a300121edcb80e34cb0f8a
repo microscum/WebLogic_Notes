@@ -1,0 +1,16 @@
+package com.example.jms;
+
+public class BuggyQueueReceiver extends BasicQueueReceiver {
+
+	public BuggyQueueReceiver(String name, String url, String queueJNDI) {
+		super(name, url, queueJNDI);
+		// TODO Auto-generated constructor stub
+	}
+
+	public BuggyQueueReceiver(String name, String url, String conFactoryJNDI,
+			String queueJNDI, boolean autoAck, int sleepTime) {
+		super(name, url, conFactoryJNDI, queueJNDI, autoAck, sleepTime);
+		// TODO Auto-generated constructor stub
+	}
+
+}

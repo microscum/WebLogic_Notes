@@ -1,0 +1,44 @@
+
+#Conditionally import wlstModule only when script is executed with jython
+if __name__ == '__main__': 
+    from wlstModule import *#@UnusedWildImport
+    
+# Modify these values as necessary
+url = 'host01:7011'
+username = 'weblogic'
+password = 'Welcome1'
+wmNames = ['HighPriorityWM','LowPriorityWM']
+rqNames = ['FairShare90','FairShare10']
+rqFairShare = [90,10]
+targetName = 'cluster1'
+
+# Connect to administration server
+connect(username, password, url)
+
+edit()
+startEdit()
+cd('/')
+  
+edit()
+startEdit()
+stMBean=getMBean("/SelfTuning/" + domainName)
+for workManager in wmNames:
+    wmMBean=getMBean("/SelfTuning/" + domainName + "/WorkManagers/" + workManager['NAME'])
+    if wmMBean != None:
+        stMBean.destroyWorkManager(wmMBean)
+
+for fairShare in rqNames:
+    fsMBean=getMBean("/SelfTuning/" + domainName + "/FairShareRequestClasses/" + fairShare['NAME'])
+    if fsMBean != None:
+        print "destroying max threads constraints...."
+        stMBean.destroyFairShareRequestClass(fsMBean)
+        print "destroyed max threads constraint"
+ 
+#Activate changes, if any
+save()
+activate(block='true')
+print 'Work Managers deleted successfully.'
+
+
+
+

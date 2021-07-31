@@ -1,0 +1,14 @@
+INSTUPjdbc.createMultiDataSource
+/practices/part2/dev/WLSTProject/wlst/jdbc/createMultiDataSource.py
+INFOS:&&3|1|2|0&&3|3|2|0&&3|4|2|0&&3|5|2|0&&3|6|2|0&&3|7|2|0&&3|8|2|0&&3|9|2|0&&3|10|2|0&&3|11|2|0
+username=3
+jdbcResourceParameters=11
+dsJNDIName=6
+jdbcResource=10
+jdbc.createMultiDataSource=2
+targetServer=8
+targetName=7
+dsName=5
+jdbcSystemResource=9
+password=4
+url=1

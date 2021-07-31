@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!-- ========================================================================
+  == DISCLAIMER:
+  ==    This script is provided for educational purposes only. It is NOT
+  ==    supported by Oracle World Wide Technical Support.
+  ==    The script has been tested and appears to work as intended.
+  ==    You should always run new scripts on a test instance initially.
+  ==
+  ======================================================================== -->
+
+<servers>
+  <server auto-publish-setting="2" auto-publish-time="15" hostname="localhost" id="Oracle WebLogic Server 12c (12.1.2) at localhost [devdomain]" name="Oracle WebLogic Server 12c (12.1.2) at localhost [devdomain]" runtime-id="Oracle WebLogic Server 12c (12.1.2)" server-type="com.bea.weblogic1212.server" server-type-id="com.bea.weblogic1212.server" start-timeout="480" start_with_debug="true" stop-timeout="240" timestamp="90" weblogic_domain_path="/u01/domains/devdomain" weblogic_host_name="localhost" weblogic_is_remote="false" weblogic_port="7001" weblogic_use_bootprop="true" weblogic_use_config_xml="true">
+    <list key="modules"/>
+  </server>
+  <server auto-publish-setting="1" hostname="host01" id="Oracle WebLogic Server 12c (12.1.2) at [host01]" name="Oracle WebLogic Server 12c (12.1.2) at [host01]" runtime-id="Oracle WebLogic Server 12c (12.1.2)" server-type="com.bea.weblogic1212.server" server-type-id="com.bea.weblogic1212.server" start-timeout="480" stop-timeout="240" timestamp="1" weblogic_domain_path="" weblogic_host_name="host01" weblogic_is_remote="true" weblogic_port="7001" weblogic_use_bootprop="false" weblogic_use_config_xml="false"/>
+</servers>

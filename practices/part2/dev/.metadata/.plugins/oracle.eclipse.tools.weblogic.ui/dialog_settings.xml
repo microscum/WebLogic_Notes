@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ========================================================================
+  == DISCLAIMER:
+  ==    This script is provided for educational purposes only. It is NOT
+  ==    supported by Oracle World Wide Technical Support.
+  ==    The script has been tested and appears to work as intended.
+  ==    You should always run new scripts on a test instance initially.
+  ==
+  ======================================================================== -->
+
+<section name="Workbench">
+	<section name="oracle.eclipse.tools.weblogic.ui.j2eelib.LibraryModuleConfigDialog">
+		<item value="300" key="height"/>
+		<item value="400" key="width"/>
+	</section>
+</section>

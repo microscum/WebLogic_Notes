@@ -1,0 +1,15 @@
+INSTUPcore.deleteWorkManagers
+/practices/part2/dev/WLSTProject/wlst/core/deleteWorkManagers.py
+INFOS:&&3|1|2|0&&3|3|2|0&&3|4|2|0&&3|5|2|0&&3|6|2|0&&3|7|2|0&&3|8|2|0&&3|9|2|0&&3|10|2|0&&3|11|2|0&&3|12|2|0
+stMBean=10
+username=3
+fsMBean=12
+domainName=9
+targetName=8
+wmNames=5
+rqFairShare=7
+password=4
+core.deleteWorkManagers=2
+url=1
+wmMBean=11
+rqNames=6

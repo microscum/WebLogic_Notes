@@ -1,0 +1,5 @@
+package com.example.jms;
+
+public class DelayedQueueSender extends BasicQueueSender {
+
+}

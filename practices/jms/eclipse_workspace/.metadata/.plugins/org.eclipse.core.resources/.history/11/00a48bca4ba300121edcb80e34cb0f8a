@@ -1,0 +1,22 @@
+package com.example.jms;
+
+import javax.jms.JMSException;
+
+import weblogic.jms.extensions.WLMessageProducer;
+
+public class DelayedQueueSender extends BasicQueueSender {
+
+	public DelayedQueueSender(String name, String url, String queueJNDI, int timeToDeliver) throws JMSException {
+		super(name, url, queueJNDI);
+		WLMessageProducer wlproducer = (WLMessageProducer)qsender;
+		wlproducer.setTimeToDeliver(timeToDeliver);
+	}
+	
+	public DelayedQueueSender(String name, String url, String conFactoryJNDI,
+			String queueJNDI, boolean txEnabled, int timeToDeliver) throws JMSException {
+		super(name, url, conFactoryJNDI, queueJNDI, txEnabled);
+		WLMessageProducer wlproducer = (WLMessageProducer)qsender;
+		wlproducer.setTimeToDeliver(timeToDeliver);
+	}
+
+}

@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<domain xmlns="http://xmlns.oracle.com/weblogic/domain" xmlns:sec="http://xmlns.oracle.com/weblogic/security" xmlns:wls="http://xmlns.oracle.com/weblogic/security/wls" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.oracle.com/weblogic/security/xacml http://xmlns.oracle.com/weblogic/security/xacml/1.0/xacml.xsd http://xmlns.oracle.com/weblogic/security/providers/passwordvalidator http://xmlns.oracle.com/weblogic/security/providers/passwordvalidator/1.0/passwordvalidator.xsd http://xmlns.oracle.com/weblogic/domain http://xmlns.oracle.com/weblogic/1.0/domain.xsd http://xmlns.oracle.com/weblogic/security http://xmlns.oracle.com/weblogic/1.0/security.xsd http://xmlns.oracle.com/weblogic/security/wls http://xmlns.oracle.com/weblogic/security/wls/1.0/wls.xsd">
+  <name>wlsadmin</name>
+  <domain-version>12.1.3.0.0</domain-version>
+  <security-configuration>
+    <name>wlsadmin</name>
+    <realm>
+      <sec:authentication-provider xsi:type="wls:default-authenticatorType">
+        <sec:name>DefaultAuthenticator</sec:name>
+      </sec:authentication-provider>
+      <sec:authentication-provider xsi:type="wls:default-identity-asserterType">
+        <sec:name>DefaultIdentityAsserter</sec:name>
+        <sec:active-type>AuthenticatedUser</sec:active-type>
+      </sec:authentication-provider>
+      <sec:role-mapper xmlns:xac="http://xmlns.oracle.com/weblogic/security/xacml" xsi:type="xac:xacml-role-mapperType">
+        <sec:name>XACMLRoleMapper</sec:name>
+      </sec:role-mapper>
+      <sec:authorizer xmlns:xac="http://xmlns.oracle.com/weblogic/security/xacml" xsi:type="xac:xacml-authorizerType">
+        <sec:name>XACMLAuthorizer</sec:name>
+      </sec:authorizer>
+      <sec:adjudicator xsi:type="wls:default-adjudicatorType">
+        <sec:name>DefaultAdjudicator</sec:name>
+      </sec:adjudicator>
+      <sec:credential-mapper xsi:type="wls:default-credential-mapperType">
+        <sec:name>DefaultCredentialMapper</sec:name>
+      </sec:credential-mapper>
+      <sec:cert-path-provider xsi:type="wls:web-logic-cert-path-providerType">
+        <sec:name>WebLogicCertPathProvider</sec:name>
+      </sec:cert-path-provider>
+      <sec:cert-path-builder>WebLogicCertPathProvider</sec:cert-path-builder>
+      <sec:name>myrealm</sec:name>
+      <sec:password-validator xmlns:pas="http://xmlns.oracle.com/weblogic/security/providers/passwordvalidator" xsi:type="pas:system-password-validatorType">
+        <sec:name>SystemPasswordValidator</sec:name>
+        <pas:min-password-length>8</pas:min-password-length>
+        <pas:min-numeric-or-special-characters>1</pas:min-numeric-or-special-characters>
+      </sec:password-validator>
+    </realm>
+    <default-realm>myrealm</default-realm>
+    <credential-encrypted>{AES}XAE+PgYqm994cAnA+WzYyGsvdzgDkBFAAv1py0JcgoVW5zPDKCfJzdytnUxeIt7xh8TX47ZIhUYCet33Egi9Nn6fhweEp6mseQ8gK54PMxUbGhILlAx1Bjgk9IJfDxEE</credential-encrypted>
+    <node-manager-username>weblogic</node-manager-username>
+    <node-manager-password-encrypted>{AES}rij/yBKqwPOl5XsTplQOjYhU/XbbqeuMqEPOkIwW9XI=</node-manager-password-encrypted>
+  </security-configuration>
+  <server>
+    <name>AdminServer</name>
+    <ssl>
+      <name>AdminServer</name>
+      <listen-port>7002</listen-port>
+    </ssl>
+    <machine>machine1</machine>
+    <listen-address>host01.example.com</listen-address>
+  </server>
+  <server>
+    <name>server1</name>
+    <ssl>
+      <enabled>true</enabled>
+      <listen-port>8011</listen-port>
+      <server-private-key-alias>wlskey</server-private-key-alias>
+      <server-private-key-pass-phrase-encrypted>{AES}DcllqdS80EnrLIMmaDvlcfdu7wwmTf+o9sEejxnukYk=</server-private-key-pass-phrase-encrypted>
+    </ssl>
+    <machine>machine1</machine>
+    <listen-port>7011</listen-port>
+    <cluster>cluster1</cluster>
+    <listen-address>host01.example.com</listen-address>
+    <jta-migratable-target>
+      <name>server1</name>
+      <user-preferred-server>server1</user-preferred-server>
+      <cluster>cluster1</cluster>
+      <migration-policy>manual</migration-policy>
+    </jta-migratable-target>
+    <key-stores>CustomIdentityAndJavaStandardTrust</key-stores>
+    <custom-identity-key-store-file-name>wls_identity.jks</custom-identity-key-store-file-name>
+    <custom-identity-key-store-type>JKS</custom-identity-key-store-type>
+    <custom-identity-key-store-pass-phrase-encrypted>{AES}R/6P/wkUKAAQhFWmA0AgJn1j2wHV0BymrabpBHItmwE=</custom-identity-key-store-pass-phrase-encrypted>
+    <java-standard-trust-key-store-pass-phrase-encrypted>{AES}7D1DhfkQ3yRzYR3j4OOwSvnILnmDg5i85VL2NrbVQ6Y=</java-standard-trust-key-store-pass-phrase-encrypted>
+  </server>
+  <server>
+    <name>server2</name>
+    <machine>machine2</machine>
+    <listen-port>7012</listen-port>
+    <cluster>cluster1</cluster>
+    <listen-address>host02.example.com</listen-address>
+    <jta-migratable-target>
+      <name>server2</name>
+      <user-preferred-server>server2</user-preferred-server>
+      <cluster>cluster1</cluster>
+      <migration-policy>manual</migration-policy>
+    </jta-migratable-target>
+  </server>
+  <cluster>
+    <name>cluster1</name>
+    <cluster-messaging-mode>unicast</cluster-messaging-mode>
+    <coherence-cluster-system-resource>CoherenceCluster1</coherence-cluster-system-resource>
+  </cluster>
+  <production-mode-enabled>true</production-mode-enabled>
+  <embedded-ldap>
+    <name>wlsadmin</name>
+    <credential-encrypted>{AES}rss+JRJfhPu2i+cFDgb/uarDknHuoUojCX4Zq0TKnTvk00bpn7Ih9ZWf7qVvg87d</credential-encrypted>
+  </embedded-ldap>
+  <configuration-version>12.1.3.0.0</configuration-version>
+  <app-deployment>
+    <name>SimpleAuctionWebApp</name>
+    <target>cluster1</target>
+    <module-type>war</module-type>
+    <source-path>/practices/part2/apps/SimpleAuctionWebApp.war</source-path>
+    <security-dd-model>DDOnly</security-dd-model>
+    <staging-mode xsi:nil="true"></staging-mode>
+    <plan-staging-mode xsi:nil="true"></plan-staging-mode>
+    <cache-in-app-directory>false</cache-in-app-directory>
+  </app-deployment>
+  <machine xsi:type="unix-machineType">
+    <name>machine1</name>
+    <node-manager>
+      <name>machine1</name>
+      <nm-type>Plain</nm-type>
+      <listen-address>host01.example.com</listen-address>
+    </node-manager>
+  </machine>
+  <machine xsi:type="unix-machineType">
+    <name>machine2</name>
+    <node-manager>
+      <name>machine2</name>
+      <nm-type>Plain</nm-type>
+      <listen-address>host02.example.com</listen-address>
+    </node-manager>
+  </machine>
+  <migratable-target>
+    <name>server1 (migratable)</name>
+    <notes>This is a system generated default migratable target for a server. Do not delete manually.</notes>
+    <user-preferred-server>server1</user-preferred-server>
+    <cluster>cluster1</cluster>
+    <migration-policy>manual</migration-policy>
+  </migratable-target>
+  <migratable-target>
+    <name>server2 (migratable)</name>
+    <notes>This is a system generated default migratable target for a server. Do not delete manually.</notes>
+    <user-preferred-server>server2</user-preferred-server>
+    <cluster>cluster1</cluster>
+    <migration-policy>manual</migration-policy>
+  </migratable-target>
+  <admin-server-name>AdminServer</admin-server-name>
+  <jdbc-system-resource>
+    <name>AuctionDBDataSource</name>
+    <target>cluster1</target>
+    <descriptor-file-name>jdbc/AuctionDBDataSource-2778-jdbc.xml</descriptor-file-name>
+  </jdbc-system-resource>
+  <coherence-cluster-system-resource>
+    <name>CoherenceCluster1</name>
+    <descriptor-file-name>coherence/defaultCoherenceCluster-coherence.xml</descriptor-file-name>
+  </coherence-cluster-system-resource>
+</domain>

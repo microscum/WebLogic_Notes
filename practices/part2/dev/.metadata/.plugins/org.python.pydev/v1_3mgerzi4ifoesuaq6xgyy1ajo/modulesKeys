@@ -1,0 +1,13 @@
+MODULES_MANAGER_V2
+StringIO
+__builtin__
+com.ziclix.python.sql
+email
+hashlib
+os
+os.path
+pytest
+re
+sys
+wlstModule|/u01/app/fmw/wlserver/common/wlst/modules/wlstModule.py
+wlstModule_core|/u01/app/fmw/wlserver/common/wlst/modules/wlstModule_core.py

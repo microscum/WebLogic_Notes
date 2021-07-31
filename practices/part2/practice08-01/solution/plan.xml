@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<deployment-plan xmlns="http://xmlns.oracle.com/weblogic/deployment-plan" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.oracle.com/weblogic/deployment-plan http://xmlns.oracle.com/weblogic/deployment-plan/1.0/deployment-plan.xsd" global-variables="false">
+  <application-name>SimpleAuctionWebAppDb.war</application-name>
+  <variable-definition>
+    <variable>
+      <name>PersistenceUnit_AuctionPU_jtaDataSource</name>
+      <value>jdbc.AuctionDBTest</value>
+    </variable>
+  </variable-definition>
+  <module-override>
+    <module-name>SimpleAuctionWebAppDb.war</module-name>
+    <module-type>war</module-type>
+
+    <module-descriptor external="false">
+      <root-element>persistence</root-element>
+      <uri>WEB-INF/lib/persistence.jar!/META-INF/persistence.xml</uri>
+      <variable-assignment>
+        <name>PersistenceUnit_AuctionPU_jtaDataSource</name>
+        <xpath>/persistence/persistence-unit[name="AuctionPU"]/jta-data-source</xpath>
+      </variable-assignment>
+    </module-descriptor>
+  </module-override>
+  <config-root>/practices/part2/practice08-01/plan</config-root>
+</deployment-plan>

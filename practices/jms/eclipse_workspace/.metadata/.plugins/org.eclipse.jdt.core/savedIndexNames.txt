@@ -1,0 +1,19 @@
+INDEX VERSION 1.126+/practices/jms/eclipse_workspace/.metadata/.plugins/org.eclipse.jdt.core
+680003802.index
+3829894817.index
+2508147471.index
+4283481814.index
+2268464613.index
+2375542489.index
+1501317170.index
+1346760340.index
+1481681510.index
+1266648557.index
+3421611052.index
+1580850431.index
+3834841441.index
+690271857.index
+3978053510.index
+3532919746.index
+2921857115.index
+1189544457.index

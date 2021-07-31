@@ -1,0 +1,37 @@
+
+# ------------------------------------------------------------------------
+# -- DISCLAIMER:
+# --    This script is provided for educational purposes only. It is NOT
+# --    supported by Oracle World Wide Technical Support.
+# --    The script has been tested and appears to work as intended.
+# --    You should always run new scripts on a test instance initially.
+# --
+# ------------------------------------------------------------------------
+
+INDEX VERSION 1.126
+/practices/part2/dev/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1956234838.index
+/SimpleAuctionWebAppDb/src/java
+/practices/part2/dev/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/453674432.index
+/SimpleAuctionWebAppDb/src/java
+/practices/part2/dev/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2541279598.index
+/AuctionWebAppSec/src/java
+/practices/part2/dev/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3731019786.index
+/SimpleAuctionWebApp/src/java
+/practices/part2/dev/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1593884003.index
+/SimpleAuctionWebAppDbSec/src/java
+/practices/part2/dev/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/420715481.index
+/SimpleAuctionWebAppSec/src/java
+/practices/part2/dev/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3960635419.index
+/AuctionWebAppSec/src/java
+/practices/part2/dev/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/394151505.index
+/ShoppingCart/src
+/practices/part2/dev/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2639003605.index
+/SimpleAuctionWebApp/src/java
+/practices/part2/dev/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2447784964.index
+/SimpleAuctionWebAppSec/src/java
+/practices/part2/dev/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/642669845.index
+/AuctionWebApp/src/java
+/practices/part2/dev/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/102590975.index
+/AuctionWebApp/src/java
+/practices/part2/dev/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2191218924.index
+/SimpleAuctionWebAppDbSec/src/java

@@ -1,0 +1,15 @@
+INSTUPcore.createWorkManager2
+/practices/part2/dev/WLSTProject/wlst/core/createWorkManager2.py
+INFOS:&&3|1|2|0&&3|3|2|0&&3|4|2|0&&3|5|2|0&&3|6|2|0&&3|7|2|0&&3|8|2|0&&3|9|2|0&&3|10|2|0&&3|11|2|0&&3|12|2|0
+rq=12
+core.createWorkManager2=2
+wm=11
+targetServer=9
+targetName=8
+rqName=6
+password=4
+rqFairShare=7
+url=1
+username=3
+tuning=10
+wmName=5

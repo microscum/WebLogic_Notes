@@ -1,0 +1,33 @@
+<?xml version='1.0'?>
+
+<!-- ========================================================================
+  == DISCLAIMER:
+  ==    This script is provided for educational purposes only. It is NOT
+  ==    supported by Oracle World Wide Technical Support.
+  ==    The script has been tested and appears to work as intended.
+  ==    You should always run new scripts on a test instance initially.
+  ==
+  ======================================================================== -->
+
+
+<coherence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns="http://xmlns.oracle.com/coherence/coherence-operational-config"
+           xsi:schemaLocation="http://xmlns.oracle.com/coherence/coherence-operational-config coherence-operational-config.xsd"
+           xml-override="../common/tangosol-coherence-override.xml">
+
+  <cluster-config>
+   <address-providers>
+      <address-provider id="extend-address-provider">
+        <socket-address>
+          <address>host01</address>
+          <port>9020</port>
+        </socket-address>
+        <socket-address>
+          <address>host02</address>
+          <port>9022</port>
+        </socket-address>
+      </address-provider>
+    </address-providers>
+  </cluster-config>
+
+</coherence>
